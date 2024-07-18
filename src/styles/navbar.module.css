@@ -1,7 +1,13 @@
 .navbarCtn{
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 2em;
+    padding-right:2em ;
     padding-top: 2em;
+    z-index: 1;
 }
 
 
