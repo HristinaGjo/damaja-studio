@@ -4,15 +4,26 @@ import Navbar from "../components/Navbar";
 import heroImg from "../assets/heroImg.webp";
 import firstRowImg from "../assets/secondRowImg.webp"
 import secondRowImg from "../assets/firstRowImg.webp"
+import { useEffect, useRef } from "react";
+import { useScroll, useTransform, motion } from "framer-motion";
 
 
 
 const HomePage = () => {
+    
+    const pageCtn = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target:pageCtn,
+        offset:[ 'start end', 'end start' ]
+    })
+
+    const sm = useTransform (scrollYProgress, [0,1], [0,-150]);
+    const md = useTransform (scrollYProgress, [0,1], [0,-250]);
 
     return ( 
         <>
 
-        <div className={classes.pageCtn}>
+        <div ref={pageCtn} className={classes.pageCtn}>
 
             <div className={classes.heroCtn}>
                 <img src={heroImg} alt="Img not available" className={classes.heroImage}/>
@@ -20,29 +31,29 @@ const HomePage = () => {
 
             <div className={classes.projectsCtn}>
 
-            <div className={classes.firstRow}>
+            <motion.div style={{y:sm}} className={classes.firstRow}>
                 <img src={firstRowImg} alt="Img not available" className={classes.firstRowImage}/>
                 <div className={classes.projectName}>
                 <span>Adidas</span>
                 <span className={classes.spanMore}>more +</span>
                 </div>
-            </div>
+            </motion.div>
 
-            <div className={classes.secondRow}>
+            <motion.div style={{y:sm}} className={classes.secondRow}>
                 <img src={secondRowImg} alt="Img not available" className={classes.secondRowImage}/>
                 <div className={classes.secondProjectName}>
                 <span>Adidas</span>
                 <span className={classes.spanMore}>more +</span>
                 </div>
-            </div>
+            </motion.div>
 
-            <div className={classes.thirdRow}>
+            <motion.div style={{y:sm}} className={classes.thirdRow}>
                 <img src={firstRowImg} alt="Img not available" className={classes.thirdRowImage}/>
                 <div className={classes.projectName}>
                 <span>Adidas</span>
                 <span className={classes.spanMore}>more +</span>
                 </div>
-            </div>
+            </motion.div>
 
             </div>
 
