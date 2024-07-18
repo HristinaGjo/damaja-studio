@@ -6,6 +6,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0 1em;
 }
 
 html, body{
@@ -103,6 +104,10 @@ a{
 
 /* tablet & desktop */
 @media (min-width:768px) {
+
+  :root{
+    padding: 0 2em;
+  }
 
   /* font -sizes */
   :root {

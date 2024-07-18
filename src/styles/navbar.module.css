@@ -1,0 +1,12 @@
+.navbarCtn{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+}
+
+
+@media (max-width:768px){
+    .navbarCtn{
+        padding-top: 1em;
+    }
+}
