@@ -1,19 +1,127 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  background-color:var(--color-beige);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+
+/* colors */
+:root {
+  --color-beige:#edede9;
+  --color-h1:black;
+  --color-h2:black;
+  --color-p:red;
+  --color-span:red;
+}
+
+/* font -sizes */
+:root {
+  --font-size-base: 16px;  /* Consistent base font size for larger screens */
+  --font-size-h1: calc(var(--font-size-base) * 2.5); /* 40px */
+  --font-size-h2: calc(var(--font-size-base) * 2); /* 32px */
+  --font-size-h3: calc(var(--font-size-base) * 1.5); /* 32px */
+  --font-size-h4: 0.875rem; /* 14px */
+  --font-size-p: var(--font-size-base); /* 16px */
+  --font-size-span: 1rem;  /* 16px */
+}
+
+/* font-weight */
+:root{
+  --font-weight-h1:600;
+  --font-weight-h2:400;
+  --font-weight-span:200;
+  --font-weight-p:200;
+}
+
+/* line-height */
+:root{
+  --line-height-h1:100%;
+  --line-height-h2:100%;
+  --line-height-span:120%;
+  --line-height-p:120%;
+}
+
+/* font-family */
+:root{
+  --font-family-h1:Helvetica, sans-serif;
+  --font-family-h2:Arial, sans-serif;
+  --font-family-span:Arial, sans-serif;
+  --font-family-p:Arial, sans-serif;
+}
+
+h1{
+  font-size: var(--font-size-h1);
+  font-family: var(--font-family-h1);
+  font-weight: var(--font-weight-h1);
+  line-height: var(--line-height-h1);
+  color: var(--color-h1);
+  margin: 0;
+}
+
+h2{
+  font-size: var(--font-size-h2);
+  font-family: var(--font-family-h2);
+  font-weight: var(--font-weight-h2);
+  line-height: var(--line-height-h2);
+  color: var(--color-h2);
+  margin: 0;
+}
+
+span{
+  font-size: var(--font-size-span);
+  font-family: var(--font-family-span);
+  font-weight: var(--font-weight-span);
+  line-height: var(--line-height-span);
+  color: var(--color-span);
+  margin: 0;
+}
+
+p{
+  font-size: var(--font-size-p);
+  font-family: var(--font-family-p);
+  font-weight: var(--font-weight-p);
+  line-height: var(--line-height-p);
+  color: var(--color-p);
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  margin: 0;
+}
+
+
+/* tablet & desktop */
+@media (min-width:768px) {
+
+  /* font -sizes */
+  :root {
+    --font-size-base: 16px;  /* Consistent base font size for larger screens */
+    --font-size-h1: calc(var(--font-size-base) * 4); /* 64px */
+    --font-size-h2: calc(var(--font-size-base) * 3.5); /* 56px */
+    --font-size-h3: calc(var(--font-size-base) * 2); /* 32px */
+    --font-size-h4: 0.875rem; /* 14px */
+    --font-size-p: var(--font-size-base); /* 16px */
+   --font-size-span: 1rem;  /* 16px */
+  }
+
+}
+
+
+
+
+
+/*a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
@@ -65,4 +173,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+}*/
