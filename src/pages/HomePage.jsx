@@ -15,11 +15,8 @@ const HomePage = () => {
   /*const heroScale = useTransform(scrollY, [0, 300], [1, 0.8]);
   const heroOpacity = useTransform(scrollY, [0, 300], [1, 0]);*/
 
-  const heroHeight = useTransform(scrollY, [0, 600], ['90vh', '50vh']);
-  
-  /*const heroOpacity = useTransform(scrollY, [0, 300], [1, 1]);*/
+  const heroHeight = useTransform(scrollY, [0, 600], ['80vh', '50vh']);
 
-  // Animate projectsCtn to parallax scroll
   const { scrollYProgress } = useScroll({
     target: projectsCtn,
     offset: ['start end', 'end start'],
