@@ -65,6 +65,7 @@
 
 @media (max-width:768px) {
     .footerCtn{
+        position: relative;
         display: flex;
         flex-direction: column;
         padding: 1em;
@@ -72,6 +73,11 @@
 
     .dashWrap{
         display: none;
+    }
+
+    .footerLinksWrap{
+        gap: .5rem;
+        display: grid;
     }
 
     .footerLinkWrap h1,
