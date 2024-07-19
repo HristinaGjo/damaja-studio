@@ -19,9 +19,10 @@ html, body{
 :root {
   --color-beige:#edede9;
   --color-h1:black;
-  --color-h2:black;
-  --color-p:red;
-  --color-span:red;
+  --color-h2:#ED434A;
+  --color-h3:#8F6E3A;
+  --color-p:#ED434A;
+  --color-span:#ED434A;
 }
 
 /* font -sizes */
@@ -29,7 +30,7 @@ html, body{
   --font-size-base: 16px;  /* Consistent base font size for larger screens */
   --font-size-h1: calc(var(--font-size-base) * 2.5); /* 40px */
   --font-size-h2: calc(var(--font-size-base) * 2); /* 32px */
-  --font-size-h3: calc(var(--font-size-base) * 1.5); /* 32px */
+  --font-size-h3: calc(var(--font-size-base) * 2); /* 32px */
   --font-size-h4: 0.875rem; /* 14px */
   --font-size-p: var(--font-size-base); /* 16px */
   --font-size-span: 1rem;  /* 16px */
@@ -39,6 +40,7 @@ html, body{
 :root{
   --font-weight-h1:600;
   --font-weight-h2:400;
+  --font-weight-h3:600;
   --font-weight-span:200;
   --font-weight-p:200;
 }
@@ -46,7 +48,8 @@ html, body{
 /* line-height */
 :root{
   --line-height-h1:100%;
-  --line-height-h2:100%;
+  --line-height-h2:120%;
+  --line-height-h3:120%;
   --line-height-span:120%;
   --line-height-p:120%;
 }
@@ -55,6 +58,7 @@ html, body{
 :root{
   --font-family-h1:Helvetica, sans-serif;
   --font-family-h2:Arial, sans-serif;
+  --font-family-h3:Arial, sans-serif;
   --font-family-span:Arial, sans-serif;
   --font-family-p:Arial, sans-serif;
 }
@@ -74,6 +78,15 @@ h2{
   font-weight: var(--font-weight-h2);
   line-height: var(--line-height-h2);
   color: var(--color-h2);
+  margin: 0;
+}
+
+h3{
+  font-size: var(--font-size-h3);
+  font-family: var(--font-family-h3);
+  font-weight: var(--font-weight-h3);
+  line-height: var(--line-height-h3);
+  color: var(--color-h3);
   margin: 0;
 }
 
@@ -110,7 +123,7 @@ a{
     --font-size-base: 16px;  /* Consistent base font size for larger screens */
     --font-size-h1: calc(var(--font-size-base) * 4); /* 64px */
     --font-size-h2: calc(var(--font-size-base) * 3.5); /* 56px */
-    --font-size-h3: calc(var(--font-size-base) * 2); /* 32px */
+    --font-size-h3: calc(var(--font-size-base) * 4); /* 32px */
     --font-size-h4: 0.875rem; /* 14px */
     --font-size-p: var(--font-size-base); /* 16px */
    --font-size-span: 1rem;  /* 16px */

@@ -3,6 +3,7 @@ import classes from "../styles/homePage.module.css";
 import Navbar from "../components/Navbar";
 import heroImg from "../assets/heroImg.webp";
 import firstRowImg from "../assets/secondRowImg.webp";
+/*import hoopImg from "../assets/secondRowImg.webp";*/
 import secondRowImg from "../assets/firstRowImg.webp";
 import { useScroll, useTransform, motion } from "framer-motion";
 
@@ -64,9 +65,52 @@ const HomePage = () => {
             </div>
           </motion.div>
         </div>
+
+        <motion.div style={{y:sm}} className={classes.clients}>
+            <div className={classes.clientsTitle}>
+                <h2>clients</h2>
+            </div>
+
+            <div className={classes.clientsCtn}>
+                <div className={classes.firstRowClients}>
+                    <h3 className={classes.firstTitle}>adidas</h3>
+                    <h3 className={classes.secondTitle}>adidas</h3>
+                </div>
+                <div className={classes.secondRowClients}>
+                    <h3>adidas</h3>
+                </div>
+                <div className={classes.thirdRowClients}>
+                    <h3 className={classes.firstThirdRow}>adidas</h3>
+                    <h3 className={classes.secondThirdRow}>adidas</h3>
+                </div>
+                <div className={classes.fourthRowClients}>
+                    <h3>adidas</h3>
+                </div>
+                <div className={classes.fifthRowClients}>
+                    <h3>adidas</h3>
+                </div>
+                <div className={classes.sixthRowClients}>
+                    <h3 className={classes.firstTitle}>adidas</h3>
+                    <h3 className={classes.secondTitle}>adidas</h3>
+                </div>
+            </div>
+        </motion.div>
+            
       </div>
     </>
   );
 };
 
 export default HomePage;
+
+
+
+
+
+
+
+            {/*<img src={hoopImg} alt="Img not available" className={classes.hoopImage} />
+            <div className={classes.hoopProjectName}>
+              <span>Adidas</span>
+              <span className={classes.spanMore}>more +</span>
+            </div>*/}

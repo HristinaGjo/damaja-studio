@@ -10,6 +10,11 @@
     z-index: 1;
 }
 
+/*.logo span{
+    font-size: 24rem;
+    letter-spacing: .1em;
+}*/
+
 
 @media (max-width:768px){
     .navbarCtn{
