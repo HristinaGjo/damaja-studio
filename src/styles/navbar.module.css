@@ -1,6 +1,6 @@
 .navbarCtn{
     position: fixed;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -18,6 +18,10 @@
 
 @media (max-width:768px){
     .navbarCtn{
+        width: 100vw;
+        box-sizing: border-box;
+        padding-left: 1em;
+        padding-right:1em ;
         padding-top: 1em;
     }
 }

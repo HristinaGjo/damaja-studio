@@ -25,7 +25,7 @@ const HomePage = () => {
     offset: ['start end', 'end start'],
   });
 
-  const sm = useTransform(scrollYProgress, [0, 1], [0, -7]);
+  const sm = useTransform(scrollYProgress, [0, 1], [0, -10]);
   const md = useTransform(scrollYProgress, [0, 1], [0, -250]);
 
   return (
@@ -101,6 +101,7 @@ const HomePage = () => {
             <div className={classes.newsCtn}>
                 <div className={classes.text}>
                     <h4>Placeholder for Domestika text <br/>
+                    Lorem ipsum Lorem ipsum
                     Lorem ipsum Lorem ipsum
                     Lorem ipsum Lorem ipsum
                     </h4>
