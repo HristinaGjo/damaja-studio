@@ -110,9 +110,9 @@ const HomePage = () => {
                     <img src={domestikaImg} alt="Img not available" className={classes.image} />
                 </div>
             </div>
-
             <Footer />
         </motion.div>
+    
 
   
     </>

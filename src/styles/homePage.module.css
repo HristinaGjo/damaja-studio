@@ -13,6 +13,7 @@
 
 .heroCtn{
     /*position: relative;*/
+    width: 100vw;
     top: 0;
     height: 90vh; /* Initial height */
     position: sticky; /* Make it sticky */

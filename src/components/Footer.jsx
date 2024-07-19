@@ -1,12 +1,23 @@
-import React from "react";
+import React, {useRef} from "react";
 import classes from "../styles/footer.module.css"
+import { useScroll, useTransform, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
 
+  const footerCtn = useRef(null);
+  
+  const { scrollYProgress } = useScroll({
+    target: footerCtn,
+    offset: ['start end', 'end start'],
+  });
+
+  const sm = useTransform(scrollYProgress, [0, 1], [0, -0]);
+  const md = useTransform(scrollYProgress, [0, 1], [0, -250]);
+
     return ( 
         <>
-        <div className={classes.footerCtn}>
+        <motion.div ref={footerCtn} style={{y:sm}} className={classes.footerCtn}>
 
           <div className={classes.footerLinksWrap}>
             
@@ -65,7 +76,7 @@ const Footer = () => {
             </div>
           </div>
 
-        </div>
+        </motion.div>
         </>
      );
 }
