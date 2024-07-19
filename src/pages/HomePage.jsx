@@ -5,6 +5,7 @@ import heroImg from "../assets/heroImg.webp";
 import firstRowImg from "../assets/secondRowImg.webp";
 /*import hoopImg from "../assets/secondRowImg.webp";*/
 import secondRowImg from "../assets/firstRowImg.webp";
+import domestikaImg from "../assets/domestika.webp"
 import { useScroll, useTransform, motion } from "framer-motion";
 import Footer from "../components/Footer";
 
@@ -99,13 +100,13 @@ const HomePage = () => {
 
             <div className={classes.newsCtn}>
                 <div className={classes.text}>
-                    <h4>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    <h4>Placeholder for Domestika text <br/>
                     Lorem ipsum Lorem ipsum
                     Lorem ipsum Lorem ipsum
                     </h4>
                 </div>
                 <div className={classes.imageCtn}>
-                    <img src={secondRowImg} alt="Img not available" className={classes.image} />
+                    <img src={domestikaImg} alt="Img not available" className={classes.image} />
                 </div>
             </div>
 
