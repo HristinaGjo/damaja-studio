@@ -22,36 +22,42 @@ html, body{
   --color-beige:#edede9;
   --color-h1:black;
   --color-h2:#ED434A;
-  --color-h3:#8F6E3A;
+  /*--color-h3:#8F6E3A;*/
+  --color-h3:black;
+  --color-h4:white;
   --color-p:#ED434A;
   --color-span:#ED434A;
+  --color-footer:#E2E3E2;
+  --color-clients: #F1EDE1;
 }
 
 /* font -sizes */
 :root {
   --font-size-base: 16px;  /* Consistent base font size for larger screens */
-  --font-size-h1: calc(var(--font-size-base) * 2.5); /* 40px */
+  --font-size-h1: calc(var(--font-size-base) * 5.5); /* 40px */
   --font-size-h2: calc(var(--font-size-base) * 2); /* 32px */
   --font-size-h3: calc(var(--font-size-base) * 2); /* 32px */
-  --font-size-h4: 0.875rem; /* 14px */
+  --font-size-h4: 1.25rem; /* 14px */
   --font-size-p: var(--font-size-base); /* 16px */
   --font-size-span: 0.875rem;  /* 14px */
 }
 
 /* font-weight */
 :root{
-  --font-weight-h1:600;
+  --font-weight-h1:400;
   --font-weight-h2:400;
   --font-weight-h3:200;
+  --font-weight-h4:400;
   --font-weight-span:200;
   --font-weight-p:200;
 }
 
 /* line-height */
 :root{
-  --line-height-h1:100%;
+  --line-height-h1:80%;
   --line-height-h2:120%;
   --line-height-h3:120%;
+  --line-height-h4:100%;
   --line-height-span:120%;
   --line-height-p:120%;
 }
@@ -61,6 +67,7 @@ html, body{
   --font-family-h1:Helvetica, sans-serif;
   --font-family-h2:Arial, sans-serif;
   --font-family-h3:Arial, sans-serif;
+  --font-family-h4:Arial, sans-serif;
   --font-family-span:Arial, sans-serif;
   --font-family-p:Arial, sans-serif;
 }
@@ -90,6 +97,16 @@ h3{
   line-height: var(--line-height-h3);
   color: var(--color-h3);
   margin: 0;
+}
+
+h4{
+  font-size: var(--font-size-h4);
+  font-family: var(--font-family-h4);
+  font-weight: var(--font-weight-h4);
+  line-height: var(--line-height-h4);
+  color: var(--color-h4);
+  margin: 0;
+
 }
 
 span{
@@ -123,10 +140,10 @@ a{
   /* font -sizes */
   :root {
     --font-size-base: 16px;  /* Consistent base font size for larger screens */
-    --font-size-h1: calc(var(--font-size-base) * 4); /* 64px */
+    --font-size-h1: calc(var(--font-size-base) * 9); /* 64px */
     --font-size-h2: calc(var(--font-size-base) * 4); /* 56px */
     --font-size-h3: calc(var(--font-size-base) * 4); /* 32px */
-    --font-size-h4: 0.875rem; /* 14px */
+    --font-size-h4: 1.75rem; /* 14px */
     --font-size-p: var(--font-size-base); /* 16px */
    --font-size-span: 1rem;  /* 16px */
   }

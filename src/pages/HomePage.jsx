@@ -24,7 +24,7 @@ const HomePage = () => {
     offset: ['start end', 'end start'],
   });
 
-  const sm = useTransform(scrollYProgress, [0, 1], [0, -0]);
+  const sm = useTransform(scrollYProgress, [0, 1], [0, -7]);
   const md = useTransform(scrollYProgress, [0, 1], [0, -250]);
 
   return (
@@ -96,6 +96,19 @@ const HomePage = () => {
                     <h3 className={classes.secondTitle}>adidas</h3>
                 </div>
             </div>
+
+            <div className={classes.newsCtn}>
+                <div className={classes.text}>
+                    <h4>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsum
+                    </h4>
+                </div>
+                <div className={classes.imageCtn}>
+                    <img src={secondRowImg} alt="Img not available" className={classes.image} />
+                </div>
+            </div>
+
             <Footer />
         </motion.div>
 

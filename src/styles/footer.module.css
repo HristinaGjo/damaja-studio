@@ -1,8 +1,27 @@
 .footerCtn{
     position: relative;
-    bottom: 0;
     display: flex;
-    background:#E2E3E2;
+    flex-direction: row;
+    gap: 1em;
+    background:var(--color-footer);
     width: 100vw;
-    height: 50dvh;
+    height: 60dvh;
+    box-sizing: border-box;
+    padding: 2em;
+}
+
+
+
+
+@media (max-width:768px) {
+    .footerCtn{
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .dash{
+        display: none;
+    }
+
 }
