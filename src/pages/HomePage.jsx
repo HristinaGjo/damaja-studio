@@ -6,6 +6,7 @@ import firstRowImg from "../assets/secondRowImg.webp";
 /*import hoopImg from "../assets/secondRowImg.webp";*/
 import secondRowImg from "../assets/firstRowImg.webp";
 import { useScroll, useTransform, motion } from "framer-motion";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   const { scrollY } = useScroll();
@@ -16,14 +17,14 @@ const HomePage = () => {
   /*const heroScale = useTransform(scrollY, [0, 300], [1, 0.8]);
   const heroOpacity = useTransform(scrollY, [0, 300], [1, 0]);*/
 
-  const heroHeight = useTransform(scrollY, [0, 600], ['80vh', '50vh']);
+  const heroHeight = useTransform(scrollY, [0, 600], ['90vh', '50vh']);
 
   const { scrollYProgress } = useScroll({
     target: projectsCtn,
     offset: ['start end', 'end start'],
   });
 
-  const sm = useTransform(scrollYProgress, [0, 1], [0, -150]);
+  const sm = useTransform(scrollYProgress, [0, 1], [0, -0]);
   const md = useTransform(scrollYProgress, [0, 1], [0, -250]);
 
   return (
@@ -40,31 +41,32 @@ const HomePage = () => {
           <img src={heroImg} alt="Img not available" className={classes.heroImage} />
         </motion.div>
 
-        <div ref={projectsCtn} className={classes.projectsCtn}>
-          <motion.div style={{ y: sm }} className={classes.firstRow}>
+        <motion.div style={{ y: sm }} ref={projectsCtn} className={classes.projectsCtn}>
+          <div className={classes.firstRow}>
             <img src={firstRowImg} alt="Img not available" className={classes.firstRowImage} />
             <div className={classes.projectName}>
               <span>Adidas</span>
               <span className={classes.spanMore}>more +</span>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div style={{ y: sm }} className={classes.secondRow}>
+          <div className={classes.secondRow}>
             <img src={secondRowImg} alt="Img not available" className={classes.secondRowImage} />
             <div className={classes.secondProjectName}>
               <span>Adidas</span>
               <span className={classes.spanMore}>more +</span>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div style={{ y: sm }} className={classes.thirdRow}>
+          <div className={classes.thirdRow}>
             <img src={firstRowImg} alt="Img not available" className={classes.thirdRowImage} />
             <div className={classes.thirdProjectName}>
               <span>Adidas</span>
               <span className={classes.spanMore}>more +</span>
             </div>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
+    </div>
 
         <motion.div style={{y:sm}} className={classes.clients}>
             <div className={classes.clientsTitle}>
@@ -94,9 +96,10 @@ const HomePage = () => {
                     <h3 className={classes.secondTitle}>adidas</h3>
                 </div>
             </div>
+            <Footer />
         </motion.div>
-            
-      </div>
+
+  
     </>
   );
 };

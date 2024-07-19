@@ -1,7 +1,7 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color-scheme: light dark;
-  background-color:var(--color-beige);
+  background-color:var(--color-white);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,8 +15,10 @@ html, body{
 }
 
 
+
 /* colors */
 :root {
+  --color-white:white;
   --color-beige:#edede9;
   --color-h1:black;
   --color-h2:#ED434A;
@@ -33,14 +35,14 @@ html, body{
   --font-size-h3: calc(var(--font-size-base) * 2); /* 32px */
   --font-size-h4: 0.875rem; /* 14px */
   --font-size-p: var(--font-size-base); /* 16px */
-  --font-size-span: 1rem;  /* 16px */
+  --font-size-span: 0.875rem;  /* 14px */
 }
 
 /* font-weight */
 :root{
   --font-weight-h1:600;
   --font-weight-h2:400;
-  --font-weight-h3:600;
+  --font-weight-h3:200;
   --font-weight-span:200;
   --font-weight-p:200;
 }
@@ -122,7 +124,7 @@ a{
   :root {
     --font-size-base: 16px;  /* Consistent base font size for larger screens */
     --font-size-h1: calc(var(--font-size-base) * 4); /* 64px */
-    --font-size-h2: calc(var(--font-size-base) * 3.5); /* 56px */
+    --font-size-h2: calc(var(--font-size-base) * 4); /* 56px */
     --font-size-h3: calc(var(--font-size-base) * 4); /* 32px */
     --font-size-h4: 0.875rem; /* 14px */
     --font-size-p: var(--font-size-base); /* 16px */
