@@ -1,0 +1,13 @@
+.svgArrow{
+    width: 3%;
+    height: 3%;
+}
+
+
+@media (max-width:768px){
+    .svgArrow{
+        width: 30%;
+        height: 30%;
+    }
+
+}

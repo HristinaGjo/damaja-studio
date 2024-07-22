@@ -8,6 +8,7 @@ import secondRowImg from "../assets/firstRowImg.webp";
 import domestikaImg from "../assets/domestika.webp"
 import { useScroll, useTransform, motion } from "framer-motion";
 import Footer from "../components/Footer";
+import SvgArrow from "../components/SvgArrow";
 
 const HomePage = () => {
   const { scrollY } = useScroll();
@@ -93,7 +94,7 @@ const HomePage = () => {
                     <h3>I-D</h3>
                 </div>
                 <div className={classes.fifthRowClients}>
-                    <h3>Peek and Cloppenburg</h3>
+                    <h3>Peek & Cloppenburg</h3>
                 </div>
                 <div className={classes.sixthRowClients}>
                     <h3 className={classes.sixthFirstTitle}>Vee Collective</h3>
@@ -103,14 +104,19 @@ const HomePage = () => {
 
             <div className={classes.newsCtn}>
                 <div className={classes.text}>
-                    <h4>Placeholder for Domestika text <br/>
-                    Lorem ipsum Lorem ipsum
-                    Lorem ipsum Lorem ipsum
-                    Lorem ipsum Lorem ipsum
+                    <h4>
+                    Hand Embroidery for Clothing: Stitch a Collage Design <br/>
                     </h4>
+                    <div className={classes.textDomestika}>
+                    <p>course</p>
+                    <SvgArrow/>
+                    </div>
+                   {/* <p className={classes.textDomestika}>Learn to embroider colorful images onto 
+                      stretchy garments to upcycle your clothing into fashionable works of art
+                    </p> */}
                 </div>
                 <div className={classes.imageCtn}>
-                    <img src={domestikaImg} alt="Img not available" className={classes.image} />
+                    <img src={firstRowImg} alt="Img not available" className={classes.image} />
                 </div>
             </div>
             <Footer />

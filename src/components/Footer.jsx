@@ -72,13 +72,13 @@ const Footer = () => {
             </div> */}
 
             <div className={classes.webshop}>
-            <span>webshop</span>
+            <a>webshop</a>
             </div>
           
             <div className={classes.social}>
-            <span>instagram</span>
-            <span>youtube</span>
-            <span>linkedin</span>
+            <a>instagram</a>
+            <a>youtube</a>
+            <a>linkedin</a>
             </div>
           </div>
 

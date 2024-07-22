@@ -4,7 +4,7 @@
     flex-direction: column;
     background:var(--color-footer);
     width: 100vw;
-    height: 50dvh;
+    min-height: 50dvh;
     box-sizing: border-box;
     padding: 2em;
 }
@@ -34,7 +34,7 @@
 }
 
 .address{
-    margin-top: 10em;
+    margin-top: 7em;
     display: flex;
     flex-direction: column;
 }
@@ -45,7 +45,6 @@
 .address h4{
     color: black;
 }
-
 
 .contactLinks{
     position: absolute;
@@ -78,7 +77,7 @@
 
 
 @media (max-width:768px) {
-    .footerCtn{
+    /*.footerCtn{
         position: relative;
         display: flex;
         flex-direction: column;
@@ -100,7 +99,7 @@
     }
 
     .address{
-        margin-top: 5em;
+        margin-top: 2em;
         display: flex;
         flex-direction: column;
     }
@@ -130,6 +129,49 @@
         justify-content: start;
     }
 
+    .social{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: end;
+        gap: 0.3em;
+    }*/
+
+    .footerCtn{
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        box-sizing: border-box;
+        padding: 1em;
+        min-height: 50vh;
+        row-gap: 0;
+    }
+
+    .footerLinksWrap{
+        gap: .5rem;
+        display: grid;
+    }
+
+    .dashWrap{
+        display: none;
+    }
+
+    .footerLinkWrap h1,
+    .footerLinkWrapHome h1{
+        font-size: 2.5rem;
+    }
+
+    .contactLinks{
+        position: absolute;
+        width: auto;
+        bottom: 2em;
+        left: 1em;
+        right: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+    }
+    
     .social{
         display: flex;
         flex-direction: row;

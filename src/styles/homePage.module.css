@@ -114,7 +114,8 @@
 .clients{
     position: relative;
     width: 100vw;
-    margin-top: 2em;
+    margin-top: 0em;
+    overflow: hidden;
 }
 
 .clientsTitle{
@@ -126,13 +127,15 @@
 }
 
 .clientsCtn{
+    position: relative;
     background: var(--color-beige);
-    height: 50dvh;
+    min-height: 50dvh;
     box-sizing: border-box;
-    padding:4em 4em;
+    padding:4em 6em;
     display: grid;
     gap: 1em;
     align-items: center;
+    overflow: hidden;
 }
 
 .firstRowClients{
@@ -176,7 +179,6 @@
     text-align: right;
 }
 
-
 .fourthRowClients{
     display: grid;
     grid-template-columns: repeat(9,1fr);
@@ -212,8 +214,44 @@
     text-align: left;
 }
 
-
 .newsCtn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 70vh;
+    background: black;
+}
+
+.text{
+    box-sizing: border-box;
+    padding:2em;
+    width: 60%;
+}
+
+.textDomestika{
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.imageCtn{
+    box-sizing: border-box;
+    padding: 1em;
+    grid-column: 2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*.newsCtn{
     width: 100vw;
     height: 70dvh;
     display: grid;
@@ -230,6 +268,8 @@
 }
 
 .imageCtn{
+    width: 100%;
+    height: auto;
     box-sizing: border-box;
     padding: 1em;
 }
@@ -237,9 +277,54 @@
 .image{
     grid-column: 2;
     width: 100%;
+    height: auto;
+    object-fit: cover;
+}*/
+
+/*.newsCtn{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:sta;
+    background: black;
+    box-sizing: border-box;
+    padding:1em;
+    gap: 1em;
+}
+
+.text{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    width:60%;
+    padding: 0;
+    gap: 1em;
+}
+
+.textDomestika{
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
+.imageCtn{
+    height:100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 0;
+    justify-content: start;
+    align-items: end;
+}
+
+.image{
+    width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 
 
@@ -267,11 +352,11 @@
 @media (max-width:768px) {
 
     .heroCtn{
-        /*position: relative;*/
+        position: relative;
         top: 0;
         width: 100%;
-        height: 80vh; /* Initial height */
-        position: sticky; /* Make it sticky */
+        height: 90vh;
+        position: sticky; 
     }
     
     .heroImage{
@@ -282,7 +367,6 @@
     }
     
     .projectsCtn{
-        /*min-height: 100dvh;*/
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
@@ -290,71 +374,33 @@
         overflow: auto;
     }
 
-    .firstRow{
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        margin-top: 2em;
-        gap: .5em;
-    }
-    
-    .firstRowImage{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        grid-column: 2;
-    }
-    
-    .projectName{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-column: 2;
-        width: 100%;
-        justify-content: space-between;
-    }
-
-
-    .secondRow{
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        margin-top: 2em;
-        gap: .5em;
-    }
-
-    .secondRowImage{
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        grid-column: 1;
-    }
-
-
+    .firstRow, 
+    .secondRow,
     .thirdRow{
         position: relative;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        margin-top: 6em;
         gap: .5em;
     }
-
+    
+    .firstRowImage,
+    .secondRowImage,
     .thirdRowImage{
         width: 100%;
         height: 100%;
         object-fit: cover;
-        grid-column: 3;
     }
-
-    .thirdProjectName{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-column: 3;
+    
+    .projectName{
+        display: flex;
+        flex-direction: row;
         width: 100%;
         justify-content: space-between;
     }
 
     .clients{
-        margin-top: 4em;
+        margin-top: 0em;
     }
 
     .clientsTitle{
@@ -362,42 +408,142 @@
     }
 
     .clientsCtn{
-        padding:1em 2em;
+        padding:1em 1em;
         display: grid;
         align-items: center;
+        gap: 0em;
+        min-height: 50vh;
+    }
+
+    .firstRowClients{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .firstTitle {
+        grid-column: 1;
+        text-align: left;
+    }
+
+    .secondTitle {
+        grid-column: 2;
+        text-align: right;
+    }
+
+    .secondRowClients{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+    }
+
+    .secondRowClients h3{
+        grid-column: 3;
+        text-align:left;
+    }
+
+    .thirdRowClients{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .firstThirdRow {
+        grid-column: 1;
+        text-align: left;
+    }
+
+    .secondThirdRow {
+        grid-column: 5;
+        text-align: right;
+    }
+
+    .fourthRowClients{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+
+    .fourthRowClients h3{
+        grid-column: 2;
+        text-align: left;
+    }
+
+    .fifthRowClients{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .fifthRowClients h3{
+        grid-column: 3;
+        text-align: right;
+    }
+
+    .sixthRowClients{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .sixthFirstTitle {
+        grid-column: 1;
+        text-align: left;
+    }
+
+    .sixthSecondTitle {
+        grid-column: 2;
+        text-align: right;
     }
 
     .newsCtn{
         width: 100vw;
-        height: 50dvh;
+        min-height:70vh ;
         display: flex;
         flex-direction: column;
+        justify-content:sta;
         background: black;
         box-sizing: border-box;
         padding:1em;
+        gap: 1em;
     }
     
     .text{
         display: flex;
+        height: auto;
         flex-direction: column;
-        width:50%;
-        height: 15dvh;
+        width:60%;
         padding: 0;
+        gap: 1em;
     }
-    
+
+    .textDomestika{
+        width: 100%;
+        display: flex;
+        gap: 1em;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+    }
+
     .imageCtn{
-        height: 30dvh;
+        height:100%;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         padding: 0;
+        justify-content: start;
+        align-items: end;
     }
-    
+
     .image{
-        grid-column: 2;
         width: 100%;
         height: 100%;
         object-fit: cover;
+        grid-column: 2;
     }
+
+    /*.imageCtn{
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        padding: 0;
+        object-fit: cover;
+    }*/
 
 }
 
