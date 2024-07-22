@@ -113,7 +113,6 @@ const HomePage = () => {
             <Footer />
         </motion.div>
     
-
   
     </>
   );
