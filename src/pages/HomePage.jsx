@@ -25,8 +25,9 @@ const HomePage = () => {
     offset: ['start end', 'end start'],
   });
 
-  const sm = useTransform(scrollYProgress, [0, 1], [0, -10]);
-  const md = useTransform(scrollYProgress, [0, 1], [0, -250]);
+  const sm = useTransform(scrollYProgress, [0, 1], [0, -50]);
+  const md = useTransform(scrollYProgress, [0, 1], [0, -150]);
+  const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);
 
   return (
     <>
@@ -42,34 +43,35 @@ const HomePage = () => {
           <img src={heroImg} alt="Img not available" className={classes.heroImage} />
         </motion.div>
 
-        <motion.div style={{ y: sm }} ref={projectsCtn} className={classes.projectsCtn}>
-          <div className={classes.firstRow}>
+        <div ref={projectsCtn} className={classes.projectsCtn}>
+          <motion.div style={{y:sm}} className={classes.firstRow}>
             <img src={firstRowImg} alt="Img not available" className={classes.firstRowImage} />
             <div className={classes.projectName}>
               <span>Adidas</span>
               <span className={classes.spanMore}>more +</span>
             </div>
-          </div>
+          </motion.div>
 
-          <div className={classes.secondRow}>
+          <motion.div style={{y:md}} className={classes.secondRow}>
             <img src={secondRowImg} alt="Img not available" className={classes.secondRowImage} />
             <div className={classes.secondProjectName}>
               <span>Adidas</span>
               <span className={classes.spanMore}>more +</span>
             </div>
-          </div>
+          </motion.div>
 
-          <div className={classes.thirdRow}>
+          <motion.div style={{y:lg}} className={classes.thirdRow}>
             <img src={firstRowImg} alt="Img not available" className={classes.thirdRowImage} />
             <div className={classes.thirdProjectName}>
               <span>Adidas</span>
               <span className={classes.spanMore}>more +</span>
             </div>
-          </div>
-        </motion.div>
-    </div>
+          </motion.div>
+        </div>
+     
+   
 
-        <motion.div style={{y:sm}} className={classes.clients}>
+        <div className={classes.clients}>
             <div className={classes.clientsTitle}>
                 <h2>clients</h2>
             </div>
@@ -111,8 +113,9 @@ const HomePage = () => {
                 </div>
             </div>
             <Footer />
-        </motion.div>
-    
+        </div>
+        </div>
+
   
     </>
   );
@@ -131,3 +134,18 @@ export default HomePage;
               <span>Adidas</span>
               <span className={classes.spanMore}>more +</span>
             </div>*/}
+
+
+            // clients
+            /*
+            Adidas, 
+            Tommy Hilfiger, 
+            Vice, 
+            I-D, 
+            Sessún, 
+            Peek and Cloppenburg, 
+            Dawn Denim, 
+            Olivia Steele, 
+            Vee Collective, 
+            Circular Berlin 
+            */
