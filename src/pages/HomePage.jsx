@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import classes from "../styles/homePage.module.css";
 import Navbar from "../components/Navbar";
 import heroImg from "../assets/heroImg.webp";
@@ -9,12 +9,42 @@ import domestikaImg from "../assets/domestika.webp"
 import { useScroll, useTransform, motion } from "framer-motion";
 import Footer from "../components/Footer";
 import SvgArrow from "../components/SvgArrow";
+import { set } from "mongoose";
 
 const HomePage = () => {
   const { scrollY } = useScroll();
   const heroRef = useRef(null);
 
   const projectsCtn = useRef(null);
+  const newsCtn = useRef(null);
+
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true)
+
+  useEffect (() =>{
+    const handleScroll = () => {
+      const newsRect = newsCtn.current.getBoundingClientRect();
+
+      if (window.innerWidth <= 768){
+        if (newsRect.top <= 0){
+          setIsNavbarVisible(false)
+        } else {
+          setIsNavbarVisible(true)
+        }
+      
+      };
+    };
+
+      window.addEventListener("scroll", handleScroll)
+      handleScroll();
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll)
+      }
+  
+  },[])
+
+
+
 
   // Animate hero image to shrink and disappear as projectsCtn comes into view
   /*const heroScale = useTransform(scrollY, [0, 300], [1, 0.8]);
@@ -36,6 +66,7 @@ const HomePage = () => {
 
   return (
     <>
+    {isNavbarVisible && <Navbar/>}
       <div className={classes.pageCtn}>
         <motion.div
           ref={heroRef}
@@ -117,7 +148,7 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <div className={classes.newsCtn}>
+            <div ref={newsCtn} className={classes.newsCtn}>
                 <div className={classes.text}>
                     <h4>
                     Hand Embroidery for Clothing: Stitch a Collage Design <br/>
@@ -137,6 +168,7 @@ const HomePage = () => {
             <Footer />
         </div>
         </div>
+        
 
   
     </>

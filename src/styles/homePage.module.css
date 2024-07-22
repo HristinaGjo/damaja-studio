@@ -379,7 +379,7 @@ img{
         position: relative;
         display: flex;
         flex-direction: column;
-        margin-top: 2em;
+        margin-top: 4em;
         gap: .5em;
     }
     
