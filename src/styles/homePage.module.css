@@ -508,11 +508,11 @@ img{
         flex-direction: column;
         width:60%;
         padding: 0;
-        gap: 1em;
+        gap: .5em;
     }
 
     .textDomestika{
-        width: 70%;
+        width: 50%;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         margin-top: 0em;
