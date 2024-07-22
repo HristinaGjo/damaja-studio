@@ -127,20 +127,23 @@
 
 .clientsCtn{
     background: var(--color-beige);
-    height: 60dvh;
-    padding:6em 6em;
+    height: 50dvh;
+    box-sizing: border-box;
+    padding:4em 4em;
     display: grid;
+    gap: 1em;
     align-items: center;
 }
 
 .firstRowClients{
     display: grid;
+    /*grid-template-columns: repeat(5,1fr);*/
     grid-template-columns: repeat(5,1fr);
 }
 
 .firstTitle {
-    grid-column: 1;
-    text-align: right;
+    grid-column: 2;
+    text-align: left;
 }
 
 .secondTitle {
@@ -176,28 +179,39 @@
 
 .fourthRowClients{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(9,1fr);
 }
 
 .fourthRowClients h3{
-    grid-column: 2;
+    grid-column: 1;
     text-align: right;
 }
 
 .fifthRowClients{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
 }
 
 .fifthRowClients h3{
-    grid-column: 4;
+    grid-column: 3;
     text-align: left;
 }
 
 .sixthRowClients{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
 }
+
+.sixthFirstTitle {
+    grid-column: 1;
+    text-align: left;
+}
+
+.sixthSecondTitle {
+    grid-column: 5;
+    text-align: left;
+}
+
 
 .newsCtn{
     width: 100vw;

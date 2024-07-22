@@ -59,11 +59,17 @@ const Footer = () => {
   
           </div>
 
+          <div className={classes.address}>
+            <h4>damaja - studio</h4>
+            <h4>Berlin</h4>
+            <a>damaja@gmail.com</a>
+          </div>
+
           <div className={classes.contactLinks}>
 
-            <div className={classes.email}>
+            {/*<div className={classes.email}>
             <span>damaja@gmail.com</span>
-            </div>
+            </div> */}
 
             <div className={classes.webshop}>
             <span>webshop</span>

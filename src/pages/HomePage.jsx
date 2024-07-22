@@ -77,26 +77,27 @@ const HomePage = () => {
             </div>
 
             <div className={classes.clientsCtn}>
-                <div className={classes.firstRowClients}>
-                    <h3 className={classes.firstTitle}>adidas</h3>
-                    <h3 className={classes.secondTitle}>adidas</h3>
+            <div className={classes.thirdRowClients}>
+                    <h3 className={classes.firstThirdRow}>Adidas</h3>
+                    <h3 className={classes.secondThirdRow}>Tommy Hilfiger</h3>
                 </div>
                 <div className={classes.secondRowClients}>
-                    <h3>adidas</h3>
+                    <h3>Vice</h3>
                 </div>
-                <div className={classes.thirdRowClients}>
-                    <h3 className={classes.firstThirdRow}>adidas</h3>
-                    <h3 className={classes.secondThirdRow}>adidas</h3>
+                <div className={classes.firstRowClients}>
+                    <h3 className={classes.firstTitle}>Circular Berlin</h3>
+                    <h3 className={classes.secondTitle}>Olivia Steele</h3>
                 </div>
+                
                 <div className={classes.fourthRowClients}>
-                    <h3>adidas</h3>
+                    <h3>I-D</h3>
                 </div>
                 <div className={classes.fifthRowClients}>
-                    <h3>adidas</h3>
+                    <h3>Peek and Cloppenburg</h3>
                 </div>
                 <div className={classes.sixthRowClients}>
-                    <h3 className={classes.firstTitle}>adidas</h3>
-                    <h3 className={classes.secondTitle}>adidas</h3>
+                    <h3 className={classes.sixthFirstTitle}>Vee Collective</h3>
+                    <h3 className={classes.sixthSecondTitle}>Dawn Denim</h3>
                 </div>
             </div>
 
@@ -134,6 +135,21 @@ export default HomePage;
               <span>Adidas</span>
               <span className={classes.spanMore}>more +</span>
             </div>*/}
+
+
+            // clients
+            /*
+       
+      
+        
+            
+            , 
+            
+            , 
+        
+            , 
+             
+            */
 
 
             // clients

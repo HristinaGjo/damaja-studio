@@ -4,7 +4,7 @@
     flex-direction: column;
     background:var(--color-footer);
     width: 100vw;
-    height: 60dvh;
+    height: 50dvh;
     box-sizing: border-box;
     padding: 2em;
 }
@@ -33,6 +33,20 @@
     opacity: 1;
 }
 
+.address{
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+}
+.address a{
+    margin-top: .5em;
+}
+
+.address h4{
+    color: black;
+}
+
+
 .contactLinks{
     position: absolute;
     width: 100%;
@@ -44,14 +58,14 @@
     text-align: center;
 }
 
-.email{
+/*.email{
     grid-column: 1;
     text-align: left;
-}
+}*/
 
 .webshop{
-    grid-column: 2;
-    text-align: center;
+    grid-column: 1;
+    text-align: left;
 }
 
 .social{
@@ -82,29 +96,47 @@
 
     .footerLinkWrap h1,
     .footerLinkWrapHome h1{
-        font-size: 4rem;
+        font-size: 2.5rem;
+    }
+
+    .address{
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .address a{
+        margin-top: .5em;
+    }
+    
+    .address h4{
+        color: black;
     }
 
     .contactLinks{
         position: absolute;
-        width: 100%;
+        width: auto;
         bottom: 2em;
         left: 1em;
         right: 1em;
         display: flex;
-        flex-direction: column;
-        justify-content: start;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: start;
-        gap: 0.3em;
+    }
+
+    .webshop{
+        display: flex;
+        justify-content: start;
     }
 
     .social{
         display: flex;
-        flex-direction: column;
-        text-align: left;
+        flex-direction: row;
+        justify-content: end;
+        align-items: end;
         gap: 0.3em;
     }
-
-
+    
 }
 
