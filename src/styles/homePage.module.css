@@ -399,7 +399,7 @@ img{
     }
 
     .clients{
-        margin-top: 0em;
+        margin-top: 2em;
     }
 
     .clientsTitle{
@@ -411,7 +411,7 @@ img{
         display: grid;
         align-items: center;
         gap: 0em;
-        min-height: 50vh;
+        min-height: 40vh;
     }
 
     .firstRowClients{
@@ -542,7 +542,7 @@ img{
         object-position:center;
         grid-column: 2;
     }
-
+    
     /*.imageCtn{
         height: 100%;
         display: flex;

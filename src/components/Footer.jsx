@@ -2,6 +2,7 @@ import React, {useRef} from "react";
 import classes from "../styles/footer.module.css"
 import { useScroll, useTransform, motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import SvgArrow from "./SvgArrow";
 
 const Footer = () => {
 
@@ -62,7 +63,9 @@ const Footer = () => {
           <div className={classes.address}>
             <h4>damaja - studio</h4>
             <h4>Berlin</h4>
+            <div className={classes.email}>
             <a>damaja@gmail.com</a>
+            </div>
           </div>
 
           <div className={classes.contactLinks}>

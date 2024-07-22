@@ -21,7 +21,7 @@ const HomePage = () => {
   const heroOpacity = useTransform(scrollY, [0, 300], [1, 0]);*/
 
   const heroHeight = useTransform(scrollY, [0, 600], ['90vh', '50vh']);
-  const heroHeightMobile = useTransform(scrollY, [0, 600], ['90vh', '50vh']);
+  const heroHeightMobile = useTransform(scrollY, [0, 600], ['70vh', '70vh']);
 
 
   const { scrollYProgress } = useScroll({
@@ -131,7 +131,7 @@ const HomePage = () => {
                     </p> */}
                 </div>
                 <div className={classes.imageCtn}>
-                    <img src={domestikaImg} alt="Img not available" className={classes.image} />
+                    <img src={firstRowImg} alt="Img not available" className={classes.image} />
                 </div>
             </div>
             <Footer />

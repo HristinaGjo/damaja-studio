@@ -152,7 +152,7 @@
         grid-template-rows: repeat(3,1fr);
         box-sizing: border-box;
         padding: 1em;
-        max-height: 50vh;
+        max-height: 60vh;
         row-gap: 0;
     }
 
@@ -176,6 +176,10 @@
         display: flex;
         justify-content: center;
         margin-top: 3em;
+    }
+    .email{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
 
     .contactLinks{
