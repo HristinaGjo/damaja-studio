@@ -371,9 +371,16 @@ img{
         padding: 0 1em;
         overflow: auto;
         height: auto;
-    }
+    } 
 
-    .firstRow, 
+    .firstRow{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+        gap: .5em;
+    }
+    
     .secondRow,
     .thirdRow{
         position: relative;
@@ -382,7 +389,7 @@ img{
         margin-top: 4em;
         gap: .5em;
     }
-    
+
     .firstRowImage,
     .secondRowImage,
     .thirdRowImage{

@@ -23,8 +23,8 @@ const HomePage = () => {
     const handleScroll = () => {
       const newsRect = newsCtn.current.getBoundingClientRect();
 
-      if (window.innerWidth <= 768){
-        if (newsRect.top <= 0){
+      if (window.innerWidth > 0){
+        if (newsRect.top <= -800){
           setIsNavbarVisible(false)
         } else {
           setIsNavbarVisible(true)
@@ -50,7 +50,7 @@ const HomePage = () => {
   const heroOpacity = useTransform(scrollY, [0, 300], [1, 0]);*/
 
   const heroHeight = useTransform(scrollY, [0, 600], ['90vh', '50vh']);
-  const heroHeightMobile = useTransform(scrollY, [0, 600], ['70vh', '70vh']);
+  const heroHeightMobile = useTransform(scrollY, [0, 600], ['90vh', '90vh']);
 
 
   const { scrollYProgress } = useScroll({
