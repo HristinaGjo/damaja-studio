@@ -21,7 +21,7 @@ const HomePage = () => {
   const heroOpacity = useTransform(scrollY, [0, 300], [1, 0]);*/
 
   const heroHeight = useTransform(scrollY, [0, 600], ['90vh', '50vh']);
-  const heroHeightMobile = useTransform(scrollY, [0, 600], ['70vh', '40vh']);
+  const heroHeightMobile = useTransform(scrollY, [0, 600], ['90vh', '50vh']);
 
 
   const { scrollYProgress } = useScroll({
@@ -30,6 +30,7 @@ const HomePage = () => {
   });
 
   const sm = useTransform(scrollYProgress, [0, 1], [0, -50]);
+  const smMobile = useTransform(scrollYProgress, [0, 1], [0, -50]);
   const md = useTransform(scrollYProgress, [0, 1], [0, -150]);
   const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);
 
@@ -39,7 +40,7 @@ const HomePage = () => {
         <motion.div
           ref={heroRef}
           style={{ 
-            height: window.innerWidth <= 768 ?heroHeightMobile : heroHeight,
+            height: window.innerWidth <= 768 ? heroHeightMobile : heroHeight,
             /*transition: 'height 0.8s ease, opacity 0.8s ease-in-out'*/
          }}
           className={classes.heroCtn}
@@ -48,7 +49,11 @@ const HomePage = () => {
         </motion.div>
 
         <div ref={projectsCtn} className={classes.projectsCtn}>
-          <motion.div style={{y:sm}} className={classes.firstRow}>
+          <motion.div 
+          style={{
+            y: window.innerWidth <= 768 ? smMobile : sm,
+          }} 
+          className={classes.firstRow}>
             <img src={firstRowImg} alt="Img not available" className={classes.firstRowImage} />
             <div className={classes.projectName}>
               <span>Adidas</span>
@@ -56,7 +61,11 @@ const HomePage = () => {
             </div>
           </motion.div>
 
-          <motion.div style={{y:md}} className={classes.secondRow}>
+          <motion.div 
+          style={{
+            y: window.innerWidth <= 768 ? smMobile : md,
+          }}  
+          className={classes.secondRow}>
             <img src={secondRowImg} alt="Img not available" className={classes.secondRowImage} />
             <div className={classes.secondProjectName}>
               <span>Adidas</span>
@@ -64,7 +73,11 @@ const HomePage = () => {
             </div>
           </motion.div>
 
-          <motion.div style={{y:lg}} className={classes.thirdRow}>
+          <motion.div 
+          style={{
+            y: window.innerWidth <= 768 ? smMobile : lg,
+          }} 
+          className={classes.thirdRow}>
             <img src={firstRowImg} alt="Img not available" className={classes.thirdRowImage} />
             <div className={classes.thirdProjectName}>
               <span>Adidas</span>
@@ -72,8 +85,7 @@ const HomePage = () => {
             </div>
           </motion.div>
         </div>
-     
-   
+    
 
         <div className={classes.clients}>
             <div className={classes.clientsTitle}>
