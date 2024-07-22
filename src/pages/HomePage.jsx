@@ -13,6 +13,7 @@ import SvgArrow from "../components/SvgArrow";
 const HomePage = () => {
   const { scrollY } = useScroll();
   const heroRef = useRef(null);
+
   const projectsCtn = useRef(null);
 
   // Animate hero image to shrink and disappear as projectsCtn comes into view
@@ -20,6 +21,8 @@ const HomePage = () => {
   const heroOpacity = useTransform(scrollY, [0, 300], [1, 0]);*/
 
   const heroHeight = useTransform(scrollY, [0, 600], ['90vh', '50vh']);
+  const heroHeightMobile = useTransform(scrollY, [0, 600], ['70vh', '40vh']);
+
 
   const { scrollYProgress } = useScroll({
     target: projectsCtn,
@@ -36,7 +39,7 @@ const HomePage = () => {
         <motion.div
           ref={heroRef}
           style={{ 
-            height: heroHeight,
+            height: window.innerWidth <= 768 ?heroHeightMobile : heroHeight,
             /*transition: 'height 0.8s ease, opacity 0.8s ease-in-out'*/
          }}
           className={classes.heroCtn}
@@ -116,7 +119,7 @@ const HomePage = () => {
                     </p> */}
                 </div>
                 <div className={classes.imageCtn}>
-                    <img src={firstRowImg} alt="Img not available" className={classes.image} />
+                    <img src={domestikaImg} alt="Img not available" className={classes.image} />
                 </div>
             </div>
             <Footer />
