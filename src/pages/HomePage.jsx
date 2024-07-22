@@ -9,7 +9,6 @@ import domestikaImg from "../assets/domestika.webp"
 import { useScroll, useTransform, motion } from "framer-motion";
 import Footer from "../components/Footer";
 import SvgArrow from "../components/SvgArrow";
-import { set } from "mongoose";
 
 const HomePage = () => {
   const { scrollY } = useScroll();
