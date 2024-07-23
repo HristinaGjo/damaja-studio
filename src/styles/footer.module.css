@@ -67,6 +67,10 @@
     text-align: center;
 }
 
+.email{
+    margin-top: .5em;
+}
+
 /*.email{
     grid-column: 1;
     text-align: left;
@@ -77,6 +81,10 @@
     text-align: left;
 }
 
+.webshopMobile{
+    display: none;
+}
+
 .social{
     grid-column: 3;
     display: flex;
@@ -84,10 +92,160 @@
     text-align: right;
 }
 
+.socialMobile{
+    display: none;
+}
+
 
 
 @media (max-width:768px) {
-    /*.footerCtn{
+
+    .footerCtn{
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        box-sizing: border-box;
+        padding: 1em;
+        min-height: 90vh;
+        row-gap: 0;
+    }
+
+    .dashWrap{
+        display: none;
+    }
+
+    .footerLinksWrap{
+        gap: .5rem;
+        display: grid;
+        grid-row: 1;
+    }
+
+    .footerLinkWrap h1,
+    .footerLinkWrapHome h1{
+        font-size: 3.5rem;
+    }
+
+    .address{
+        grid-row: 2;
+        display: flex;
+        justify-content: end;
+        margin-bottom: auto;
+    }
+
+
+    /*.contactLinks{
+        grid-row: 3;
+        position: absolute;
+        width: auto;
+        bottom: 2.5em;
+        left: 1em;
+        right: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+    }
+    
+    .social{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: end;
+        gap: 0.3em;
+    }*/
+
+    .contactLinks{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        box-sizing: border-box;
+        width:auto;
+        bottom: 2em;
+        left: 1em;
+        right: 1em;
+        gap: 3em;
+    }
+
+    .address, .email{
+        display: none;
+    }
+
+    .addressMobile{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: start; 
+    }
+
+
+    .emailMobile a{
+        /*display: grid;
+        grid-template-columns: repeat(2,1fr);*/
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        text-align: left;
+        margin-top: 0;
+        gap: 0.5em;
+    }
+
+    .webshopMobile{
+        display: flex;
+        flex-direction: column; 
+        justify-content: start; 
+        align-items: start; 
+    }
+
+    .webshopMobile h4,
+    .socialMobile h4,
+    .addressMobile h4{
+        color: black;
+        display: block;
+        margin-bottom: 0.2em;
+    }
+
+    .webshopMobile a{
+        /*display: grid;
+        grid-template-columns: repeat(2,1fr);*/
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        text-align: left;
+        gap: 0.5em;
+    }
+
+    .webshop{
+        display: none;
+    }
+
+    .socialMobile{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 0em;
+    }
+
+    .social{
+        display: none;
+    }
+    
+}
+
+
+
+
+    /*.email a{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 0em !important;
+    }*/
+
+
+
+
+
+/*.footerCtn{
         position: relative;
         display: flex;
         flex-direction: column;
@@ -146,62 +304,3 @@
         align-items: end;
         gap: 0.3em;
     }*/
-
-    .footerCtn{
-        display: grid;
-        grid-template-rows: repeat(3,1fr);
-        box-sizing: border-box;
-        padding: 1em;
-        min-height: 90vh;
-        row-gap: 0;
-    }
-
-    .dashWrap{
-        display: none;
-    }
-
-    .footerLinksWrap{
-        gap: .5rem;
-        display: grid;
-        grid-row: 1;
-    }
-
-    .footerLinkWrap h1,
-    .footerLinkWrapHome h1{
-        font-size: 3.5rem;
-    }
-
-    .address{
-        grid-row: 2;
-        display: flex;
-        justify-content: end;
-    }
-
-    .email{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .contactLinks{
-        grid-row: 3;
-        position: absolute;
-        width: auto;
-        bottom: 2.5em;
-        left: 1em;
-        right: 1em;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: start;
-    }
-    
-    .social{
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        align-items: end;
-        gap: 0.3em;
-    }
-    
-}
-

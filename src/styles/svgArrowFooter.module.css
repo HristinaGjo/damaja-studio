@@ -1,0 +1,16 @@
+
+
+
+@media (max-width:768px){
+
+
+    .svgFooterMobile{
+        width: 4%;
+        height: 4%;
+        fill: black;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+
+}

@@ -2,23 +2,13 @@ import React, {useRef} from "react";
 import classes from "../styles/footer.module.css"
 import { useScroll, useTransform, motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import SvgArrow from "./SvgArrow";
+import SvgArrowFooter from "./SvgArrowFooter";
 
 const Footer = () => {
 
-  const footerCtn = useRef(null);
-  
-  const { scrollYProgress } = useScroll({
-    target: footerCtn,
-    offset: ['start end', 'end start'],
-  });
-
-  const sm = useTransform(scrollYProgress, [0, 1], [0, -0]);
-  const md = useTransform(scrollYProgress, [0, 1], [0, -250]);
-
     return ( 
         <>
-        <motion.div ref={footerCtn} style={{y:sm}} className={classes.footerCtn}>
+        <div className={classes.footerCtn}>
 
           <div className={classes.footerLinksWrap}>
             
@@ -61,10 +51,20 @@ const Footer = () => {
           </div>
 
           <div className={classes.address}>
-            <h4>damaja - studio</h4>
-            <h4>Berlin</h4>
+              <h4>damaja - studio</h4>
+              <h4>Berlin</h4>
             <div className={classes.email}>
-            <a>damaja@gmail.com</a>
+              <a>damaja@gmail.com <SvgArrowFooter/></a>
+            </div>
+          </div>
+
+
+
+          <div className={classes.addressMobile}>
+              <h4>damaja - studio</h4>
+              <h4>Berlin</h4>
+            <div className={classes.emailMobile}>
+              <a>damaja@gmail.com <SvgArrowFooter/></a>
             </div>
           </div>
 
@@ -75,17 +75,30 @@ const Footer = () => {
             </div> */}
 
             <div className={classes.webshop}>
-            <a>webshop</a>
+              <a>webshop</a>
+            </div>
+
+            <div className={classes.webshopMobile}>
+              <h4>check damaja shop</h4>
+              <a>webshop <SvgArrowFooter/></a>
             </div>
           
             <div className={classes.social}>
-            <a>instagram</a>
-            <a>youtube</a>
-            <a>linkedin</a>
+              <a>instagram</a>
+              <a>youtube</a>
+              <a>linkedin</a>
             </div>
+
+            <div className={classes.socialMobile}>
+              <h4>social</h4>
+              <a>instagram</a>
+              <a>youtube</a>
+              <a>linkedin</a>
+            </div>
+
           </div>
 
-        </motion.div>
+        </div>
         </>
      );
 }

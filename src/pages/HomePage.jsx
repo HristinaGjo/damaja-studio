@@ -165,7 +165,7 @@ const HomePage = () => {
                     </h4>
                     <div className={classes.textDomestika}>
                     <p>course</p>
-                    <SvgArrow/>
+                    <SvgArrow />
                     </div>
                    {/* <p className={classes.textDomestika}>Learn to embroider colorful images onto 
                       stretchy garments to upcycle your clothing into fashionable works of art

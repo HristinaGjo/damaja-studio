@@ -56,7 +56,7 @@ html, body{
 
 /* line-height */
 :root{
-  --line-height-h1:80%;
+  --line-height-h1:90%;
   --line-height-h2:120%;
   --line-height-h3:120%;
   --line-height-h4:110%;

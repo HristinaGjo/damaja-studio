@@ -1,6 +1,7 @@
 .svgArrow{
     width: 3%;
     height: 3%;
+    fill: white;
 }
 
 
@@ -8,6 +9,16 @@
     .svgArrow{
         width: 50%;
         height: 50%;
+        fill: white;
+    }
+
+    .footerMobile{
+        width: 40%;
+        height: 40%;
+        fill: black;
+        display: flex;
+        align-items:center;
+        justify-content: center;
     }
 
 }
