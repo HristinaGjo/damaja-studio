@@ -515,18 +515,18 @@ img{
     }
     
     .text{
-        display: flex;
-        flex-direction: column;
+     
+        height: auto;
         width:60%;
         padding: 0;
-        gap: .5em;
+     
     }
 
     .textDomestika{
         width: 50%;
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        margin-top: 0em;
+        margin-top: auto;
         gap: 0;
         /*height: auto;
         display: flex;
