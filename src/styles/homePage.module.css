@@ -504,7 +504,7 @@ img{
     .newsCtn{
         width: 100vw;
         /*min-height:70vh;*/
-        max-height: 40vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content:start;
@@ -539,12 +539,13 @@ img{
     }
 
     .imageCtn{
-        height:100%;
+        height:auto;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         padding: 0;
         justify-content: start;
-        align-items: end;
+        align-items: start;
+        overflow: hidden;
     }
 
     .image{

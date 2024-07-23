@@ -28,7 +28,7 @@ const HomePage = () => {
       const clientsRect = clientsCtn.current.getBoundingClientRect();
 
       if (window.innerWidth > 0){
-        if (newsRect.top <= -70){
+        if (newsRect.top <= -90){
           setIsNavbarVisible(false)
         } else {
           setIsNavbarVisible(true)
