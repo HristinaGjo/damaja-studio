@@ -373,7 +373,7 @@ img{
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        padding: 0 1em;
+        padding: 0 1.5em;
         overflow: auto;
         height: auto;
     } 
@@ -411,7 +411,7 @@ img{
     }
 
     .clients{
-        margin-top: 0em;
+        margin-top: 2em;
     }
 
     .clientsTitle{
@@ -419,11 +419,11 @@ img{
     }
 
     .clientsCtn{
-        padding:1em 1em;
+        padding:2em 2em;
         display: grid;
         align-items: center;
         gap: 0em;
-        min-height: 40vh;
+        min-height: 60vh;
     }
 
     .firstRowClients{
@@ -504,7 +504,7 @@ img{
     .newsCtn{
         width: 100vw;
         /*min-height:70vh;*/
-        max-height: 50vh;
+        max-height: 40vh;
         display: flex;
         flex-direction: column;
         justify-content:start;
