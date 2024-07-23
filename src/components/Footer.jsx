@@ -75,7 +75,7 @@ const Footer = () => {
             </div> */}
 
             <div className={classes.webshop}>
-              <a>webshop</a>
+              <a>webshop <SvgArrowFooter/></a>
             </div>
 
             <div className={classes.webshopMobile}>

@@ -131,10 +131,11 @@
     padding: 0 2em;
 }
 
+
 .clientsCtn{
     position: relative;
     background: var(--color-beige);
-    min-height: 50dvh;
+    min-height: 60dvh;
     box-sizing: border-box;
     padding:4em 6em;
     display: grid;
