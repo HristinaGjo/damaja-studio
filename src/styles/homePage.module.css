@@ -516,7 +516,6 @@ img{
     
     .text{
         display: flex;
-        height: auto;
         flex-direction: column;
         width:60%;
         padding: 0;
@@ -543,8 +542,6 @@ img{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         padding: 0;
-        justify-content: start;
-        align-items: start;
         overflow: hidden;
     }
 

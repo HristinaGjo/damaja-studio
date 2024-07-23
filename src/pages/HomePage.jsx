@@ -36,7 +36,7 @@ const HomePage = () => {
       };
 
       if (clientsRect.top <= 0 && clientsRect.bottom > 0){
-        setIsNavbarColor ('#8F6E3A')
+        setIsNavbarColor ('#000000')
       } else if (newsRect.top <= 0 && newsRect.bottom >0) {
         setIsNavbarColor('#ffffff')
       } else {
