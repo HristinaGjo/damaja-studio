@@ -28,7 +28,7 @@ html, body{
   --color-h3:#8F6E3A;;
   --color-h4:white;
   --color-p:white;
-  --color-span:#ED434A;
+  /*--color-span:#ED434A;*/
   --color-footer:#E2E3E2;
   --color-clients: #F1EDE1;
 }
@@ -116,7 +116,7 @@ span{
   font-family: var(--font-family-span);
   font-weight: var(--font-weight-span);
   line-height: var(--line-height-span);
-  color: var(--color-span);
+  /*color: var(--color-span);*/
   margin: 0;
 }
 

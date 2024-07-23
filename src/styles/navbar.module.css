@@ -8,12 +8,16 @@
     padding-right:2em ;
     padding-top: 2em;
     z-index: 1;
+    transition: opacity 1s ease, transform 1s ease;
+    opacity: 1; 
+    transform: translateY(0); 
 }
 
-/*.logo span{
-    font-size: 24rem;
-    letter-spacing: .1em;
-}*/
+.hidden {
+    opacity: 0; 
+    transform: translateY(-100%); 
+}
+  
 
 
 @media (max-width:768px){

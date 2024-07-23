@@ -58,9 +58,14 @@
     justify-content: space-between;
 }
 
+ .span{
+    color: #ED434A;
+}
+
 .spanMore{
     display: flex;
     justify-content: end;
+    color: #ED434A ;
 }
 
 .secondRow{
@@ -406,7 +411,7 @@ img{
     }
 
     .clients{
-        margin-top: 2em;
+        margin-top: 0em;
     }
 
     .clientsTitle{

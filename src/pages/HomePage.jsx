@@ -16,21 +16,33 @@ const HomePage = () => {
 
   const projectsCtn = useRef(null);
   const newsCtn = useRef(null);
+  const clientsCtn = useRef(null);
 
   const [isNavbarVisible, setIsNavbarVisible] = useState(true)
+  const [navbarColor, setIsNavbarColor] = useState('#ED434A')
+
 
   useEffect (() =>{
     const handleScroll = () => {
       const newsRect = newsCtn.current.getBoundingClientRect();
+      const clientsRect = clientsCtn.current.getBoundingClientRect();
 
       if (window.innerWidth > 0){
-        if (newsRect.top <= -800){
+        if (newsRect.top <= -200){
           setIsNavbarVisible(false)
         } else {
           setIsNavbarVisible(true)
         }
-      
       };
+
+      if (clientsRect.top <= 0 && clientsRect.bottom > 0){
+        setIsNavbarColor ('#8F6E3A')
+      } else if (newsRect.top <= 0 && newsRect.bottom >0) {
+        setIsNavbarColor('#ffffff')
+      } else {
+        setIsNavbarColor ('#ED434A')
+      }
+
     };
 
       window.addEventListener("scroll", handleScroll)
@@ -41,8 +53,6 @@ const HomePage = () => {
       }
   
   },[])
-
-
 
 
   // Animate hero image to shrink and disappear as projectsCtn comes into view
@@ -65,7 +75,7 @@ const HomePage = () => {
 
   return (
     <>
-    {isNavbarVisible && <Navbar/>}
+    {isNavbarVisible && <Navbar className={isNavbarVisible ? "" : "hidden"} style={{color:navbarColor}}/>}
       <div className={classes.pageCtn}>
         <motion.div
           ref={heroRef}
@@ -86,7 +96,7 @@ const HomePage = () => {
           className={classes.firstRow}>
             <img src={firstRowImg} alt="Img not available" className={classes.firstRowImage} />
             <div className={classes.projectName}>
-              <span>Adidas</span>
+              <span className={classes.span}>Adidas</span>
               <span className={classes.spanMore}>more +</span>
             </div>
           </motion.div>
@@ -98,7 +108,7 @@ const HomePage = () => {
           className={classes.secondRow}>
             <img src={secondRowImg} alt="Img not available" className={classes.secondRowImage} />
             <div className={classes.secondProjectName}>
-              <span>Adidas</span>
+              <span className={classes.span}>Adidas</span>
               <span className={classes.spanMore}>more +</span>
             </div>
           </motion.div>
@@ -110,7 +120,7 @@ const HomePage = () => {
           className={classes.thirdRow}>
             <img src={firstRowImg} alt="Img not available" className={classes.thirdRowImage} />
             <div className={classes.thirdProjectName}>
-              <span>Adidas</span>
+              <span className={classes.span}>Adidas</span>
               <span className={classes.spanMore}>more +</span>
             </div>
           </motion.div>
@@ -122,7 +132,7 @@ const HomePage = () => {
                 <h2>clients</h2>
             </div>
 
-            <div className={classes.clientsCtn}>
+            <div ref={clientsCtn} className={classes.clientsCtn}>
             <div className={classes.thirdRowClients}>
                     <h3 className={classes.firstThirdRow}>adidas</h3>
                     <h3 className={classes.secondThirdRow}>tommy hilfiger</h3>
