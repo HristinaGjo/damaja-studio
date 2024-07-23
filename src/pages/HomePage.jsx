@@ -28,7 +28,7 @@ const HomePage = () => {
       const clientsRect = clientsCtn.current.getBoundingClientRect();
 
       if (window.innerWidth > 0){
-        if (newsRect.top <= -200){
+        if (newsRect.top <= -400){
           setIsNavbarVisible(false)
         } else {
           setIsNavbarVisible(true)
@@ -75,7 +75,8 @@ const HomePage = () => {
 
   return (
     <>
-    {isNavbarVisible && <Navbar className={isNavbarVisible ? "" : "hidden"} style={{color:navbarColor}}/>}
+    {isNavbarVisible && <Navbar style={{color:navbarColor}}/>}
+    {/*{isNavbarVisible && <Navbar className={isNavbarVisible ? "" : "hidden"} style={{color:navbarColor}}/>}*/}
       <div className={classes.pageCtn}>
         <motion.div
           ref={heroRef}
