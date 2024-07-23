@@ -419,7 +419,7 @@ img{
     }
 
     .clientsCtn{
-        padding:2em 2em;
+        padding:2em 1em;
         display: grid;
         align-items: center;
         gap: 0em;
