@@ -113,7 +113,7 @@
         grid-template-rows: repeat(3,1fr);
         box-sizing: border-box;
         padding: 1em;
-        min-height: 90vh;
+        min-height:90vh ;
         row-gap: 0;
     }
 
@@ -121,23 +121,26 @@
         display: none;
     }
 
+
     .footerLinksWrap{
         gap: .5rem;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         grid-row: 1;
+        height: auto;
     }
 
     .footerLinkWrap h1,
     .footerLinkWrapHome h1{
-        font-size: 3.5rem;
+        font-size: 4.2rem;
     }
 
-    .address{
+    /*.address{
         grid-row: 2;
         display: flex;
         justify-content: end;
         margin-bottom: auto;
-    }
+    }*/
 
 
     /*.contactLinks{
@@ -180,8 +183,9 @@
     .addressMobile{
         display: flex;
         flex-direction: column; 
-        justify-content: center; 
+        justify-content: end; 
         align-items: start; 
+        grid-row: 2;
     }
 
 
@@ -229,7 +233,8 @@
 
     .socialMobile{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: start;
         gap: 0em;
     }

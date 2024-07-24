@@ -66,6 +66,10 @@ const Footer = () => {
             <div className={classes.emailMobile}>
               <a>damaja@gmail.com <SvgArrowFooter/></a>
             </div>
+            <div className={classes.webshopMobile}>
+              <h4>check damaja shop</h4>
+              <a>webshop <SvgArrowFooter/></a>
+            </div>
           </div>
 
           <div className={classes.contactLinks}>
@@ -78,10 +82,7 @@ const Footer = () => {
               <a>webshop <SvgArrowFooter/></a>
             </div>
 
-            <div className={classes.webshopMobile}>
-              <h4>check damaja shop</h4>
-              <a>webshop <SvgArrowFooter/></a>
-            </div>
+
           
             <div className={classes.social}>
               <a>instagram</a>
@@ -90,7 +91,7 @@ const Footer = () => {
             </div>
 
             <div className={classes.socialMobile}>
-              <h4>social</h4>
+              {/*<h4>social</h4>*/}
               <a>instagram</a>
               <a>youtube</a>
               <a>linkedin</a>
