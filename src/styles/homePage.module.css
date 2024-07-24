@@ -116,6 +116,10 @@
     justify-content: space-between;
 }
 
+.clientsListMobile{
+    display: none;
+}
+
 .clients{
     position: relative;
     width: 100vw;
@@ -255,10 +259,12 @@
 
 .getInTouch h4{
     color: #8F6E3A;
+    font-size: 20px;
 }
 
 .getInTouch a{
     color: #8F6E3A;
+    font-size: 20px;
 }
 
 
@@ -553,7 +559,7 @@ img{
         box-sizing: border-box;
         padding: 1em;
         background: var(--color-beige);
-        min-height: 60vh;
+        max-height: 70vh;
     }
 
 
@@ -563,13 +569,17 @@ img{
     }
 
     .clientsList{
+        display: none;
+    }
+
+    .clientsListMobile{
         display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: start;
     }
 
-    .clientsList h3{
+    .clientsListMobile h3{
         color: #8F6E3A;
     }
 
@@ -582,6 +592,7 @@ img{
 
     .getInTouch h4{
         color: #8F6E3A;
+        font-size: 16px;
     }
 
     .getInTouch a{
@@ -590,6 +601,7 @@ img{
         align-items: center;
         gap: 0.5em;
         color: #8F6E3A;
+        font-size: 16px;
     }
 
     .newsCtn{

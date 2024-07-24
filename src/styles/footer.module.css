@@ -9,6 +9,14 @@
     padding: 2em;
 }*/
 
+
+.footerCtnMobile,
+.webshopMobile,
+.addressMobile,
+.socialMobile{
+    display: none;
+}
+
 .footerCtn{
     background:var(--color-footer);
     display: grid;
@@ -18,6 +26,9 @@
     min-height: 60vh;
     row-gap: 0;
 }
+
+
+
 
 .footerLinksWrap {
     grid-column-gap: 2.5rem;
@@ -98,17 +109,83 @@
     text-align: right;
 }
 
-.webshopMobile,
-.addressMobile,
-.socialMobile{
-    display: none;
-}
 
 
 
 @media (max-width:768px) {
 
-    .footerCtn{
+    .footerCtn, .dashWrap{
+        display: none;
+    }
+
+    .footerCtnMobile{
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        box-sizing: border-box;
+        padding: 1em;
+        background: var(--color-footer);
+        max-height:90vh;
+    }
+
+    .footerLinksWrapMobile{
+        display: grid;
+        row-gap: 0;
+        gap: 0.5em;
+    }
+
+    .footerLinksWrapMobile h1{
+        font-size: 4.2em;
+    }
+
+    .middleCtnMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 1em;
+    }
+
+    .addressMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5em;
+    }
+
+    .addressMobile h4,
+    .webshopMobile h4{
+        color: black;
+    }
+
+    .emailMobile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    .webshopMobile{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .webshopMobileA{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    .socialMobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 1em;
+    }
+
+
+    /*.footerCtn{
         display: grid;
         grid-template-rows: repeat(3,1fr);
         box-sizing: border-box;
@@ -164,7 +241,7 @@
         gap: 0.3em;
     }*/
 
-    .contactLinks{
+    /*.contactLinks{
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -190,8 +267,6 @@
 
 
     .emailMobile a{
-        /*display: grid;
-        grid-template-columns: repeat(2,1fr);*/
         display: flex;
         flex-direction: row;
         justify-content: start;
@@ -217,8 +292,6 @@
     }
 
     .webshopMobile a{
-        /*display: grid;
-        grid-template-columns: repeat(2,1fr);*/
         display: flex;
         flex-direction: row;
         justify-content: start;
@@ -241,7 +314,7 @@
 
     .social{
         display: none;
-    }
+    }*/
     
 }
 

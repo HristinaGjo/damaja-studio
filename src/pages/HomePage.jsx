@@ -142,6 +142,14 @@ const HomePage = () => {
                   <h3>peek & cloppenburg, dawn denim</h3>
               </div>
 
+              <div className={classes.clientsListMobile}>
+                  <h3>adidas, tommy hilfiger</h3>
+                  <h3>circular berlin</h3>
+                  <h3>olivia steele, vee collective</h3>
+                  <h3>peek & cloppenburg</h3>
+                  <h3>i-D, dawn denim</h3>
+              </div>
+
               <div className={classes.getInTouch}>
                 <h4>for project collaboration get in touch</h4>
                 <a>damaja@gmail.com <SvgArrowFooter/></a>
