@@ -9,6 +9,7 @@ import domestikaImg from "../assets/domestika.webp"
 import { useScroll, useTransform, motion } from "framer-motion";
 import Footer from "../components/Footer";
 import SvgArrow from "../components/SvgArrow";
+import SvgArrowFooter from "../components/SvgArrowFooter";
 
 const HomePage = () => {
   const { scrollY } = useScroll();
@@ -16,7 +17,7 @@ const HomePage = () => {
 
   const projectsCtn = useRef(null);
   const newsCtn = useRef(null);
-  const clientsCtn = useRef(null);
+  const clientsCtnNew = useRef(null);
 
   const [isNavbarVisible, setIsNavbarVisible] = useState(true)
   const [navbarColor, setIsNavbarColor] = useState('#ED434A')
@@ -25,7 +26,7 @@ const HomePage = () => {
   useEffect (() =>{
     const handleScroll = () => {
       const newsRect = newsCtn.current.getBoundingClientRect();
-      const clientsRect = clientsCtn.current.getBoundingClientRect();
+      const clientsRect = clientsCtnNew.current.getBoundingClientRect();
 
       if (window.innerWidth > 0){
         if (newsRect.top <= -200){
@@ -36,7 +37,7 @@ const HomePage = () => {
       };
 
       if (clientsRect.top <= 0 && clientsRect.bottom > 0){
-        setIsNavbarColor ('#000000')
+        setIsNavbarColor ('#8F6E3A')
       } else if (newsRect.top <= 0 && newsRect.bottom >0) {
         setIsNavbarColor('#ffffff')
       } else {
@@ -128,36 +129,26 @@ const HomePage = () => {
         </div>
     
 
-        <div className={classes.clients}>
-            <div className={classes.clientsTitle}>
-                <h2>clients</h2>
-            </div>
+       <div className={classes.clients}>
+            <div  ref={clientsCtnNew}className={classes.clientsCtnNew}>
+              
+              <div className={classes.damajaClients}>
+                  <h1>clients</h1>
+              </div> 
 
-            <div ref={clientsCtn} className={classes.clientsCtn}>
-            <div className={classes.thirdRowClients}>
-                    <h3 className={classes.firstThirdRow}>adidas</h3>
-                    <h3 className={classes.secondThirdRow}>tommy hilfiger</h3>
-                </div>
-                <div className={classes.secondRowClients}>
-                    <h3>vice</h3>
-                </div>
-                <div className={classes.firstRowClients}>
-                    <h3 className={classes.firstTitle}>circular berlin</h3>
-                    <h3 className={classes.secondTitle}>olivia steele</h3>
-                </div>
-                
-                <div className={classes.fourthRowClients}>
-                    <h3>i-D</h3>
-                </div>
-                <div className={classes.fifthRowClients}>
-                    <h3>peek & cloppenburg</h3>
-                </div>
-                <div className={classes.sixthRowClients}>
-                    <h3 className={classes.sixthFirstTitle}>vee collective</h3>
-                    <h3 className={classes.sixthSecondTitle}>dawn denim</h3>
-                </div>
-            </div>
+              <div className={classes.clientsList}>
+                  <h3>adidas, tommy hilfiger, circular berlin</h3>
+                  <h3>olivia steele, i-D, vee collective</h3>
+                  <h3>peek & cloppenburg, dawn denim</h3>
+              </div>
 
+              <div className={classes.getInTouch}>
+                <h4>for project collaboration get in touch</h4>
+                <a>damaja@gmail.com <SvgArrowFooter/></a>
+
+              </div>
+            </div>
+         
             <div ref={newsCtn} className={classes.newsCtn}>
                 <div className={classes.text}>
                     <h4>
