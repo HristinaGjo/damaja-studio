@@ -305,7 +305,7 @@ img{
         display: grid;
         grid-template-rows: repeat(3,1fr);
         box-sizing: border-box;
-        padding:2em 1em 2em 1em;
+        padding:1.5em;
         margin-top: 2em;
         background: var(--color-clients);
         max-height: 70vh;
@@ -371,7 +371,7 @@ img{
         justify-content:start;
         background: black;
         box-sizing: border-box;
-        padding:2em 1em 2em 1em;
+        padding:1.5em;
         gap: 0em;
     }
     
