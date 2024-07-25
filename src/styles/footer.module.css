@@ -47,12 +47,12 @@
 
 .middleCtn h4,
 .contactLinks h4{
-    color: black;
+    color: var(--black-2);
 }
 
 .middleCtn a,
 .contactLinks a{
-    color: black;
+    color: var(--black-2);
     font-size: 20px;
 }
 
@@ -86,7 +86,7 @@
 
 .rights h4{
     font-size: 20px;
-    color: black;
+    color: var(--black-2);
 }
 
 
@@ -181,7 +181,7 @@
 
     .addressMobile h4,
     .webshopMobile h4{
-        color: black;
+        color: var(--black-2);
     }
 
     .emailMobile{

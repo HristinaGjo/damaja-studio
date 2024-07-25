@@ -312,7 +312,9 @@ img{
 
     .damajaClients h1{
         /*color: #8F6E3A;*/
-        color: var(--black-2);
+        /*color: #A67153;*/
+        color: #8F6E3A;
+        /*color: var(--black-2);*/
         font-size: 4.2rem;
     }
 
@@ -329,7 +331,9 @@ img{
 
     .clientsListMobile h3{
         /*color: #8F6E3A;*/
-        color: var(--black-2);
+        /*color: var(--black-2);*/
+        color: #8F6E3A;;
+        /*color:#AB7D56;*/
     }
 
     .getInTouch{
@@ -341,7 +345,9 @@ img{
 
     .getInTouch h4{
         /*color: #8F6E3A;*/
-        color: var(--black-2);
+        /*color: var(--black-2);*/
+        /*color: #A67153;*/
+        color: #8F6E3A;
         font-size: 16px;
     }
 
@@ -351,7 +357,8 @@ img{
         align-items: center;
         gap: 0.5em;
         /*color: #8F6E3A;*/
-        color: var(--black-2);
+        /*color: var(--black-2);*/
+        color: #8F6E3A;
         font-size: 16px;
     }
 

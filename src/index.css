@@ -34,17 +34,18 @@ html, body{
   /*--color-white:#f2f2f2;*/
   --color-white:white;
   --color-beige:#edede9;
-  --color-h1:black;
+  --color-h1:#141414;
   --color-h2:#ED434A;
   /*--color-h3:#8F6E3A;*/
-  --color-h3:black;;
+  --color-h3:#141414;
   --color-h4:#f2f2f2;
   --color-p:#f2f2f2;
   /*--color-span:#ED434A;*/
   --color-footer:#E2E3E2;
   /*--color-clients: #F1EDE1;*/
   /*--color-clients:#ede8e4;*/
-  --color-clients:#f2f2f2;
+  /*--color-clients:#f2f2f2;*/
+  --color-clients:#DFD8D1;
 }
 
 /* font -sizes */
