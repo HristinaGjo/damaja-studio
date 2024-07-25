@@ -22,7 +22,7 @@ const HomePage = () => {
   const clientsCtnNew = useRef(null);
 
   const [isNavbarVisible, setIsNavbarVisible] = useState(true)
-  const [navbarColor, setIsNavbarColor] = useState('#ED434A')
+  const [navbarColor, setIsNavbarColor] = useState('#141414')
 
 
   useEffect (() =>{
@@ -43,7 +43,7 @@ const HomePage = () => {
       } else if (newsRect.top <= 0 && newsRect.bottom >0) {
         setIsNavbarColor('#ffffff')
       } else {
-        setIsNavbarColor ('#ED434A')
+        setIsNavbarColor ('#141414')
       }
 
     };

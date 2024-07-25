@@ -146,7 +146,8 @@
 .damajaClients h1{
     /*color: #8F6E3A;*/
     /*color: var(--indian-red);*/
-    color: var(--black-2);
+    /*color: var(--black-2);*/
+    color: #8F6E3A;
 }
 
 .clientsList{
@@ -159,7 +160,7 @@
 .clientsList h3{
     /*color: #8F6E3A;*/
     /*color: var(--indian-red);*/
-    color: var(--black-2);
+    color: #8F6E3A;
 }
 
 .getInTouch{
@@ -172,12 +173,12 @@
 
 .getInTouch h4{
     /*color: #8F6E3A;*/
-    color:var(--black-2);
+    color: #8F6E3A;
     font-size: 20px;
 }
 
 .getInTouch a{
-    color:var(--black-2);
+    color: #8F6E3A;
     /*color: #8F6E3A;*/
     font-size: 20px;
 }
@@ -304,9 +305,9 @@ img{
         display: grid;
         grid-template-rows: repeat(3,1fr);
         box-sizing: border-box;
-        padding: 1em;
+        padding:2em 1em 2em 1em;
         margin-top: 2em;
-        background: var(--color-clients);
+        background: var(--color-footer);
         max-height: 70vh;
     }
 
@@ -370,7 +371,7 @@ img{
         justify-content:start;
         background: black;
         box-sizing: border-box;
-        padding:1em;
+        padding:2em 1em 2em 1em;
         gap: 0em;
     }
     
