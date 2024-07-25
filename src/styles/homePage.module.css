@@ -134,6 +134,7 @@
 }
 
 .clientsCtnNew{
+    width: 100vw;
     display: grid;
     grid-template-rows: repeat(3,1fr);
     box-sizing: border-box;
@@ -299,6 +300,10 @@ img{
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
+    }
+
+    .clients{
+        padding: 0;
     }
 
     .clientsCtnNew{
