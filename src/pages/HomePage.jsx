@@ -164,8 +164,8 @@ const HomePage = () => {
                     <h4>
                     Hand Embroidery for Clothing: Stitch a Collage Design <br/>
                     </h4>
-                    <p>Learn to embroider colorful images onto stretchy garments to upcycle your clothing 
-                      into fashionable works of art.</p>
+                    {/*<p>Learn to embroider colorful images onto stretchy garments to upcycle your clothing 
+                      into fashionable works of art.</p>*/}
                     <div className={classes.textDomestika}>
                     <p>course</p>
                     <SvgArrow />
