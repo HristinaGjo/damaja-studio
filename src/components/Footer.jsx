@@ -14,10 +14,10 @@ const Footer = () => {
 
             <div className={classes.footerLinkWrapHome}>
               <Link to="/">
-                <h1>home</h1>
+                <h1>menu</h1>
               </Link>
               <div className={classes.dashWrap}>
-                <h1 >/</h1>
+                <h1 >+</h1>
               </div>
             </div>
 
@@ -48,8 +48,8 @@ const Footer = () => {
                 <h1>/</h1>
               </div>
           </div>
-        </div> {/*footerLinksWrap*/}
 
+        </div> {/*footerLinksWrap*/}
 
           <div className={classes.address}> 
               <h4>damaja - studio</h4>
