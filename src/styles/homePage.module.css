@@ -307,7 +307,7 @@ img{
         box-sizing: border-box;
         padding:2em 1em 2em 1em;
         margin-top: 2em;
-        background: var(--color-footer);
+        background: var(--color-clients);
         max-height: 70vh;
     }
 

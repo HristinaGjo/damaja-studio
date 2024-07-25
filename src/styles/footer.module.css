@@ -151,7 +151,7 @@
         grid-template-rows: repeat(3,1fr);
         box-sizing: border-box;
         padding:2em 1em 2em 1em;
-        background: var(--color-clients);
+        background: var(--color-footer);
         max-height:90vh;
     }
 
