@@ -1,11 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import classes from "../styles/homePage.module.css";
 import Navbar from "../components/Navbar";
-import heroImg from "../assets/heroImg.webp";
-import firstRowImg from "../assets/secondRowImg.webp";
+import heroImg from "../assets/heroNew.webp";
+import heroImgMobile from "../assets/heroNewMobile.jpeg";
+import firstRowImg from "../assets/adidasCover.webp";
 /*import hoopImg from "../assets/secondRowImg.webp";*/
-import secondRowImg from "../assets/firstRowImg.webp";
-import domestikaImg from "../assets/domestika.webp"
+import secondRowImg from "../assets/secondRow.webp";
+import thirdRowImg from "../assets/wallArt.webp";
+import domestikaImg from "../assets/domestika04.webp"
 import { useScroll, useTransform, motion } from "framer-motion";
 import Footer from "../components/Footer";
 import SvgArrow from "../components/SvgArrow";
@@ -37,7 +39,7 @@ const HomePage = () => {
       };
 
       if (clientsRect.top <= 0 && clientsRect.bottom > 0){
-        setIsNavbarColor ('#8F6E3A')
+        setIsNavbarColor ('#141414')
       } else if (newsRect.top <= 0 && newsRect.bottom >0) {
         setIsNavbarColor('#ffffff')
       } else {
@@ -56,11 +58,7 @@ const HomePage = () => {
   },[])
 
 
-  // Animate hero image to shrink and disappear as projectsCtn comes into view
-  /*const heroScale = useTransform(scrollY, [0, 300], [1, 0.8]);
-  const heroOpacity = useTransform(scrollY, [0, 300], [1, 0]);*/
-
-  const heroHeight = useTransform(scrollY, [0, 600], ['90vh', '50vh']);
+  const heroHeight = useTransform(scrollY, [0, 600], ['90vh', '70vh']);
   const heroHeightMobile = useTransform(scrollY, [0, 600], ['80vh', '80vh']);
 
 
@@ -83,11 +81,15 @@ const HomePage = () => {
           ref={heroRef}
           style={{ 
             height: window.innerWidth <= 768 ? heroHeightMobile : heroHeight,
-            /*transition: 'height 0.8s ease, opacity 0.8s ease-in-out'*/
+            /*transition: 'height 0.8s linear'*/
+                        /*transition: 'height 0.8s ease, opacity 0.8s ease-in-out'*/
+
          }}
           className={classes.heroCtn}
         >
           <img src={heroImg} alt="Img not available" className={classes.heroImage} />
+          <img src={heroImgMobile} alt="Img not available" className={classes.heroImageMobile} />
+
         </motion.div>
 
         <div ref={projectsCtn} className={classes.projectsCtn}>
@@ -98,7 +100,7 @@ const HomePage = () => {
           className={classes.firstRow}>
             <img src={firstRowImg} alt="Img not available" className={classes.firstRowImage} />
             <div className={classes.projectName}>
-              <span className={classes.span}>Adidas</span>
+              <span className={classes.span}>adidas</span>
               <span className={classes.spanMore}>more +</span>
             </div>
           </motion.div>
@@ -110,7 +112,7 @@ const HomePage = () => {
           className={classes.secondRow}>
             <img src={secondRowImg} alt="Img not available" className={classes.secondRowImage} />
             <div className={classes.secondProjectName}>
-              <span className={classes.span}>Adidas</span>
+              <span className={classes.span}>adidas</span>
               <span className={classes.spanMore}>more +</span>
             </div>
           </motion.div>
@@ -120,9 +122,9 @@ const HomePage = () => {
             y: window.innerWidth <= 768 ? smMobile : lg,
           }} 
           className={classes.thirdRow}>
-            <img src={firstRowImg} alt="Img not available" className={classes.thirdRowImage} />
+            <img src={thirdRowImg} alt="Img not available" className={classes.thirdRowImage} />
             <div className={classes.thirdProjectName}>
-              <span className={classes.span}>Adidas</span>
+              <span className={classes.span}>wall art</span>
               <span className={classes.spanMore}>more +</span>
             </div>
           </motion.div>
@@ -162,56 +164,26 @@ const HomePage = () => {
                     <h4>
                     Hand Embroidery for Clothing: Stitch a Collage Design <br/>
                     </h4>
+                    <p>Learn to embroider colorful images onto stretchy garments to upcycle your clothing 
+                      into fashionable works of art.</p>
                     <div className={classes.textDomestika}>
                     <p>course</p>
                     <SvgArrow />
                     </div>
-                   {/* <p className={classes.textDomestika}>Learn to embroider colorful images onto 
-                      stretchy garments to upcycle your clothing into fashionable works of art
-                    </p> */}
                 </div>
                 <div className={classes.imageCtn}>
-                    <img src={firstRowImg} alt="Img not available" className={classes.image} />
+                    <img src={domestikaImg} alt="Img not available" className={classes.image} />
                 </div>
             </div>
             <Footer />
         </div>
         </div>
         
-
-  
     </>
   );
 };
 
 export default HomePage;
-
-
-
-
-
-
-
-            {/*<img src={hoopImg} alt="Img not available" className={classes.hoopImage} />
-            <div className={classes.hoopProjectName}>
-              <span>Adidas</span>
-              <span className={classes.spanMore}>more +</span>
-            </div>*/}
-
-
-            // clients
-            /*
-       
-      
-        
-            
-            , 
-            
-            , 
-        
-            , 
-             
-            */
 
 
             // clients

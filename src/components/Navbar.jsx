@@ -6,9 +6,9 @@ const Navbar = ({style}) => {
     return ( 
         <>
         <div className={classes.navbarCtn} style={style}>
-            <div className={classes.logo}>
+            {/*<div className={classes.logo}>
                 <span>damaja</span>
-            </div>
+            </div> */}
 
             <div className={classes.menu}>
                 <span>menu</span>

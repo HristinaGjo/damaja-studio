@@ -12,15 +12,23 @@ const Footer = () => {
 
         <div className={classes.footerLinksWrap}>
 
-            <div className={classes.footerLinkWrapHome}>
+            {/*<div className={classes.footerLinkWrapHome}>
               <Link to="/">
                 <h1>menu</h1>
               </Link>
               <div className={classes.dashWrap}>
                 <h1 >+</h1>
               </div>
-            </div>
+            </div>*/}
 
+            <div className={classes.footerLinkWrapHome}>
+              <Link to="/">
+                <h1>home</h1>
+              </Link>
+              <div className={classes.dashWrap}>
+                <h1>/</h1>
+              </div>
+            </div>
 
             <div className={classes.footerLinkWrap}>
               <Link to="/">
@@ -51,25 +59,31 @@ const Footer = () => {
 
         </div> {/*footerLinksWrap*/}
 
+        <div className={classes.middleCtn}>
           <div className={classes.address}> 
               <h4>damaja - studio</h4>
-              <h4>Berlin</h4>
+              <h4>Kreuzberg, Berlin</h4>
             <div className={classes.email}>
               <a>damaja@gmail.com <SvgArrowFooter/></a>
             </div>
           </div>
+            <div className={classes.webshop}>
+              <h4>visit damaja - webshop</h4>
+              <Link to="https://www.damaja-studio.com/" target="_blank" rel = "noopener noreferrer">webshop <SvgArrowFooter/></Link>
+            </div>
+        </div>
 
         <div className={classes.contactLinks}>
-
-          <div className={classes.webshop}>
-              <a>webshop <SvgArrowFooter/></a>
-          </div>
-
+              <h4>social</h4>
           <div className={classes.social}>
-              <a>instagram</a>
-              <a>youtube</a>
-              <a>linkedin</a>
+            <Link to="https://www.instagram.com/_damaja_/" target="_blank" rel = "noopener noreferrer">instagram</Link>
+            <Link to="https://www.youtube.com/@DamajaHandmade" target="_blank" rel = "noopener noreferrer">youtube</Link>
+            <Link to="https://www.linkedin.com/in/stefanija-pejchinovska/?originalSubdomain=de" target="_blank" rel = "noopener noreferrer">linkedIn</Link>
           </div>
+        </div>
+        <div className={classes.rights}>
+          <h4>&copy; 2024 damaja</h4>
+
         </div>
     </div>
 
@@ -118,7 +132,7 @@ const Footer = () => {
         <div className={classes.middleCtnMobile}>
           <div className={classes.addressMobile}> 
               <h4>damaja - studio</h4>
-              <h4>Berlin</h4>
+              <h4>Kreuzberg, Berlin</h4>
         
             <div className={classes.emailMobile}>
               <a>damaja@gmail.com </a>
@@ -128,16 +142,16 @@ const Footer = () => {
 
           <div className={classes.webshopMobile}>
               <h4>damaja - webshop</h4>
-              <a className={classes.webshopMobileA}>webshop <SvgArrowFooter/></a>
+              <Link className={classes.webshopLink} to="https://www.damaja-studio.com/" target="_blank" rel = "noopener noreferrer">webshop <SvgArrowFooter/></Link>
           </div>
           
         </div>
 
 
           <div className={classes.socialMobile}>
-              <a>instagram</a>
-              <a>youtube</a>
-              <a>linkedin</a>
+            <Link to="https://www.instagram.com/_damaja_/" target="_blank" rel = "noopener noreferrer">instagram</Link>
+            <Link to="https://www.youtube.com/@DamajaHandmade" target="_blank" rel = "noopener noreferrer">youtube</Link>
+            <Link to="https://www.linkedin.com/in/stefanija-pejchinovska/?originalSubdomain=de" target="_blank" rel = "noopener noreferrer">linkedIn</Link>
           </div>
 
     </div>
