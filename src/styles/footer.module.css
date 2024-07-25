@@ -1,16 +1,224 @@
-/*.footerCtn{
-    position: relative;
+.footerCtnMobile,
+.webshopMobile,
+.addressMobile,
+.socialMobile,
+.dashWrap{
+    display: none;
+}
+
+.footerCtn{
+    background:var(--color-footer);
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    box-sizing: border-box;
+    padding:2em;
+    min-height:60vh;
+}
+
+.footerLinksWrap {
     display: flex;
     flex-direction: column;
-    background:var(--color-footer);
-    width: 100vw;
-    min-height: 50dvh;
-    box-sizing: border-box;
-    padding: 2em;
+    gap: 1em;
+    justify-content: start;
+}
+
+.footerLinkWrap{
+    display: flex;
+    flex-direction: row;
+    opacity: 0.2;
+    /*border-bottom: 1px solid black;*/
+}
+
+.footerLinkWrapHome{
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    /*border-bottom: 1px solid black;*/
+}
+
+.middleCtn {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    justify-content: start;
+    margin-left: 2em;
+    grid-column: 4;
+}
+
+.middleCtn h4,
+.contactLinks h4{
+    color: black;
+}
+
+.middleCtn a,
+.contactLinks a{
+    color: black;
+    font-size: 20px;
+}
+
+.address,
+.webshop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.contactLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-left: 4em;
+    grid-column: 5;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.rights{
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+}
+
+.rights h4{
+    font-size: 20px;
+    color: black;
+}
+
+
+
+
+
+/*.address{
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    margin-top: .5em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.email a,
+.webshop a{
+    display: flex;
+    gap: 1em
+}
+
+.address h4{
+    color: black;
+}
+
+.contactLinks{
+    display: flex;
+    flex-direction: column;
+}
+
+.webshop {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+}
+
+.social{
+    display: flex;
+    justify-content:space-around;
+    text-align: right;
 }*/
 
 
-.footerCtnMobile,
+
+
+@media (max-width:768px) {
+
+    .footerCtn, .dashWrap{
+        display: none;
+    }
+
+    .footerCtnMobile{
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        box-sizing: border-box;
+        padding: 1em;
+        background: var(--color-footer);
+        max-height:90vh;
+    }
+
+    .footerLinksWrapMobile{
+        display: grid;
+        row-gap: 0;
+        gap: 0.5em;
+    }
+
+    .footerLinksWrapMobile h1{
+        font-size: 4.2em;
+    }
+
+    .middleCtnMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 1em;
+    }
+
+    .addressMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5em;
+    }
+
+    .addressMobile h4,
+    .webshopMobile h4{
+        color: black;
+    }
+
+    .emailMobile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    .webshopMobile{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .webshopMobileA{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    .socialMobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 1em;
+    }
+}
+
+
+
+
+
+
+/* .footerCtnMobile,
 .webshopMobile,
 .addressMobile,
 .socialMobile{
@@ -26,9 +234,6 @@
     min-height: 60vh;
     row-gap: 0;
 }
-
-
-
 
 .footerLinksWrap {
     grid-column-gap: 2.5rem;
@@ -98,9 +303,6 @@
     align-items: start;
     text-align: left;
 }
-
-
-
 
 .social{
     grid-column: 3;
@@ -183,210 +385,7 @@
         align-items: end;
         margin-bottom: 1em;
     }
-
-
-    /*.footerCtn{
-        display: grid;
-        grid-template-rows: repeat(3,1fr);
-        box-sizing: border-box;
-        padding: 1em;
-        min-height:90vh ;
-        row-gap: 0;
-    }
-
-    .dashWrap{
-        display: none;
-    }
-
-
-    .footerLinksWrap{
-        gap: .5rem;
-        display: flex;
-        flex-direction: column;
-        grid-row: 1;
-        height: auto;
-    }
-
-    .footerLinkWrap h1,
-    .footerLinkWrapHome h1{
-        font-size: 4.2rem;
-    }
-
-    /*.address{
-        grid-row: 2;
-        display: flex;
-        justify-content: end;
-        margin-bottom: auto;
-    }*/
-
-
-    /*.contactLinks{
-        grid-row: 3;
-        position: absolute;
-        width: auto;
-        bottom: 2.5em;
-        left: 1em;
-        right: 1em;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: start;
-    }
-    
-    .social{
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        align-items: end;
-        gap: 0.3em;
-    }*/
-
-    /*.contactLinks{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        box-sizing: border-box;
-        width:auto;
-        bottom: 2em;
-        left: 1em;
-        right: 1em;
-        gap: 3em;
-    }
-
-    .address, .email{
-        display: none;
-    }
-
-    .addressMobile{
-        display: flex;
-        flex-direction: column; 
-        justify-content: end; 
-        align-items: start; 
-        grid-row: 2;
-    }
-
-
-    .emailMobile a{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: center;
-        text-align: left;
-        margin-top: 0;
-        gap: 0.5em;
-    }
-
-    .webshopMobile{
-        display: flex;
-        flex-direction: column; 
-        justify-content: start; 
-        align-items: start; 
-    }
-
-    .webshopMobile h4,
-    .socialMobile h4,
-    .addressMobile h4{
-        color: black;
-        display: block;
-        margin-bottom: 0.2em;
-    }
-
-    .webshopMobile a{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: center;
-        text-align: left;
-        gap: 0.5em;
-    }
-
-    .webshop{
-        display: none;
-    }
-
-    .socialMobile{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: start;
-        gap: 0em;
-    }
-
-    .social{
-        display: none;
-    }*/
-    
-}
+} */
 
 
 
-
-    /*.email a{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        margin-top: 0em !important;
-    }*/
-
-
-
-
-
-/*.footerCtn{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        padding: 1em;
-    }
-
-    .dashWrap{
-        display: none;
-    }
-
-    .footerLinksWrap{
-        gap: .5rem;
-        display: grid;
-    }
-
-    .footerLinkWrap h1,
-    .footerLinkWrapHome h1{
-        font-size: 2.5rem;
-    }
-
-    .address{
-        margin-top: 2em;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .address a{
-        margin-top: .5em;
-    }
-    
-    .address h4{
-        color: black;
-    }
-
-    .contactLinks{
-        position: absolute;
-        width: auto;
-        bottom: 2em;
-        left: 1em;
-        right: 1em;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: start;
-    }
-
-    .webshop{
-        display: flex;
-        justify-content: start;
-    }
-
-    .social{
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        align-items: end;
-        gap: 0.3em;
-    }*/

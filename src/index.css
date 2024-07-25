@@ -20,17 +20,31 @@ html, body{
 
 /* colors */
 :root {
+  --color-light-grey: #ccc;
+  /*--indian-red: #c45e6b;*/
+  --indian-red:#ED434A;
+  /*--indian-red:#141414;*/
+  --brown: #983441;
+  --peru: #b97b43;
+  --black: black;
+  --dark: #19191b;
+  --black-2: #141414;
+  --color-dark-grey: #999;
+  --color-coral:#ff9254;
+  /*--color-white:#f2f2f2;*/
   --color-white:white;
   --color-beige:#edede9;
   --color-h1:black;
   --color-h2:#ED434A;
   /*--color-h3:#8F6E3A;*/
   --color-h3:black;;
-  --color-h4:white;
-  --color-p:white;
+  --color-h4:#f2f2f2;
+  --color-p:#f2f2f2;
   /*--color-span:#ED434A;*/
   --color-footer:#E2E3E2;
-  --color-clients: #F1EDE1;
+  /*--color-clients: #F1EDE1;*/
+  /*--color-clients:#ede8e4;*/
+  --color-clients:#f2f2f2;
 }
 
 /* font -sizes */
@@ -151,6 +165,20 @@ a{
   }
 
 }
+
+
+
+/* --black: #000000;
+--white: #FFFFFF;
+--beige: #F1EDE1;
+--lightblue: #E2E3E2;
+--blue: #37B5B2;
+--pink: #FFD6E8;
+--red: #ED434A;
+--brown: #8F6E3A;
+--bg-color: var(--white);
+--text-color: var(--red); */
+
 
 
 
