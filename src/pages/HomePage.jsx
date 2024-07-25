@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import classes from "../styles/homePage.module.css";
 import Navbar from "../components/Navbar";
-import heroImg from "../assets/heroNew.webp";
-import heroImgMobile from "../assets/heroNewMobile.jpeg";
+import heroImg from "../assets/secondRowCut.webp";
+import heroImgMobile from "../assets/secondRowCut.webp";
 import firstRowImg from "../assets/adidasCover.webp";
 /*import hoopImg from "../assets/secondRowImg.webp";*/
 import secondRowImg from "../assets/secondRow.webp";
-import thirdRowImg from "../assets/wallArt.webp";
-import domestikaImg from "../assets/domestika04.webp"
+import thirdRowImg from "../assets/wallArtLong.webp";
+import domestikaImg from "../assets/domestika.webp"
 import { useScroll, useTransform, motion } from "framer-motion";
 import Footer from "../components/Footer";
 import SvgArrow from "../components/SvgArrow";
