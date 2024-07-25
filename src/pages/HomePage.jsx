@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import classes from "../styles/homePage.module.css";
 import Navbar from "../components/Navbar";
-import heroImg from "../assets/hero.webp";
+import heroImg from "../assets/heroNew.webp";
+import heroImgMobile from "../assets/heroNewMobile.jpeg";
 import firstRowImg from "../assets/adidasCover.webp";
 /*import hoopImg from "../assets/secondRowImg.webp";*/
 import secondRowImg from "../assets/secondRow.webp";
-import thirdRowImg from "../assets/wallArtLong.webp";
+import thirdRowImg from "../assets/wallArt.webp";
 import domestikaImg from "../assets/domestika04.webp"
 import { useScroll, useTransform, motion } from "framer-motion";
 import Footer from "../components/Footer";
@@ -38,7 +39,7 @@ const HomePage = () => {
       };
 
       if (clientsRect.top <= 0 && clientsRect.bottom > 0){
-        setIsNavbarColor ('#8F6E3A')
+        setIsNavbarColor ('#141414')
       } else if (newsRect.top <= 0 && newsRect.bottom >0) {
         setIsNavbarColor('#ffffff')
       } else {
@@ -57,7 +58,7 @@ const HomePage = () => {
   },[])
 
 
-  const heroHeight = useTransform(scrollY, [0, 600], ['90vh', '50vh']);
+  const heroHeight = useTransform(scrollY, [0, 600], ['90vh', '70vh']);
   const heroHeightMobile = useTransform(scrollY, [0, 600], ['80vh', '80vh']);
 
 
@@ -80,11 +81,15 @@ const HomePage = () => {
           ref={heroRef}
           style={{ 
             height: window.innerWidth <= 768 ? heroHeightMobile : heroHeight,
-            /*transition: 'height 0.8s ease, opacity 0.8s ease-in-out'*/
+            /*transition: 'height 0.8s linear'*/
+                        /*transition: 'height 0.8s ease, opacity 0.8s ease-in-out'*/
+
          }}
           className={classes.heroCtn}
         >
           <img src={heroImg} alt="Img not available" className={classes.heroImage} />
+          <img src={heroImgMobile} alt="Img not available" className={classes.heroImageMobile} />
+
         </motion.div>
 
         <div ref={projectsCtn} className={classes.projectsCtn}>

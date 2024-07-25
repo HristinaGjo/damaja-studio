@@ -142,7 +142,7 @@ const Footer = () => {
 
           <div className={classes.webshopMobile}>
               <h4>damaja - webshop</h4>
-              <Link to="https://www.damaja-studio.com/" target="_blank" rel = "noopener noreferrer">webshop <SvgArrowFooter/></Link>
+              <Link className={classes.webshopLink} to="https://www.damaja-studio.com/" target="_blank" rel = "noopener noreferrer">webshop <SvgArrowFooter/></Link>
           </div>
           
         </div>
