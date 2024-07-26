@@ -111,14 +111,14 @@
         gap: 0.5em;
     }
 
-    .footerLinkWrap,
+   /* .footerLinkWrap,
     .footerLinkWrapHome{
         border-bottom: 1px solid black;
     }
 
     .footerLinkWrapHome{
         border-bottom: 0.5px solid black;
-    }
+    } */
 
     .middleCtnMobile{
         display: flex;
