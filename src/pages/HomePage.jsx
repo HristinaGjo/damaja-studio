@@ -23,14 +23,15 @@ const HomePage = () => {
 
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const [navbarColor, setIsNavbarColor] = useState('#141414');
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // New state to track menu open status
+  const [navOpen, setNavOpen] = useState(false);
+  /*const [isMenuOpen, setnavOpen] = useState(false); */// New state to track menu open status
 
   useEffect(() => {
     const handleScroll = () => {
       const newsRect = newsCtn.current.getBoundingClientRect();
       const clientsRect = clientsCtnNew.current.getBoundingClientRect();
 
-      if (!isMenuOpen) { // Only hide navbar if the menu is not open
+      if (!navOpen) { // Only hide navbar if the menu is not open
         if (window.innerWidth > 0){
           if (newsRect.top <= -200){
             setIsNavbarVisible(false);
@@ -55,7 +56,7 @@ const HomePage = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     }
-  }, [isMenuOpen]); // Add isMenuOpen to the dependency array
+  }, [navOpen]); // Add isMenuOpen to the dependency array
 
   const heroHeight = useTransform(scrollY, [0, 600], ['90vh', '70vh']);
   const heroHeightMobile = useTransform(scrollY, [0, 600], ['80vh', '80vh']);
@@ -72,7 +73,7 @@ const HomePage = () => {
 
   return (
     <>
-      {isNavbarVisible && <Navbar style={{color:navbarColor}} onMenuToggle={setIsMenuOpen} />}
+      {isNavbarVisible && <Navbar style={{color:navbarColor}} onMenuToggle={setNavOpen} />}
       <div className={classes.pageCtn}>
         <motion.div
           ref={heroRef}
