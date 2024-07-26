@@ -38,7 +38,7 @@ const HomePage = () => {
         }
       };
 
-      if (clientsRect.top <= 0 && clientsRect.bottom > 0){
+      if (clientsRect.top <=0 && clientsRect.bottom > 0){
         setIsNavbarColor ('#8F6E3A')
       } else if (newsRect.top <= 0 && newsRect.bottom >0) {
         setIsNavbarColor('#ffffff')
@@ -135,7 +135,7 @@ const HomePage = () => {
             <div  ref={clientsCtnNew}className={classes.clientsCtnNew}>
               
               <div className={classes.damajaClients}>
-                  <h1>clients</h1>
+                  <h1>damaja clients</h1>
               </div> 
 
               <div className={classes.clientsList}>
