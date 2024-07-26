@@ -46,16 +46,29 @@ const Footer = () => {
               <div className={classes.dashWrap}>
                 <h1>/</h1>
               </div>
-          </div>
+            </div>
 
-          <div className={classes.footerLinkWrap}>
+            <div className={classes.footerLinkWrap}>
+              <Link to="/">
+                <h1>workshops</h1>
+              </Link>
+              <div className={classes.dashWrap}>
+                <h1>/</h1>
+              </div>
+            </div>
+
+            <div className={classes.footerLinkWrap}>
               <Link to="/">
                 <h1>contact</h1>
               </Link>
               <div className={classes.dashWrap}>
                 <h1>/</h1>
-              </div>
-          </div>
+                </div>
+            </div>
+
+            <div className={classes.rights}>
+              <h4>&copy; 2024 damaja</h4>
+           </div>
 
         </div> {/*footerLinksWrap*/}
 
@@ -81,10 +94,8 @@ const Footer = () => {
             <Link to="https://www.linkedin.com/in/stefanija-pejchinovska/?originalSubdomain=de" target="_blank" rel = "noopener noreferrer">linkedIn</Link>
           </div>
         </div>
-        <div className={classes.rights}>
-          <h4>&copy; 2024 damaja</h4>
 
-        </div>
+
     </div>
 
     <div className={classes.footerCtnMobile}>
@@ -113,6 +124,15 @@ const Footer = () => {
             <div className={classes.footerLinkWrap}>
               <Link to="/">
                 <h1>about</h1>
+              </Link>
+              <div className={classes.dashWrap}>
+                <h1>/</h1>
+              </div>
+          </div>
+
+          <div className={classes.footerLinkWrap}>
+              <Link to="/">
+                <h1>workshops</h1>
               </Link>
               <div className={classes.dashWrap}>
                 <h1>/</h1>
