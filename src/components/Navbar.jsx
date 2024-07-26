@@ -36,7 +36,7 @@ const Navbar = ({ style, onMenuToggle  }) => {
                 }}
                 >
                     <ul className="nav-links">
-                        <li className="nav-item">
+                        <li className="nav-item-home">
                             <Link to='/'  onClick={() => setNavOpen(!navOpen)}
                             style={{
                                 top:navOpen ? "0" : "120px",

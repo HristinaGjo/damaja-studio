@@ -46,15 +46,15 @@
     cursor: pointer;
     border-radius: 50%;
     transition: 0.3s ease;
-    padding: 2.7em;
+    padding: 2em;
 }
 
 .hamBox:hover {
-    background: #19191b;
+    background:transparent;
 }
 
 .hamBoxOpen {
-    background: #19191b;
+    background:transparent;
 }
 
 
@@ -63,10 +63,10 @@
     margin:  0.5em auto;
     position: absolute;
     display: block;
-    width: 50px;
+    width: 60px;
     height: 2px;
     border-radius: 10px;
-    background: white;
+    background: var(--black-2);
     left: 0;
     right: 0;
     transform: rotate(0deg);
@@ -74,23 +74,23 @@
 }
 
 .lineTop{
-    top: 2.4em;
+    top: 2em;
 }
 
 .lineBottom{
-    bottom: 2.4em;
+    bottom: 2em;
 }
 
 .lineTop.spin{
     top: 2.35em;
     transform: rotate(135deg);
-    background: white;
+    background: var(--black-2);
 }
 
 .lineBottom.spin{
     top: 2.35em;
     transform: rotate(225deg);
-    background: white;
+    background: var(--black-2);
 }
 
 ul.nav-links{
@@ -120,6 +120,10 @@ ul.nav-links a{
     top: 0;
     font-size: 6.5em;
     transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-item{
+    opacity: 0.2;
 }
 
 
