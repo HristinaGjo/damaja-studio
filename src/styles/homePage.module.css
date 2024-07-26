@@ -201,7 +201,7 @@
 }
 
 .text p{
-    color: white;
+    color: #f2f2f2;
 }
 
 .text h4{
@@ -321,7 +321,6 @@ img{
         /*color: #A67153;*/
         color: #8F6E3A;
         /*color: var(--black-2);*/
-        font-size: 4.2rem;
     }
 
     .clientsList{

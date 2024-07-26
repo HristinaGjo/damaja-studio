@@ -39,7 +39,7 @@ html, body{
   /*--color-h3:#8F6E3A;*/
   --color-h3:#141414;
   --color-h4:#f2f2f2;
-  --color-p:#f2f2f2;
+  --color-p:#141414;
   /*--color-span:#ED434A;*/
   --color-footer:#E2E3E2;
   /*--color-clients: #F1EDE1;*/
@@ -51,7 +51,7 @@ html, body{
 /* font -sizes */
 :root {
   --font-size-base: 16px;  /* Consistent base font size for larger screens */
-  --font-size-h1: calc(var(--font-size-base) * 5.5); /* 40px */
+  --font-size-h1: calc(var(--font-size-base) * 3.5); /* 40px */
   --font-size-h2: calc(var(--font-size-base) * 2); /* 32px */
   --font-size-h3: calc(var(--font-size-base) * 1.75); /* 32px */
   --font-size-h4: 1.25rem; /* 14px */

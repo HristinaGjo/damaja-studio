@@ -10,67 +10,47 @@ const Footer = () => {
     <>
       <div className={classes.footerCtn}>
 
-        <div className={classes.footerLinksWrap}>
+        <div className={classes.leftCtn}>
 
-            {/*<div className={classes.footerLinkWrapHome}>
-              <Link to="/">
-                <h1>menu</h1>
-              </Link>
-              <div className={classes.dashWrap}>
-                <h1 >+</h1>
-              </div>
-            </div>*/}
+          <div className={classes.footerLinksWrap}>
 
             <div className={classes.footerLinkWrapHome}>
               <Link to="/">
                 <h1>home</h1>
               </Link>
-              <div className={classes.dashWrap}>
-                <h1>/</h1>
-              </div>
             </div>
 
             <div className={classes.footerLinkWrap}>
               <Link to="/">
                 <h1>art wear</h1>
               </Link>
-              <div className={classes.dashWrap}>
-                <h1 >/</h1>
-              </div>
-            </div>
-
-            <div className={classes.footerLinkWrap}>
-              <Link to="/">
-                <h1>about</h1>
-              </Link>
-              <div className={classes.dashWrap}>
-                <h1>/</h1>
-              </div>
             </div>
 
             <div className={classes.footerLinkWrap}>
               <Link to="/">
                 <h1>workshops</h1>
               </Link>
-              <div className={classes.dashWrap}>
-                <h1>/</h1>
-              </div>
+            </div>
+
+            <div className={classes.footerLinkWrap}>
+              <Link to="/">
+                <h1>about</h1>
+              </Link>
             </div>
 
             <div className={classes.footerLinkWrap}>
               <Link to="/">
                 <h1>contact</h1>
               </Link>
-              <div className={classes.dashWrap}>
-                <h1>/</h1>
-                </div>
             </div>
+          </div> 
 
             <div className={classes.rights}>
               <h4>&copy; 2024 damaja</h4>
            </div>
+        </div>
 
-        </div> {/*footerLinksWrap*/}
+        {/*footerLinksWrap*/}
 
         <div className={classes.middleCtn}>
           <div className={classes.address}> 
@@ -106,9 +86,6 @@ const Footer = () => {
               <Link to="/">
                 <h1>home</h1>
               </Link>
-              <div className={classes.dashWrap}>
-                <h1 >/</h1>
-              </div>
             </div>
 
 
@@ -116,37 +93,25 @@ const Footer = () => {
               <Link to="/">
                 <h1>art wear</h1>
               </Link>
-              <div className={classes.dashWrap}>
-                <h1 >/</h1>
-              </div>
+            </div>
+
+            <div className={classes.footerLinkWrap}>
+              <Link to="/">
+                <h1>workshops</h1>
+              </Link>
             </div>
 
             <div className={classes.footerLinkWrap}>
               <Link to="/">
                 <h1>about</h1>
               </Link>
-              <div className={classes.dashWrap}>
-                <h1>/</h1>
-              </div>
-          </div>
+            </div>
 
-          <div className={classes.footerLinkWrap}>
-              <Link to="/">
-                <h1>workshops</h1>
-              </Link>
-              <div className={classes.dashWrap}>
-                <h1>/</h1>
-              </div>
-          </div>
-
-          <div className={classes.footerLinkWrap}>
+            <div className={classes.footerLinkWrap}>
               <Link to="/">
                 <h1>contact</h1>
               </Link>
-              <div className={classes.dashWrap}>
-                <h1>/</h1>
-              </div>
-          </div>
+            </div>
         </div> {/*footerLinksWrap*/}
 
         <div className={classes.middleCtnMobile}>
@@ -164,16 +129,16 @@ const Footer = () => {
               <h4>damaja - webshop</h4>
               <Link className={classes.webshopLink} to="https://www.damaja-studio.com/" target="_blank" rel = "noopener noreferrer">webshop <SvgArrowFooter/></Link>
           </div>
-          
         </div>
-
 
           <div className={classes.socialMobile}>
             <Link to="https://www.instagram.com/_damaja_/" target="_blank" rel = "noopener noreferrer">instagram</Link>
             <Link to="https://www.youtube.com/@DamajaHandmade" target="_blank" rel = "noopener noreferrer">youtube</Link>
             <Link to="https://www.linkedin.com/in/stefanija-pejchinovska/?originalSubdomain=de" target="_blank" rel = "noopener noreferrer">linkedIn</Link>
+            <div className={classes.rightsMobile}>
+              <p>&copy; 2024 damaja</p>
+           </div>
           </div>
-
     </div>
   </>
   );
@@ -184,36 +149,7 @@ export default Footer;
 
 
 
-/* 
-
-
-          <div className={classes.addressMobile}>
-              <h4>damaja - studio</h4>
-              <h4>Berlin</h4>
-            <div className={classes.emailMobile}>
-              <a>damaja@gmail.com <SvgArrowFooter/></a>
-            </div>
-
-            <div className={classes.webshopMobile}>
-              <h4>check damaja shop</h4>
-              <a>webshop <SvgArrowFooter/></a>
-            </div>
-          </div>
-         
-
-          
-
-          
-            <div className={classes.socialMobile}>
-    
-              <a>instagram</a>
-              <a>youtube</a>
-              <a>linkedin</a>
-            </div>
-
-
-
-import React, { useRef } from "react";
+/*import React, { useRef } from "react";
 import classes from "../styles/footer.module.css"
 import { useScroll, useTransform, motion } from "framer-motion";
 
