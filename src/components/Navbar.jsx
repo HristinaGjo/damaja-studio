@@ -5,6 +5,58 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import SvgArrowFooter from "./SvgArrowFooter";
 
+
+const Navbar = () => {
+
+    const [navOpen, setNavOpen] = useState(false);
+
+    return ( 
+
+        <div className={classes.nav}>
+            <div className={classes.navContainer}>
+                <div className={classes.navbar}>
+                    <div className={classes.logo}>damaja</div>
+                    <div className={classes.menuToggle} onClick={() => setNavOpen(!navOpen)}>
+                    <div className={navOpen ? classes.hamBoxOpen : classes.hamBox}>
+                            <span className={classes.lineTop + (navOpen ? ` ${classes.spin}` : '')}></span>
+                            <span className={classes.lineBottom + (navOpen ? ` ${classes.spin}` : '')}></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={classes.navOverlay}
+                style={{
+                    top:navOpen ? "0" : "-100%",
+                    transitionDelay: navOpen ? "0s" : "0s",
+                }}
+                
+                ></div>
+
+            </div>
+        </div>
+     );
+}
+ 
+export default Navbar;
+
+
+
+
+
+
+
+
+
+
+
+
+/*import React, { useState } from "react";
+import classes from "../styles/navbar.module.css";
+import { Squeeze as Hamburger } from 'hamburger-react';
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import SvgArrowFooter from "./SvgArrowFooter";
+
 const Navbar = ({ style, onMenuToggle  }) => {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -63,70 +115,7 @@ const Navbar = ({ style, onMenuToggle  }) => {
     );
 }
 
-export default Navbar;
-
-
-
-
-
-
-
-
-            {/*<div className={classes.logo}>
-                <span>damaja</span>
-            </div> */}
-
-           {/* <div className={classes.menu}>
-                <span>menu</span>
-            </div> */}
-
-
-
-
-/*import React from "react";
-import classes from "../styles/navbar.module.css"
-
-
-const Navbar = ({style, className}) => {
-    return ( 
-        <>
-        <div className={`${classes.navbarCtn} ${className}`} style={style}>
-            <div className={classes.logo}>
-                <span>damaja</span>
-            </div>
-
-            <div className={classes.menu}>
-                <span>menu</span>
-            </div>
-            
-        </div>
-        </>
-     );
-}
- 
 export default Navbar; */
 
 
 
-/*import React from "react";
-import classes from "../styles/navbar.module.css"
-
-
-const Navbar = ({className}) => {
-    return ( 
-        <>
-        <div className={`${classes.navbarCtn} ${className}`}>
-            <div className={classes.logo}>
-                <span>damaja</span>
-            </div>
-
-            <div className={classes.menu}>
-                <span>menu</span>
-            </div>
-            
-        </div>
-        </>
-     );
-}
- 
-export default Navbar;*/

@@ -11,7 +11,6 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import Footer from "../components/Footer";
 import SvgArrow from "../components/SvgArrow";
 import SvgArrowFooter from "../components/SvgArrowFooter";
-import transition from "../transition";
 
 
 const HomePage = () => {
@@ -190,4 +189,4 @@ const HomePage = () => {
   );
 };
 
-export default transition(HomePage);
+export default HomePage;

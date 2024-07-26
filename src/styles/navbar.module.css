@@ -1,4 +1,102 @@
-.navbarCtn{
+.nav{
+    position: fixed;
+    z-index: 2;
+    background: red;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    /*background: red;
+    height: 100vh;*/
+}
+
+.menuToggle{
+    cursor: pointer;
+}
+
+.navOverlay{
+    position: fixed;
+    background: red;
+    z-index: -2;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 4em;
+    transition:all 2s cubic-bezier(0.165, 0.84, 0.44, 1)
+}
+
+.hamBox{
+    position: relative;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    padding: 2.4em;
+}
+
+.hamBox:hover {
+    background: #19191b;
+}
+
+.hamBoxOpen {
+    background: #19191b;
+}
+
+
+.lineTop,
+.lineBottom{
+    margin:  0 auto;
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 2px;
+    border-radius: 10px;
+    background: white;
+    left: 0;
+    right: 0;
+    transform: rotate(0deg);
+    transition: all 0.4s;
+}
+
+.lineTop{
+    top: 2.2em;
+}
+
+.lineBottom{
+    bottom: 2.2em;
+}
+
+.lineTop .spin{
+    top: 2.35em;
+    transform: rotate(135deg);
+    background: white;
+}
+
+.lineBottom .spin{
+    top: 2.35em;
+    transform: rotate(225deg);
+    background: white;
+}
+
+
+
+
+
+
+
+
+
+/*.navbarCtn{
     position: sticky;
     display: flex;
     justify-content: end;
@@ -72,12 +170,10 @@
     padding: 10px 0;
     cursor: pointer;
     opacity: 0.2;
-   /* border-bottom: 1px solid black; */
   }
 
   .menuItemHome {
     width: 95vw;
-    /*border-bottom: 1px solid black;*/
   }
 
   .webshop a{
@@ -89,13 +185,6 @@
 
 
 @media (max-width:768px){
-    /*.navbarCtn{
-        width: 100vw;
-        box-sizing: border-box;
-        padding-left: 1em;
-        padding-right:1em ;
-        padding-top: 1em;
-    }*/
 
     .navbarCtn{
         position: sticky;
@@ -151,4 +240,4 @@
         padding: 0;
     }
 
-}
+}*/
