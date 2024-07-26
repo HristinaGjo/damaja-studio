@@ -135,21 +135,68 @@ const HomePage = () => {
             <div  ref={clientsCtnNew}className={classes.clientsCtnNew}>
               
               <div className={classes.damajaClients}>
-                  <h1>damaja clients</h1>
+                  <h1>clients</h1>
               </div> 
 
-              <div className={classes.clientsList}>
+               <div className={classes.clientsList}>
+                <div className={classes.firstCtn}>
+                  <h3>adidas</h3>
+                  <h3>tommy hilfiger</h3>
+                  <h3>circular berlin</h3>
+                </div>
+                <div className={classes.secondCtn}>
+                  <h3>olivia steele</h3>
+                  <h3>i-D</h3>
+                  <h3>vee collective</h3>
+                </div>
+                <div className={classes.thirdCtn}>
+                  <h3>peek & cloppenburg</h3>
+                  <h3>dawn denim</h3>
+                  <h3> ivy oak</h3>
+                </div>
+              </div>
+
+              {/*<div className={classes.clientsList}>
+                  <h3>adidas</h3>
+                  <h3>tommy hilfiger</h3>
+                  <h3>circular berlin</h3>
+                  <h3>olivia steele</h3>
+                  <h3>i-D</h3>
+                  <h3>vee collective</h3>
+                  <h3>peek & cloppenburg</h3>
+                  <h3>dawn denim</h3>
+              </div>*/}
+
+              {/*<div className={classes.clientsList}>
                   <h3>adidas, tommy hilfiger, circular berlin</h3>
                   <h3>olivia steele, i-D, vee collective</h3>
                   <h3>peek & cloppenburg, dawn denim</h3>
-              </div>
+              </div>*/}
 
-              <div className={classes.clientsListMobile}>
+             { /*<div className={classes.clientsListMobile}>
                   <h3>adidas, tommy hilfiger</h3>
                   <h3>circular berlin</h3>
                   <h3>olivia steele, vee collective</h3>
                   <h3>peek & cloppenburg</h3>
                   <h3>i-D, dawn denim</h3>
+              </div>*/}
+
+              <div className={classes.clientsListMobile}>
+                <div className={classes.firstCtnMobile}>
+                  <h3>adidas</h3>
+                  <h3>tommy hilfiger</h3>
+                  <h3>circular berlin</h3>
+                </div>
+                <div className={classes.secondCtnMobile}>
+                  <h3>olivia steele</h3>
+                  <h3>i-D</h3>
+                  <h3>vee collective</h3>
+                </div>
+                <div className={classes.thirdCtnMobile}>
+                  <h3>peek & cloppenburg</h3>
+                  <h3>dawn denim</h3>
+                  <h3> ivy oak</h3>
+                </div>
               </div>
 
               <div className={classes.getInTouch}>
