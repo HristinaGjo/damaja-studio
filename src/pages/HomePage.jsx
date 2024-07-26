@@ -209,7 +209,7 @@ const HomePage = () => {
             <div ref={newsCtn} className={classes.newsCtn}>
                 <div className={classes.text}>
                     <h4>
-                    Hand Embroidery for Clothing: Stitch a Collage Design <br/>
+                    Hand Embroidery for Clothing: <br/> Stitch a Collage Design <br/>
                     </h4>
                     {/*<p>Learn to embroider colorful images onto stretchy garments to upcycle your clothing 
                       into fashionable works of art.</p>*/}

@@ -1,5 +1,7 @@
 import React from "react";
 import classes from "../styles/navbar.module.css"
+import { Squash as Hamburger } from 'hamburger-react'
+
 
 
 const Navbar = ({style}) => {
