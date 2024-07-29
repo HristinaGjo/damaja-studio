@@ -134,9 +134,9 @@ const Footer = () => {
             <Link to="https://www.instagram.com/_damaja_/" target="_blank" rel = "noopener noreferrer">instagram</Link>
             <Link to="https://www.youtube.com/@DamajaHandmade" target="_blank" rel = "noopener noreferrer">youtube</Link>
             <Link to="https://www.linkedin.com/in/stefanija-pejchinovska/?originalSubdomain=de" target="_blank" rel = "noopener noreferrer">linkedIn</Link>
-            <div className={classes.rightsMobile}>
+            {/*<div className={classes.rightsMobile}>
               <p>&copy; 2024 damaja</p>
-           </div>
+           </div>*/}
           </div>
     </div>
   </>
