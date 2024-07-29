@@ -223,6 +223,7 @@
 
 .text p{
     color: #f2f2f2;
+    font-size: 20px;
 }
 
 .text h4{
@@ -414,12 +415,12 @@ img{
     
     .text{
         height: auto;
-        width:65%;
+        width:100%;
         padding: 0;
     }
 
     .textDomestika{
-        width: 50%;
+        width: 30%;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         margin-top: auto;
