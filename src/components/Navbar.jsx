@@ -21,8 +21,8 @@ const Navbar = ({ style, onMenuToggle  }) => {
             <div className="nav-container">
                 <div className="navbar">
                     <div className="logo">damaja</div>
-                    <div className="menu-toggle" onClick={() => handleMenuToggle(!navOpen)}>
-                    <div className={navOpen ? "hamBox hamBoxOpen" : "hamBox"}>
+                    <div className="menu-toggle"  onClick={() => handleMenuToggle(!navOpen)}>
+                        <div className={navOpen ? "hamBox hamBoxOpen" : "hamBox"}>
                             <span className={navOpen ? "lineTop spin" : "lineTop"}></span>
                             <span className={navOpen ? "lineBottom spin" : "lineBottom"}></span>
                         </div>
@@ -86,13 +86,35 @@ const Navbar = ({ style, onMenuToggle  }) => {
                     </ul>
 
                     <div className="nav-footer">
+
+                    <div className="nav-rights"
+                        style={{
+                            bottom:navOpen ? "0" :"-20px",
+                            opacity:navOpen ? "1" : "0",
+                            transitionDelay: navOpen ? "1.2s" : "0s"
+                            }}>
+                            <p>&copy; 2024 damaja</p>
+                        </div>
+
+                        <div className="nav-webshop">
+                            <Link to="https://www.damaja-studio.com/" target="_blank" rel = "noopener noreferrer"
+                            style={{
+                                bottom:navOpen ? "0" :"-20px",
+                                opacity:navOpen ? "1" : "0",
+                                transitionDelay: navOpen ? "1.3s" : "0s"
+                                }}>
+                                    webshop <SvgArrowFooter/>
+                            </Link>
+                        </div>
+
+
                         <div className="nav-social-media"
                             >
                             <Link to="https://www.instagram.com/_damaja_/" target="_blank" rel = "noopener noreferrer"
                             style={{
                                 bottom:navOpen ? "0" :"-20px",
                                 opacity:navOpen ? "1" : "0",
-                                transitionDelay: navOpen ? "1.2s" : "0"
+                                transitionDelay: navOpen ? "1.4s" : "0s"
                                 }}>
                                     instagram
                             </Link>
@@ -100,7 +122,7 @@ const Navbar = ({ style, onMenuToggle  }) => {
                             style={{
                                 bottom:navOpen ? "0" :"-20px",
                                 opacity:navOpen ? "1" : "0",
-                                transitionDelay: navOpen ? "1.3s" : "0"
+                                transitionDelay: navOpen ? "1.5s" : "0s"
                                 }}>
                                     youtube
                                 </Link>
@@ -108,39 +130,63 @@ const Navbar = ({ style, onMenuToggle  }) => {
                             style={{
                                 bottom:navOpen ? "0" :"-20px",
                                 opacity:navOpen ? "1" : "0",
-                                transitionDelay: navOpen ? "1.4s" : "0"
+                                transitionDelay: navOpen ? "1.6s" : "0s"
                                 }}>
                                     linkedIn
                             </Link>
                         </div>
-                        <div className="nav-webshop">
+
+
+                    </div>
+
+                    <div className="nav-footer-mobile">
+
+                    <div className="nav-webshop-mobile">
                             <Link to="https://www.damaja-studio.com/" target="_blank" rel = "noopener noreferrer"
                             style={{
                                 bottom:navOpen ? "0" :"-20px",
                                 opacity:navOpen ? "1" : "0",
-                                transitionDelay: navOpen ? "1.5s" : "0"
+                                transitionDelay: navOpen ? "1.2s" : "0s"
                                 }}>
                                     webshop <SvgArrowFooter/>
                             </Link>
                         </div>
-                        <div className="nav-rights"
+
+                        <div className="nav-social-media-mobile"
+                            >
+                            <Link to="https://www.instagram.com/_damaja_/" target="_blank" rel = "noopener noreferrer"
+                            style={{
+                                bottom:navOpen ? "0" :"-20px",
+                                opacity:navOpen ? "1" : "0",
+                                transitionDelay: navOpen ? "1.3s" : "0s"
+                                }}>
+                                    instagram
+                            </Link>
+                            <Link to="https://www.youtube.com/@DamajaHandmade" target="_blank" rel = "noopener noreferrer"
+                            style={{
+                                bottom:navOpen ? "0" :"-20px",
+                                opacity:navOpen ? "1" : "0",
+                                transitionDelay: navOpen ? "1.4s" : "0s"
+                                }}>
+                                    youtube
+                                </Link>
+                            <Link to="https://www.linkedin.com/in/stefanija-pejchinovska/?originalSubdomain=de" target="_blank" rel = "noopener noreferrer"
+                            style={{
+                                bottom:navOpen ? "0" :"-20px",
+                                opacity:navOpen ? "1" : "0",
+                                transitionDelay: navOpen ? "1.5s" : "0s"
+                                }}>
+                                    linkedIn
+                            </Link>
+                        </div>
+
+                        <div className="nav-rights-mobile"
                         style={{
                             bottom:navOpen ? "0" :"-20px",
                             opacity:navOpen ? "1" : "0",
-                            transitionDelay: navOpen ? "1.6s" : "0"
+                            transitionDelay: navOpen ? "1.6s" : "0s"
                             }}>
                             <p>&copy; 2024 damaja</p>
-                        </div>
-
-                        <div className="nav-webshop-mobile">
-                            <Link to="https://www.damaja-studio.com/" target="_blank" rel = "noopener noreferrer"
-                            style={{
-                                bottom:navOpen ? "0" :"-20px",
-                                opacity:navOpen ? "1" : "0",
-                                transitionDelay: navOpen ? "1.5s" : "0"
-                                }}>
-                                    webshop <SvgArrowFooter/>
-                            </Link>
                         </div>
                     </div>
 
