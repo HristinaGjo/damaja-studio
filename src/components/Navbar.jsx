@@ -131,6 +131,17 @@ const Navbar = ({ style, onMenuToggle  }) => {
                             }}>
                             <p>&copy; 2024 damaja</p>
                         </div>
+
+                        <div className="nav-webshop-mobile">
+                            <Link to="https://www.damaja-studio.com/" target="_blank" rel = "noopener noreferrer"
+                            style={{
+                                bottom:navOpen ? "0" :"-20px",
+                                opacity:navOpen ? "1" : "0",
+                                transitionDelay: navOpen ? "1.5s" : "0"
+                                }}>
+                                    webshop <SvgArrowFooter/>
+                            </Link>
+                        </div>
                     </div>
 
                 </div>
