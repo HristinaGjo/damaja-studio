@@ -11,12 +11,13 @@
     grid-template-columns: repeat(4,1fr);
     box-sizing: border-box;
     padding:2em;
-    max-height: 80vh;
+    height: auto;
 }
 
 .leftCtn{
-    display: grid;
-    grid-template-rows: repeat(2,1fr);
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
 }
 
 .rights h4{
@@ -25,8 +26,7 @@
 }
 
 .rights{
-    position: absolute;
-    bottom: 2em;
+    justify-content: end;
 }
 
 .footerLinksWrap {
@@ -42,10 +42,12 @@
     opacity: 0.2;
 }
 
-.footerLinkWrapHome{
-    display: flex;
-    flex-direction: row;
+.active{
     opacity: 1;
+}
+
+.inactive{
+    opacity: 0.2;
 }
 
 .middleCtn {
@@ -114,15 +116,6 @@
         row-gap: 0;
         gap: 0.5em;
     }
-
-   /* .footerLinkWrap,
-    .footerLinkWrapHome{
-        border-bottom: 1px solid black;
-    }
-
-    .footerLinkWrapHome{
-        border-bottom: 0.5px solid black;
-    } */
 
     .middleCtnMobile{
         display: flex;

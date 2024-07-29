@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import classes from "../styles/footer.module.css"
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import SvgArrowFooter from "./SvgArrowFooter";
 
 const Footer = () => {
+
+  const [activeLink, setActiveLink] = useState("/")
+
+  // Get current location using useLocation from react-router-dom
+  let location =useLocation();
+
+  useEffect (() => {
+    setActiveLink(location.pathname)
+  }, [location])
+
+  const handleSetActiveLink = (link) => {
+    setActiveLink (link);
+  }
 
     return ( 
     <>
@@ -13,39 +26,45 @@ const Footer = () => {
 
           <div className={classes.footerLinksWrap}>
 
-            <div className={classes.footerLinkWrapHome}>
+            <div className={`${classes.footerLinkWrap} ${activeLink === "/" ? classes.active : classes.inactive}`}
+            onClick={() => handleSetActiveLink ("/")}>
               <Link to="/">
                 <h1>home</h1>
               </Link>
             </div>
 
-            <div className={classes.footerLinkWrap}>
-              <Link to="/">
-                <h1>art wear</h1>
+            <div className={`${classes.footerLinkWrap} ${activeLink === "/artwear" ? classes.active : classes.inactive}`}
+            onClick={() => handleSetActiveLink ("artwear")}>
+              <Link to="/artwear">
+                <h1>artwear</h1>
               </Link>
             </div>
 
-            <div className={classes.footerLinkWrap}>
-              <Link to="/">
+            <div className={`${classes.footerLinkWrap} ${activeLink === "/workshops" ? classes.active : classes.inactive}`}
+            onClick={handleSetActiveLink}>
+              <Link to="/workshops">
                 <h1>workshops</h1>
               </Link>
             </div>
 
-            <div className={classes.footerLinkWrap}>
-              <Link to="/">
+            <div className={`${classes.footerLinkWrap} ${activeLink === "/about" ? classes.active : classes.inactive}`}
+            onClick={handleSetActiveLink}>
+              <Link to="/about">
                 <h1>about</h1>
               </Link>
             </div>
 
-            <div className={classes.footerLinkWrap}>
-              <Link to="/">
+            <div className={`${classes.footerLinkWrap} ${activeLink === "/contact" ? classes.active : classes.inactive}`}
+            onClick={handleSetActiveLink}>
+              <Link to="/contact">
                 <h1>contact</h1>
               </Link>
             </div>
+
           </div> 
 
             <div className={classes.rights}>
-              <h4>&copy; 2024 damaja</h4>
+              <h4>&copy; 2024 damaja. all rights reserved</h4>
            </div>
         </div>
 
