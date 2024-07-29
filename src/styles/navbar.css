@@ -2,7 +2,6 @@
     display: none;
 }
 
-
 .nav{
     position: fixed;
     z-index: 2;
@@ -339,62 +338,7 @@ ul.nav-links a{
         opacity: 0;
     }
 
-    .logo{
-        color: transparent;
-    }
-
 }
-
-
-
-    /*
-    .nav-footer-mobile{
-        position: absolute;
-        width: 100%;
-        bottom: 0px;
-        left: 0;
-        box-sizing: border-box;
-        padding: 1.5em;
-        display: flex;
-        flex-direction: column;
-        gap:2em;
-    }
-
-    .nav-webshop-mobile a{
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        gap: 0.5em;
-        align-items: center;
-        bottom: -20px;
-        transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
-        opacity: 0;
-    }
-
-    .nav-social-media-mobile {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5em;
-
-    }
-
-    .nav-social-media-mobile a{
-        position: relative;
-
-        gap: 1em;
-        bottom: -20px;
-        transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
-        opacity: 0;
-    }
-
-    .nav-rights-mobile{
-        position: relative;
-        display: flex;
-        align-items: end;
-        bottom: -20px;
-        transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
-        opacity: 0;
-    }*/
 
 
 

@@ -24,7 +24,6 @@ const HomePage = () => {
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const [navbarColor, setIsNavbarColor] = useState('#141414');
   const [navOpen, setNavOpen] = useState(false);
-  /*const [isMenuOpen, setnavOpen] = useState(false); */// New state to track menu open status
 
   useEffect(() => {
     const handleScroll = () => {
