@@ -307,7 +307,7 @@ ul.nav-links a{
         bottom: 0px;
         left: 0;
         box-sizing: border-box;
-        padding: 1.5em;
+        padding: 1.4em;
     }
 
     .nav-rights-mobile{
@@ -318,7 +318,7 @@ ul.nav-links a{
         position: relative;
         display: flex;
         flex-direction: row;
-        gap: 0.5em;
+        gap: 0.2em;
         align-items: center;
         bottom: -20px;
         transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
@@ -328,7 +328,7 @@ ul.nav-links a{
     .nav-social-media-mobile {
         display: flex;
         flex-direction: row;
-        gap: 0.5em;
+        gap: 0.3em;
     }
 
     .nav-social-media-mobile a{

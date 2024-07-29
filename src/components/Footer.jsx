@@ -45,7 +45,7 @@ const Footer = () => {
           </div> 
 
             <div className={classes.rights}>
-              <h4>&copy; 2024 damaja</h4>
+              <h4>&copy; 2024 damaja. All rights reserved</h4>
            </div>
         </div>
 
@@ -86,7 +86,6 @@ const Footer = () => {
                 <h1>home</h1>
               </Link>
             </div>
-
 
             <div className={classes.footerLinkWrap}>
               <Link to="/">
@@ -131,11 +130,13 @@ const Footer = () => {
         </div>
 
           <div className={classes.socialMobile}>
-            <Link to="https://www.instagram.com/_damaja_/" target="_blank" rel = "noopener noreferrer">instagram</Link>
-            <Link to="https://www.youtube.com/@DamajaHandmade" target="_blank" rel = "noopener noreferrer">youtube</Link>
-            <Link to="https://www.linkedin.com/in/stefanija-pejchinovska/?originalSubdomain=de" target="_blank" rel = "noopener noreferrer">linkedIn</Link>
+              <div className={classes.socialMobileLinks}>
+                <Link to="https://www.instagram.com/_damaja_/" target="_blank" rel = "noopener noreferrer">instagram</Link>
+                <Link to="https://www.youtube.com/@DamajaHandmade" target="_blank" rel = "noopener noreferrer">youtube</Link>
+                <Link to="https://www.linkedin.com/in/stefanija-pejchinovska/?originalSubdomain=de" target="_blank" rel = "noopener noreferrer">linkedIn</Link>
+              </div>
             <div className={classes.rightsMobile}>
-              <p>&copy; 2024 damaja</p>
+              <p>&copy; 2024</p>
            </div>
           </div>
     </div>
