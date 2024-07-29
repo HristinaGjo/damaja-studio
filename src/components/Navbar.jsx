@@ -15,16 +15,20 @@ const Navbar = ({ style, onMenuToggle  }) => {
         onMenuToggle(toggled); // Notify the parent component
     };
 
+    const currentStyle = navOpen ? { color: 'black' } : style;
+    const logoStyle = navOpen ? { visibility: 'hidden' } : { visibility: 'visible' };
+
+
     return ( 
 
-        <div className="nav" style={style}>
+        <div className="nav" >
             <div className="nav-container">
                 <div className="navbar">
-                    <div className="logo">damaja</div>
-                    <div className="menu-toggle"  onClick={() => handleMenuToggle(!navOpen)}>
+                    <div className="logo" style={{...currentStyle, ...logoStyle}}>damaja</div>
+                    <div className="menu-toggle" onClick={() => handleMenuToggle(!navOpen)}>
                         <div className={navOpen ? "hamBox hamBoxOpen" : "hamBox"}>
-                            <span className={navOpen ? "lineTop spin" : "lineTop"}></span>
-                            <span className={navOpen ? "lineBottom spin" : "lineBottom"}></span>
+                            <span className={navOpen ? "lineTop spin" : "lineTop"} style={{ ...style, backgroundColor: currentStyle.color }} ></span>
+                            <span className={navOpen ? "lineBottom spin" : "lineBottom"} style={{ ...style, backgroundColor: currentStyle.color }}></span>
                         </div>
                     </div>
                 </div>
