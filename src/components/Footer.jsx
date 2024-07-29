@@ -100,36 +100,41 @@ const Footer = () => {
 
         <div className={classes.footerLinksWrapMobile}>
 
-            <div className={classes.footerLinkWrapHome}>
+           <div className={`${classes.footerLinkWrap} ${activeLink === "/" ? classes.active : classes.inactive}`}
+            onClick={() => handleSetActiveLink ("/")}>
               <Link to="/">
                 <h1>home</h1>
               </Link>
             </div>
 
-
-            <div className={classes.footerLinkWrap}>
-              <Link to="/">
-                <h1>art wear</h1>
+            <div className={`${classes.footerLinkWrap} ${activeLink === "/artwear" ? classes.active : classes.inactive}`}
+            onClick={() => handleSetActiveLink ("artwear")}>
+              <Link to="/artwear">
+                <h1>artwear</h1>
               </Link>
             </div>
 
-            <div className={classes.footerLinkWrap}>
-              <Link to="/">
+            <div className={`${classes.footerLinkWrap} ${activeLink === "/workshops" ? classes.active : classes.inactive}`}
+            onClick={handleSetActiveLink}>
+              <Link to="/workshops">
                 <h1>workshops</h1>
               </Link>
             </div>
 
-            <div className={classes.footerLinkWrap}>
-              <Link to="/">
+            <div className={`${classes.footerLinkWrap} ${activeLink === "/about" ? classes.active : classes.inactive}`}
+            onClick={handleSetActiveLink}>
+              <Link to="/about">
                 <h1>about</h1>
               </Link>
             </div>
 
-            <div className={classes.footerLinkWrap}>
-              <Link to="/">
+            <div className={`${classes.footerLinkWrap} ${activeLink === "/contact" ? classes.active : classes.inactive}`}
+            onClick={handleSetActiveLink}>
+              <Link to="/contact">
                 <h1>contact</h1>
               </Link>
             </div>
+
         </div> {/*footerLinksWrap*/}
 
         <div className={classes.middleCtnMobile}>
