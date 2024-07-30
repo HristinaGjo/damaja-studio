@@ -6,7 +6,7 @@
 }
 
 .footerCtn{
-    background:var(--pink);
+    background:var(--color-footer);
     display: grid;
     grid-template-columns: repeat(4,1fr);
     box-sizing: border-box;
@@ -112,7 +112,7 @@
         grid-template-rows: repeat(3,1fr);
         box-sizing: border-box;
         padding:1.5em;
-        background: var(--pink);
+        background: var(--color-footer);
         max-height:100vh;
         gap: 4em;
     }
@@ -121,11 +121,6 @@
         display: grid;
         row-gap: 0;
         gap: 0.5em;
-    }
-
-    .footerLinksWrapMobile h1{
-        color: var(--red);
-
     }
 
    /* .footerLinkWrap,
@@ -153,7 +148,7 @@
 
     .addressMobile h4,
     .webshopMobile h4{
-        color: var(--red);
+        color: var(--black-2);
     }
 
     .emailMobile{
@@ -199,7 +194,7 @@
         
     }
 
-    .webshopMobile a,
+    /*.webshopMobile a,
     .emailMobile a,
     .socialMobile a{
         color: var(--red);
@@ -207,7 +202,7 @@
 
     .rightsMobile p{
         color: var(--red);
-    }
+    }*/
 
 
 
