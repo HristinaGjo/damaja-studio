@@ -17,7 +17,7 @@ const Footer = () => {
   const handleSetActiveLink = (link) => {
     setActiveLink (link);
   }
-
+  
     return ( 
     <>
       <div className={classes.footerCtn}>
