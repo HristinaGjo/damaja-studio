@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100vw;
     box-sizing: border-box;
-    padding:6em 2em 2em 2em;
+    padding:10em 2em 2em 2em;
 }
 
 /*.title{
@@ -29,7 +29,7 @@
 
 .close{
     position: fixed;
-    top: 1em;
+    top: 1.5em;
     right: 0.3em;
     width: 50px;
     height: 50px;
@@ -58,10 +58,10 @@
     transform-origin: center;
 }
 
-.textCtn{
+.textDescription{
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 2em;
 }
 
 .text{
@@ -72,14 +72,47 @@
     font-size: 1.5em;
 }
 
+/*.textCtn{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.details span{
+    font-size: 1.5em;
+    text-align: left;
+}*/
+
 .imagesCtn{
     width: 100%;
     margin-top: 4em;
     display: grid;
     /* grid-template-columns: repeat(4,1fr)*/
     grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr));
-    gap: 4em;
+    gap: 8em;
+    margin-bottom: 4em;
 }
+
+/*.firstRowImg{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+}
+
+.imgOne{
+    display: grid;
+    grid-column: 2;
+}
+
+.imgTwo{
+    grid-column: 3;
+}*/
 
 .firstRowImg{
     display: grid;
@@ -87,13 +120,24 @@
     gap: 1em;
 }
 
-.imgFirst{
-    display: grid;
-    grid-column: 2;
+.imgOne{
+    grid-column:2;
 }
 
-.imgSecond{
+.nestedGridFirst{
     grid-column: 3;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5em;
+}
+
+.imgTwo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    z-index: -2;
 }
 
 .secondRowImg{
@@ -102,14 +146,52 @@
     gap: 1em;
 }
 
-.imgThird{
+.imgThree{
     display: grid;
     grid-template-rows: repeat(2,1fr);
     grid-column: 1;
 }
 
-.imgFourth{
+.imgFour{
     grid-column: 3 / span 2;
+}
+
+.thirdRowImg{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+}
+
+.imgFive{
+    grid-column: 1 / span 2;
+}
+
+.fourthRowImg{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+}
+
+.nestedGrid{
+    grid-column: 2;
+    position: relative;
+    /*display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5em;*/
+}
+
+.imgSix{
+    /*grid-row: 1;*/
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+}
+
+.imgSeven{
+    /*position: relative;*/
+    grid-column: 3;
+    width: 100%;
 }
 
 img{
@@ -126,7 +208,7 @@ img{
         flex-direction: column;
         width: 100vw;
         box-sizing: border-box;
-        padding:4em 2em 2em 2em;
+        padding:4em 1.5em 1.5em 1.5em;
     }
 
     .close{
@@ -142,10 +224,6 @@ img{
         height: 2px;
         background-color: black;
         border-radius: 10px;
-    }
-
-    .textCtn{
-        gap: 4em;
     }
 
     .title{
@@ -169,23 +247,52 @@ img{
         margin-top: 4em;
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        gap: 2em;
+        margin-bottom: 4em;
     }
 
     .firstRowImg,
-    .secondRowImg{
+    .secondRowImg,
+    .thirdRowImg,
+    .fourthRowImg{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .nestedGrid{
+        grid-column: 1;
+        position: relative;
+    }
+
+    .nestedGridFirst{
         display: flex;
         flex-direction: column;
     }
+    
+    .imgSix,
+    .imgTwo{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    .imgSeven{
+        grid-row: 2;
+        width: 100%;
+    }
 
-    .imgFirst,
-    .imgSecond,
-    .imgThird,
-    .imgFourth{
+    .imgOne,
+    .imgTwo,
+    .imgThree,
+    .imgFour,
+    .imgFive,
+    .ingSix,
+    .imgSeven{
         display: flex;
         flex-direction: column;
     }
-
 
 }
 

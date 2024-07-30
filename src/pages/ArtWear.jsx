@@ -17,6 +17,8 @@ const ArtWear = () => {
         <>
         <div className={classes.pageCtn}>
             <div className={classes.textCtn}>
+        
+            <div className={classes.textDescription}>
                 <div className={classes.title}>
                     <h1>Art Wear</h1>
                     <button className={classes.button} onClick={handleClick}>
@@ -26,33 +28,71 @@ const ArtWear = () => {
                         </div>
                     </button>
                 </div>
+
                 <div className={classes.text}>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Aenean id ligula non enim posuere viverra. 
                         Nullam fermentum nulla vitae accumsan pharetra. Etiam ac sodales turpis. 
                         Vivamus sit amet mi ut sem vehicula fringilla eget mollis metus. 
                         Morbi nec purus sodales, semper diam nec, cursus purus. Curabitur tristique congue accumsan. 
-                        Praesent urna metus, porta ut dictum vitae, aliquam vitae nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Praesent urna metus, porta ut dictum vitae, aliquam vitae nisi. Lorem ipsum dolor sit amet, consectetur adipiscing.
                     </span>
                 </div>
             </div>
+            
+               {/* <div className={classes.details}>
+                    <span>design: damaja</span>
+                    <span>year: damaja</span>
+                    <span>material: damaja</span>
+                </div>*/}
+            </div>
+
+
 
             <div className={classes.imagesCtn}>
 
-                <div className={classes.firstRowImg}>
-                    <div className={classes.imgFirst}>
+            <div className={classes.firstRowImg}>
+                    <div className={classes.imgOne} >
                         <img src={placeHolder} alt="Img not available" />
                     </div>
-                    <div className={classes.imgSecond} >
+                    <div className={classes.nestedGridFirst}>
+                        <div className={classes.imgTwo} >
+                            <img src={placeHolder} alt="Img not available" />
+                        </div>
+                    </div>
+                </div>
+
+                {/*<div className={classes.firstRowImg}>
+                    <div className={classes.imgOne}>
+                        <img src={placeHolder} alt="Img not available" />
+                    </div>
+                    <div className={classes.imgTwo} >
+                        <img src={placeHolder} alt="Img not available" />
+                    </div>
+                </div>*/}
+
+                <div className={classes.secondRowImg}>
+                    <div className={classes.imgThree}>
+                        <img src={placeHolder} alt="Img not available" />
+                    </div>
+                    <div className={classes.imgFour} >
                         <img src={placeHolder} alt="Img not available" />
                     </div>
                 </div>
 
-                <div className={classes.secondRowImg}>
-                    <div className={classes.imgThird}>
+                <div className={classes.thirdRowImg}>
+                    <div className={classes.imgFive}>
                         <img src={placeHolder} alt="Img not available" />
                     </div>
-                    <div className={classes.imgFourth} >
+                </div>
+
+                <div className={classes.fourthRowImg}>
+                    <div className={classes.nestedGrid}>
+                        <div className={classes.imgSix} >
+                            <img src={placeHolder} alt="Img not available" />
+                        </div>
+                    </div>
+                    <div className={classes.imgSeven} >
                         <img src={placeHolder} alt="Img not available" />
                     </div>
                 </div>
