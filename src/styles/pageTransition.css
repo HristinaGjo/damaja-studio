@@ -1,0 +1,12 @@
+/* PageTransition.css */
+.page-transition {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.page-transition.fadeIn {
+    opacity: 1;
+}
+
+.page-transition.fadeOut {
+    opacity: 0;
+}

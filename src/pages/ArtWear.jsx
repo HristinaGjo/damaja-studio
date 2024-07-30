@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "../styles/artWear.module.css"
 import Footer from "../components/Footer";
-import {useNavigate } from "react-router-dom";
+import {useLocation, useNavigate } from "react-router-dom";
 import placeHolder from "../assets/domestika.webp"
+import transition from "../transition";
 
 
 const ArtWear = () => {
 
     const navigate = useNavigate();
-    
+
     const handleClick = () => {
         navigate("/")
     };
@@ -98,9 +99,10 @@ const ArtWear = () => {
                 </div>
 
             </div>
+            <Footer /> 
         
          </div>
-         <Footer /> 
+
         </>
      );
 }

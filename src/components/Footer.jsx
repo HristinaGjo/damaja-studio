@@ -7,12 +7,12 @@ const Footer = () => {
 
   const [activeLink, setActiveLink] = useState("/")
 
-  // Get current location using useLocation from react-router-dom
   let location =useLocation();
 
-  useEffect (() => {
-    setActiveLink(location.pathname)
-  }, [location])
+  useEffect(() => {
+    setActiveLink(location.pathname);
+    window.scrollTo(0, 0); // Scroll to top when location changes
+  }, [location]);
 
   const handleSetActiveLink = (link) => {
     setActiveLink (link);

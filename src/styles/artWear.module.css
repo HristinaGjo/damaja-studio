@@ -3,8 +3,9 @@
     flex-direction: column;
     width: 100vw;
     box-sizing: border-box;
-    padding:8em 2em 2em 2em;
+    padding-top:8em;
 }
+
 
 /*.title{
     display: grid;
@@ -40,7 +41,7 @@
 .lineBottom{
     position: absolute;
     width: 60px;
-    height: 2px;
+    height: 1px;
     background-color: var(--red);
     border-radius: 10px;
 }
@@ -63,6 +64,7 @@
     display: flex;
     flex-direction: column;
     gap: 2em;
+    padding:2em;
 }
 
 .text{
@@ -103,6 +105,7 @@
     grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr));
     gap: 8em;
     margin-bottom: 8em;
+    padding:2em;
 }
 
 /*.firstRowImg{
@@ -214,7 +217,7 @@ img{
         flex-direction: column;
         width: 100vw;
         box-sizing: border-box;
-        padding:4em 1.5em 1.5em 1.5em;
+        padding-top:4em;
     }
 
     .close{
@@ -231,6 +234,10 @@ img{
         height: 1px;
         background-color:var(--red);
         border-radius: 10px;
+    }
+
+    .textDescription{
+        padding: 0 1.5em 0 1.5em ;
     }
 
     .title{
@@ -258,6 +265,8 @@ img{
         flex-direction: column;
         gap: 2em;
         margin-bottom: 4em;
+        box-sizing: border-box;
+        padding: 1.5em;
     }
 
     .firstRowImg,

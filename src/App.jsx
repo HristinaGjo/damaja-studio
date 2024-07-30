@@ -7,6 +7,7 @@ import ArtWear from "./pages/ArtWear";
 import Workshops from "./pages/Workshops"
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import PageTransition from "./components/PageTransition";
 
 
 function App() {
