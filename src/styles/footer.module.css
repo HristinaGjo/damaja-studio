@@ -156,6 +156,11 @@
         gap: 0.5em;
     }
 
+    .socialMobile{
+        display: flex;
+        flex-direction: row;
+    }
+
     /*.socialMobile{
         display: flex;
         flex-direction: column;

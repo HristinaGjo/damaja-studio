@@ -154,15 +154,15 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className={classes.socialMobile}>
+          <div className={classes.socialMobile}>
               <div className={classes.socialMobileLinks}>
                 <Link to="https://www.instagram.com/_damaja_/" target="_blank" rel = "noopener noreferrer">instagram</Link>
                 <Link to="https://www.youtube.com/@DamajaHandmade" target="_blank" rel = "noopener noreferrer">youtube</Link>
                 <Link to="https://www.linkedin.com/in/stefanija-pejchinovska/?originalSubdomain=de" target="_blank" rel = "noopener noreferrer">linkedIn</Link>
               </div>
-            <div className={classes.rightsMobile}>
-              <p>&copy; 2024</p>
-           </div>
+              <div className={classes.rightsMobile}>
+                <p>&copy; 2024</p>
+              </div>
           </div>
     </div>
   </>
