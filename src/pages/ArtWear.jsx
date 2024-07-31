@@ -6,6 +6,7 @@ import placeHolder from "../assets/domestika.webp"
 import transition from "../transition";
 import domestikaImg from "../assets/domestika.webp";
 import SvgArrow from "../components/SvgArrow";
+import LazyLoad from "react-lazyload";
 
 
 const ArtWear = () => {
@@ -73,11 +74,15 @@ const ArtWear = () => {
 
             <div className={classes.firstRowImg}>
                     <div className={classes.imgOne} >
-                        <img src={placeHolder} alt="Img not available" />
+                        <LazyLoad>
+                            <img src={placeHolder} alt="Img not available" />
+                        </LazyLoad>
                     </div>
                     <div className={classes.nestedGridFirst}>
                         <div className={classes.imgTwo} >
-                            <img src={placeHolder} alt="Img not available" />
+                            <LazyLoad>
+                                <img src={placeHolder} alt="Img not available" />
+                            </LazyLoad>
                         </div>
                     </div>
                 </div>
@@ -93,27 +98,37 @@ const ArtWear = () => {
 
                 <div className={classes.secondRowImg}>
                     <div className={classes.imgThree}>
-                        <img src={placeHolder} alt="Img not available" />
+                        <LazyLoad>
+                            <img src={placeHolder} alt="Img not available" />
+                        </LazyLoad>
                     </div>
                     <div className={classes.imgFour} >
-                        <img src={placeHolder} alt="Img not available" />
+                        <LazyLoad>
+                            <img src={placeHolder} alt="Img not available" />
+                        </LazyLoad>
                     </div>
                 </div>
 
                 <div className={classes.thirdRowImg}>
                     <div className={classes.imgFive}>
-                        <img src={placeHolder} alt="Img not available" />
+                        <LazyLoad>
+                            <img src={placeHolder} alt="Img not available" />
+                        </LazyLoad>
                     </div>
                 </div>
 
                 <div className={classes.fourthRowImg}>
                     <div className={classes.nestedGrid}>
                         <div className={classes.imgSix} >
-                            <img src={placeHolder} alt="Img not available" />
+                            <LazyLoad>
+                                <img src={placeHolder} alt="Img not available" />
+                            </LazyLoad>
                         </div>
                     </div>
                     <div className={classes.imgSeven} >
-                        <img src={placeHolder} alt="Img not available" />
+                        <LazyLoad>
+                            <img src={placeHolder} alt="Img not available" />
+                        </LazyLoad>
                     </div>
                 </div>
             </div>

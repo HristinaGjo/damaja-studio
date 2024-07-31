@@ -7,7 +7,7 @@ import firstRowImg from "../assets/domestika.webp";
 import secondRowImg from "../assets/secondRow.webp";
 import thirdRowImg from "../assets/domestika.webp";
 import domestikaImg from "../assets/domestika.webp";
-import { useScroll, useTransform, motion } from "framer-motion";
+/*import { useScroll, useTransform, motion } from "framer-motion";*/
 import Footer from "../components/Footer";
 import SvgArrow from "../components/SvgArrow";
 import SvgArrowFooter from "../components/SvgArrowFooter";
@@ -16,7 +16,7 @@ import { Link, useLocation } from "react-router-dom";
 
 
 const HomePage = () => {
-  const { scrollY } = useScroll();
+  /*const { scrollY } = useScroll();*/
   const heroRef = useRef(null);
 
   const projectsCtn = useRef(null);

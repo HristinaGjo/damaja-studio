@@ -57,9 +57,9 @@
     background:transparent;
 }
 
-.hamBox .lineTop, .hamBox .lineBottom {
-    background-color: inherit; /* Ensure it inherits the color */
-}
+/*.hamBox .lineTop, .hamBox .lineBottom {
+    background-color: inherit;
+}*/
 
 
 .lineTop,
@@ -75,6 +75,7 @@
     right: 0;
     transform: rotate(0deg);
     transition: all 0.4s;
+    z-index: 1;
 }
 
 

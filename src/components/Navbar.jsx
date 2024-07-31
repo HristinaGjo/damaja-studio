@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import SvgArrowFooter from "./SvgArrowFooter";
 
 
-const Navbar = ({ style, onMenuToggle  }) => {
+const Navbar = ({ style={}, onMenuToggle  }) => {
 
     const [navOpen, setNavOpen] = useState(false);
 
