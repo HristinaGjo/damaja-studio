@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100vw;
     box-sizing: border-box;
-    padding-top:6em;
+    padding-top:4em;
 }
 
 
@@ -20,8 +20,8 @@
 .close{
     /*position: fixed;*/
     position: absolute;
-    top: 1.5em;
-    right: 0.3em;
+    top: 1.2em;
+    right: 0.6em;
     width: 50px;
     height: 50px;
 }
@@ -29,7 +29,7 @@
 .lineTop,
 .lineBottom{
     position: absolute;
-    width: 60px;
+    width: 80px;
     height: 1px;
     background-color: var(--red);
     border-radius: 10px;

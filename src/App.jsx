@@ -8,6 +8,7 @@ import Workshops from "./pages/Workshops"
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import PageTransition from "./components/PageTransition";
+import ProjectDetails from "./pages/ProjectsDetails";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Route path="/workshops" element={<Workshops />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/projects/:projectId" element={<ProjectDetails />} />
     </Routes>
 
   </>

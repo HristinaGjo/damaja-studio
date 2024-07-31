@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 import SvgArrow from "../components/SvgArrow";
 import SvgArrowFooter from "../components/SvgArrowFooter";
 import transition from "../transition";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 
 const HomePage = () => {
@@ -112,17 +112,20 @@ const HomePage = () => {
         </motion.div>
 
         <div ref={projectsCtn} className={classes.projectsCtn}>
+        <Link to="/projects/1">
           <motion.div 
             style={{ y: window.innerWidth <= 768 ? smMobile : sm }} 
             className={classes.firstRow}
           >
-            <img src={firstRowImg} alt="Img not available" className={classes.firstRowImage} />
+            <img src={firstRowImg} alt="Img not available" className={classes.firstRowImage} /> 
             <div className={classes.projectName}>
               <span className={classes.span}>adidas</span>
               <span className={classes.spanMore}>more +</span>
             </div>
           </motion.div>
+          </Link>
 
+          <Link to="/projects/2">
           <motion.div 
             style={{ y: window.innerWidth <= 768 ? smMobile : md }}  
             className={classes.secondRow}
@@ -133,7 +136,9 @@ const HomePage = () => {
               <span className={classes.spanMore}>more +</span>
             </div>
           </motion.div>
+          </Link>
 
+          <Link to="/projects/3">
           <motion.div 
             style={{ y: window.innerWidth <= 768 ? smMobile : lg }} 
             className={classes.thirdRow}
@@ -144,6 +149,7 @@ const HomePage = () => {
               <span className={classes.spanMore}>more +</span>
             </div>
           </motion.div>
+          </Link>
         </div>
 
         <div className={classes.clients}>
