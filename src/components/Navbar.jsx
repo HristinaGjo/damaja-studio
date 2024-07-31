@@ -39,49 +39,28 @@ const Navbar = ({ style, onMenuToggle  }) => {
                 >
                     <ul className="nav-links">
                         <li className="nav-item-home">
-                            <Link to='/'  onClick={() => setNavOpen(!navOpen)}
-                            style={{
-                                top:navOpen ? "0" : "120px",
-                                transitionDelay:navOpen ? "0.8s" : "0s",
-
-                            }}>
+                            <Link to='/'  onClick={() => setNavOpen(!navOpen)}>
                                 <h1>home</h1>
                             </Link>
                             <div className="nav-item-wrapper"></div>
                         </li>
                         <li className="nav-item">
-                            <Link to='/artwear' onClick={() => setNavOpen(!navOpen)}
-                             style={{
-                                top:navOpen ? "0" : "120px",
-                                transitionDelay:navOpen ? "0.9s" : "0s",
-                            }}>
+                            <Link to='/artwear' onClick={() => setNavOpen(!navOpen)}>
                                 <h1>art wear</h1></Link>
                             <div className="nav-item-wrapper"></div>
                         </li>
                         <li className="nav-item">
-                            <Link to='/workshops' onClick={() => setNavOpen(!navOpen)}
-                                style={{
-                                top:navOpen ? "0" : "120px",
-                                transitionDelay:navOpen ? "1s" : "0s",
-                            }}>
+                            <Link to='/workshops' onClick={() => setNavOpen(!navOpen)}>
                                 <h1>workshops</h1></Link>
                             <div className="nav-item-wrapper"></div>
                         </li>
                         <li className="nav-item">
-                            <Link to='/about' onClick={() => setNavOpen(!navOpen)}
-                            style={{
-                                top:navOpen ? "0" : "120px",
-                                transitionDelay:navOpen ? "1.1s" : "0s",
-                            }}>
+                            <Link to='/about' onClick={() => setNavOpen(!navOpen)}>
                                 <h1>about</h1></Link>
                             <div className="nav-item-wrapper"></div>
                         </li>
                         <li className="nav-item">
-                            <Link to='/contact' onClick={() => setNavOpen(!navOpen)}
-                            style={{
-                                top:navOpen ? "0" : "120px",
-                                transitionDelay:navOpen ? "1.2s" : "0s",
-                            }}>
+                            <Link to='/contact' onClick={() => setNavOpen(!navOpen)}>
                                 <h1>contact</h1></Link>
                             <div className="nav-item-wrapper"></div>
                         </li>
@@ -89,22 +68,12 @@ const Navbar = ({ style, onMenuToggle  }) => {
 
                     <div className="nav-footer">
 
-                    <div className="nav-rights"
-                        style={{
-                            bottom:navOpen ? "0" :"-20px",
-                            opacity:navOpen ? "1" : "0",
-                            transitionDelay: navOpen ? "1.2s" : "0s"
-                            }}>
+                    <div className="nav-rights">
                             <p>&copy; 2024 damaja</p>
                         </div>
 
                         <div className="nav-webshop">
-                            <Link to="https://www.damaja-studio.com/" target="_blank" rel = "noopener noreferrer"
-                            style={{
-                                bottom:navOpen ? "0" :"-20px",
-                                opacity:navOpen ? "1" : "0",
-                                transitionDelay: navOpen ? "1.3s" : "0s"
-                                }}>
+                            <Link to="https://www.damaja-studio.com/" target="_blank" rel = "noopener noreferrer">
                                     webshop <SvgArrowFooter/>
                             </Link>
                         </div>
@@ -112,28 +81,13 @@ const Navbar = ({ style, onMenuToggle  }) => {
 
                         <div className="nav-social-media"
                             >
-                            <Link to="https://www.instagram.com/_damaja_/" target="_blank" rel = "noopener noreferrer"
-                            style={{
-                                bottom:navOpen ? "0" :"-20px",
-                                opacity:navOpen ? "1" : "0",
-                                transitionDelay: navOpen ? "1.4s" : "0s"
-                                }}>
+                            <Link to="https://www.instagram.com/_damaja_/" target="_blank" rel = "noopener noreferrer">
                                     instagram
                             </Link>
-                            <Link to="https://www.youtube.com/@DamajaHandmade" target="_blank" rel = "noopener noreferrer"
-                            style={{
-                                bottom:navOpen ? "0" :"-20px",
-                                opacity:navOpen ? "1" : "0",
-                                transitionDelay: navOpen ? "1.5s" : "0s"
-                                }}>
+                            <Link to="https://www.youtube.com/@DamajaHandmade" target="_blank" rel = "noopener noreferrer">
                                     youtube
                                 </Link>
-                            <Link to="https://www.linkedin.com/in/stefanija-pejchinovska/?originalSubdomain=de" target="_blank" rel = "noopener noreferrer"
-                            style={{
-                                bottom:navOpen ? "0" :"-20px",
-                                opacity:navOpen ? "1" : "0",
-                                transitionDelay: navOpen ? "1.6s" : "0s"
-                                }}>
+                            <Link to="https://www.linkedin.com/in/stefanija-pejchinovska/?originalSubdomain=de" target="_blank" rel = "noopener noreferrer">
                                     linkedIn
                             </Link>
                         </div>
@@ -144,50 +98,25 @@ const Navbar = ({ style, onMenuToggle  }) => {
                     <div className="nav-footer-mobile">
 
                     <div className="nav-webshop-mobile">
-                            <Link to="https://www.damaja-studio.com/" target="_blank" rel = "noopener noreferrer"
-                            style={{
-                                bottom:navOpen ? "0" :"-20px",
-                                opacity:navOpen ? "1" : "0",
-                                transitionDelay: navOpen ? "1.2s" : "0s"
-                                }}>
+                            <Link to="https://www.damaja-studio.com/" target="_blank" rel = "noopener noreferrer">
                                     webshop <SvgArrowFooter/>
                             </Link>
                         </div>
 
                         <div className="nav-social-media-mobile"
                             >
-                            <Link to="https://www.instagram.com/_damaja_/" target="_blank" rel = "noopener noreferrer"
-                            style={{
-                                bottom:navOpen ? "0" :"-20px",
-                                opacity:navOpen ? "1" : "0",
-                                transitionDelay: navOpen ? "1.3s" : "0s"
-                                }}>
+                            <Link to="https://www.instagram.com/_damaja_/" target="_blank" rel = "noopener noreferrer">
                                     instagram
                             </Link>
-                            <Link to="https://www.youtube.com/@DamajaHandmade" target="_blank" rel = "noopener noreferrer"
-                            style={{
-                                bottom:navOpen ? "0" :"-20px",
-                                opacity:navOpen ? "1" : "0",
-                                transitionDelay: navOpen ? "1.4s" : "0s"
-                                }}>
+                            <Link to="https://www.youtube.com/@DamajaHandmade" target="_blank" rel = "noopener noreferrer">
                                     youtube
                                 </Link>
-                            <Link to="https://www.linkedin.com/in/stefanija-pejchinovska/?originalSubdomain=de" target="_blank" rel = "noopener noreferrer"
-                            style={{
-                                bottom:navOpen ? "0" :"-20px",
-                                opacity:navOpen ? "1" : "0",
-                                transitionDelay: navOpen ? "1.5s" : "0s"
-                                }}>
+                            <Link to="https://www.linkedin.com/in/stefanija-pejchinovska/?originalSubdomain=de" target="_blank" rel = "noopener noreferrer">
                                     linkedIn
                             </Link>
                         </div>
 
-                        <div className="nav-rights-mobile"
-                        style={{
-                            bottom:navOpen ? "0" :"-20px",
-                            opacity:navOpen ? "1" : "0",
-                            transitionDelay: navOpen ? "1.6s" : "0s"
-                            }}>
+                        <div className="nav-rights-mobile">
                             <p>&copy; 2024 damaja</p>
                         </div>
                     </div>
