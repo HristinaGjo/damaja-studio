@@ -22,14 +22,12 @@ const HomePage = () => {
   const projectsCtn = useRef(null);
   const newsCtn = useRef(null);
   const clientsCtnNew = useRef(null);
+  const location = useLocation ();
 
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const [navbarColor, setIsNavbarColor] = useState('#141414');
   const [navOpen, setNavOpen] = useState(false);
-
   const [loading, setLoading] = useState(true);
-  const location = useLocation();
-
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -40,9 +38,9 @@ const HomePage = () => {
     return () => clearTimeout(timer);
   }, [location]);
 
+
   useEffect(() => {
     const handleScroll = () => {
-
       if (!newsCtn.current || !clientsCtnNew.current) return;
       const newsRect = newsCtn.current.getBoundingClientRect();
       const clientsRect = clientsCtnNew.current.getBoundingClientRect();
