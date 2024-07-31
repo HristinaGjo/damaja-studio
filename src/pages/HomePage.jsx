@@ -72,7 +72,7 @@ const HomePage = () => {
     }
   }, [navOpen]); // Add isMenuOpen to the dependency array
 
-  const heroHeight = useTransform(scrollY, [0, 600], ['90vh', '70vh']);
+  /*const heroHeight = useTransform(scrollY, [0, 600], ['90vh', '70vh']);
   const heroHeightMobile = useTransform(scrollY, [0, 600], ['80vh', '80vh']);
 
   const { scrollYProgress } = useScroll({
@@ -83,7 +83,7 @@ const HomePage = () => {
   const sm = useTransform(scrollYProgress, [0, 1], [0, -50]);
   const smMobile = useTransform(scrollYProgress, [0, 1], [0, -50]);
   const md = useTransform(scrollYProgress, [0, 1], [0, -150]);
-  const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);
+  const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);*/
 
 
   if (loading) {
@@ -100,55 +100,41 @@ const HomePage = () => {
     <>
       {isNavbarVisible && <Navbar style={{color:navbarColor}} onMenuToggle={setNavOpen} />}
       <div className={classes.pageCtn}>
-        <motion.div
-          ref={heroRef}
-          style={{ 
-            height: window.innerWidth <= 768 ? heroHeightMobile : heroHeight,
-          }}
-          className={classes.heroCtn}
-        >
+        <div className={classes.heroCtn}>
           <img src={heroImg} alt="Img not available" className={classes.heroImage} />
           <img src={heroImgMobile} alt="Img not available" className={classes.heroImageMobile} />
-        </motion.div>
+        </div>
 
-        <div ref={projectsCtn} className={classes.projectsCtn}>
-        <Link to="/projects/1">
-          <motion.div 
-            style={{ y: window.innerWidth <= 768 ? smMobile : sm }} 
-            className={classes.firstRow}
-          >
+        <div className={classes.projectsCtn}>
+
+        <Link to="/projects/adidas">
+          <div className={classes.firstRow}>
             <img src={firstRowImg} alt="Img not available" className={classes.firstRowImage} /> 
             <div className={classes.projectName}>
               <span className={classes.span}>adidas</span>
               <span className={classes.spanMore}>more +</span>
             </div>
-          </motion.div>
+          </div>
           </Link>
 
-          <Link to="/projects/2">
-          <motion.div 
-            style={{ y: window.innerWidth <= 768 ? smMobile : md }}  
-            className={classes.secondRow}
-          >
+          <Link to="/projects/project2">
+          <div className={classes.secondRow}>
             <img src={secondRowImg} alt="Img not available" className={classes.secondRowImage} />
             <div className={classes.secondProjectName}>
               <span className={classes.span}>adidas</span>
               <span className={classes.spanMore}>more +</span>
             </div>
-          </motion.div>
+          </div>
           </Link>
 
-          <Link to="/projects/3">
-          <motion.div 
-            style={{ y: window.innerWidth <= 768 ? smMobile : lg }} 
-            className={classes.thirdRow}
-          >
+          <Link to="/projects/wallart">
+          <div className={classes.thirdRow}>
             <img src={thirdRowImg} alt="Img not available" className={classes.thirdRowImage} />
             <div className={classes.thirdProjectName}>
               <span className={classes.span}>wall art</span>
               <span className={classes.spanMore}>more +</span>
             </div>
-          </motion.div>
+          </div>
           </Link>
         </div>
 

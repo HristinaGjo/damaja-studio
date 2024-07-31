@@ -4,6 +4,8 @@ import Footer from "../components/Footer";
 import {useLocation, useNavigate } from "react-router-dom";
 import placeHolder from "../assets/domestika.webp"
 import transition from "../transition";
+import domestikaImg from "../assets/domestika.webp";
+import SvgArrow from "../components/SvgArrow";
 
 
 const ArtWear = () => {
@@ -17,7 +19,7 @@ const ArtWear = () => {
         const timer = setTimeout(() => {
           window.scrollTo(0, 0);
           setLoading(false);
-        }, 200); // Adjust the timeout duration as needed
+        }, 200);
     
         return () => clearTimeout(timer);
       }, [location]);
@@ -28,19 +30,7 @@ const ArtWear = () => {
 
       const handleClick = () => {
         navigate("/")
-    };
-
-
-
-    /*useEffect (() =>{
-        window.scrollTo(0,0)
-    }, [location])*/
-
-    /*useEffect(() => {
-    if (location.pathname !== '/artwear') {
-        window.scrollTo(0, 0);
-    }
-}, [location.pathname]);*/
+      };
 
 
     return ( 
@@ -50,7 +40,7 @@ const ArtWear = () => {
         
             <div className={classes.textDescription}>
                 <div className={classes.title}>
-                    <h1>Art Wear</h1>
+                    <h1>art wear</h1>
                     <button className={classes.button} onClick={handleClick}>
                         <div className={classes.close}>
                             <div className={classes.lineTop}></div>
@@ -126,12 +116,24 @@ const ArtWear = () => {
                         <img src={placeHolder} alt="Img not available" />
                     </div>
                 </div>
-
             </div>
-            <Footer /> 
-        
-         </div>
 
+           {/* <div className={classes.newsCtn}>
+                    <div className={classes.text}>
+                        <h4>
+                        Hand Embroidery for Clothing: <br/> Stitch a Collage Design <br/>
+                        </h4>
+                        <div className={classes.textDomestika}>
+                            <p>course</p>
+                            <SvgArrow />
+                        </div>
+                    </div>
+                    <div className={classes.imageCtn}>
+                        <img src={domestikaImg} alt="Img not available" className={classes.image} />
+                    </div>
+                </div>*/}
+            <Footer /> 
+         </div>
         </>
      );
 }

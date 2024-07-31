@@ -171,7 +171,7 @@ a{
   :root {
     --font-size-base: 16px;  /* Consistent base font size for larger screens */
     --font-size-h1: calc(var(--font-size-base) * 5); /* 64px */
-    --font-size-h2: calc(var(--font-size-base) * 4); /* 56px */
+    --font-size-h2: calc(var(--font-size-base) * 4.5); /* 56px */
     --font-size-h3: calc(var(--font-size-base) * 2.5); /* 32px */
     --font-size-h4: 1.75rem; /* 14px */
     --font-size-p: var(--font-size-base); /* 16px */

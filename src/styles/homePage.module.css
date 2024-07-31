@@ -1,88 +1,3 @@
-/*.firstRow{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin-top: 2em;
-    gap: 1em;
-}
-
-.firstRowImage{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    grid-column: 2;
-}
-
-.projectName{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-column: 2;
-    width: 100%;
-    justify-content: space-between;
-    border-top: 0.5px solid var(--indian-red);
-}
-
-.span{
-    color: var(--indian-red);
-    margin-top: 0.5em;
-}
-
-.spanMore{
-    display: flex;
-    justify-content: end;
-    color: var(--indian-red);
-    margin-top: 0.5em;
-}
-
-.secondRow{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin-top: 10em;
-    gap: 1em;
-}
-
-.secondRowImage{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    grid-column: 1;
-}
-
-.secondProjectName{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-column: 1;
-    width: 100%;
-    justify-content: space-between;
-    border-top: 0.5px solid var(--indian-red);
-}
-
-.thirdRow{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin-top: 10em;
-    gap: 1em;
-}
-
-.thirdRowImage{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    grid-column: 2;
-}
-
-.thirdProjectName{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-column: 2;
-    width: 100%;
-    justify-content: space-between;
-    border-top: 0.5px solid var(--indian-red);
-}*/
-
-
 .pageCtn{
     position: relative;
     overflow-x: hidden;
@@ -100,7 +15,7 @@
     position: relative;
     width: 100vw;
     top: 0;
-    height: 90vh; 
+    height: 100vh; 
     position: sticky; 
 }
 
@@ -123,6 +38,8 @@
     box-sizing: border-box;
     padding: 0 2em;
     overflow: auto;
+    margin-top: 4em;
+    margin-bottom: 4em;
 }
 
 .firstRow{
@@ -210,7 +127,6 @@
 }
 
 
-
 .clientsListMobile{
     display: none;
 }
@@ -295,11 +211,11 @@
     height: 70vh;
     background: black;
     overflow: hidden;
+    padding:2em;
 }
 
 .text{
     box-sizing: border-box;
-    padding:2em;
     width: 60%;
 }
 
@@ -325,7 +241,6 @@
 
 .imageCtn{
     box-sizing: border-box;
-    padding: 1em;
     grid-column: 2;
     width: 100%;
     height: 100%;
