@@ -63,7 +63,7 @@ const HomePage = () => {
         }
       }
     };
-
+    
     window.addEventListener("scroll", handleScroll);
     handleScroll();
 
