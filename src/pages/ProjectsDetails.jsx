@@ -36,8 +36,8 @@ const ProjectDetails = () => {
     };
 
     const currentIndex = projectOrder.indexOf(projectId);
-    const nextProjectId = projectOrder[(currentIndex + 1) % projectOrder.length]
-    const previousProjectId = projectOrder[(currentIndex - 1) % projectOrder.length]
+    const nextProjectId = projectOrder[currentIndex + 1]
+    const previousProjectId = projectOrder[currentIndex - 1]
 
     return ( 
         <>
@@ -126,16 +126,20 @@ const ProjectDetails = () => {
             </div>
 
             <div className={classes.nextProjectCtn}>
+                {previousProjectId && (
                     <div className={classes.previous}>
                         <Link to={`/projects/${previousProjectId}`}>
                         <h2>prev</h2>
                         </Link>
                     </div>
-                    <div className={classes.next}>
-                        <Link to={`/projects/${nextProjectId}`}>
+                    )}
+                    {nextProjectId && (
+                
+                        <Link to={`/projects/${nextProjectId}`} className={classes.next}>
                         <h2>next</h2>
                         </Link>
-                    </div>
+               
+                    )}
                 </div>
             <Footer /> 
          </div>

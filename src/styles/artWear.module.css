@@ -223,8 +223,20 @@ img{
     padding: 2em;
 }
 
-.nextProjectCtn h2{
-    opacity: 0.5;
+.nextProjectCtn .previous,
+.nextProjectCtn .next {
+  position: absolute;
+  transform: translateY(-100%); 
+  opacity: 0.5;
+}
+
+
+.nextProjectCtn .previous {
+  left: 2em; 
+}
+
+.nextProjectCtn .next {
+  right: 2em; 
 }
 
 
