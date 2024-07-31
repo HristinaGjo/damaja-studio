@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import classes from "../styles/artWear.module.css"
 import Footer from "../components/Footer";
 import {useLocation, useNavigate } from "react-router-dom";
@@ -9,10 +9,39 @@ import transition from "../transition";
 const ArtWear = () => {
 
     const navigate = useNavigate();
+    const location = useLocation ();
+    const [loading, setLoading] = useState(true);
 
-    const handleClick = () => {
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+          window.scrollTo(0, 0);
+          setLoading(false);
+        }, 200); // Adjust the timeout duration as needed
+    
+        return () => clearTimeout(timer);
+      }, [location]);
+
+      if (loading) {
+        return <div className={classes.loadingScreen}></div>; // White screen while loading
+      };
+
+      const handleClick = () => {
         navigate("/")
     };
+
+
+
+    /*useEffect (() =>{
+        window.scrollTo(0,0)
+    }, [location])*/
+
+    /*useEffect(() => {
+    if (location.pathname !== '/artwear') {
+        window.scrollTo(0, 0);
+    }
+}, [location.pathname]);*/
+
 
     return ( 
         <>
@@ -107,4 +136,4 @@ const ArtWear = () => {
      );
 }
  
-export default ArtWear;
+export default transition(ArtWear);

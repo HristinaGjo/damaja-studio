@@ -27,8 +27,23 @@ const HomePage = () => {
   const [navbarColor, setIsNavbarColor] = useState('#141414');
   const [navOpen, setNavOpen] = useState(false);
 
+  const [loading, setLoading] = useState(true);
+  const location = useLocation();
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      window.scrollTo(0, 0);
+      setLoading(false);
+    }, 200); // Adjust the timeout duration as needed
+
+    return () => clearTimeout(timer);
+  }, [location]);
+
   useEffect(() => {
     const handleScroll = () => {
+
+      if (!newsCtn.current || !clientsCtnNew.current) return;
       const newsRect = newsCtn.current.getBoundingClientRect();
       const clientsRect = clientsCtnNew.current.getBoundingClientRect();
 
@@ -71,6 +86,11 @@ const HomePage = () => {
   const smMobile = useTransform(scrollYProgress, [0, 1], [0, -50]);
   const md = useTransform(scrollYProgress, [0, 1], [0, -150]);
   const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);
+
+
+  if (loading) {
+    return <div className={classes.loadingScreen}></div>; // White screen while loading
+  };
 
   /*const location = useLocation ();
 
@@ -198,4 +218,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default transition(HomePage);

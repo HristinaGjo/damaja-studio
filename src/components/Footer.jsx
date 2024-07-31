@@ -11,8 +11,7 @@ const Footer = () => {
 
   useEffect(() => {
     setActiveLink(location.pathname);
-    window.scrollTo(0, 0); // Scroll to top when location changes
-  }, [location]);
+  }, [location]); 
 
   const handleSetActiveLink = (link) => {
     setActiveLink (link);

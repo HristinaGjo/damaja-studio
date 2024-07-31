@@ -178,53 +178,6 @@ ul.nav-links a{
 
 @media (max-width:768px) {
 
-    /*.nav{
-        position: fixed;
-        z-index: 2;
-        background: transparent;
-    }
-    
-    .navbar{
-        position: fixed;
-        box-sizing: border-box;
-        padding:0.5em 1em 1.5em;
-    }
-    
-    .nav-overlay{
-        position: fixed;
-        background:var(--color-footer);
-        z-index: -2;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-        box-sizing: border-box;
-        padding: 0;
-        transition:all 1s cubic-bezier(0.165, 0.84, 0.44, 1)
-    }
-    
-    .hamBox{
-        position: relative;
-        width: 0px;
-        height: 0px;
-        cursor: pointer;
-        border-radius: 50%;
-        transition: 0.3s ease;
-        padding: 2em;
-    }
-    
-    .hamBox:hover {
-        background:transparent;
-    }
-    
-    .hamBoxOpen {
-        background:transparent;
-    }*/
-
-
-
-    
     .lineTop,
     .lineBottom{
         margin:  0.5em auto;
@@ -255,20 +208,6 @@ ul.nav-links a{
         transform: rotate(225deg);
         background: var(--black-2);
     }
-    
-    /*ul.nav-links{
-        position: absolute;
-        top: 20%;
-        left: 1.5em;
-        margin: 0;
-        padding: 0em;
-        gap: 0.5em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-    }*/
-
 
     .nav-overlay{
         box-sizing: border-box;
@@ -365,3 +304,64 @@ ul.nav-links a{
 
 
     
+
+
+
+
+    /*.nav{
+        position: fixed;
+        z-index: 2;
+        background: transparent;
+    }
+    
+    .navbar{
+        position: fixed;
+        box-sizing: border-box;
+        padding:0.5em 1em 1.5em;
+    }
+    
+    .nav-overlay{
+        position: fixed;
+        background:var(--color-footer);
+        z-index: -2;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 0;
+        transition:all 1s cubic-bezier(0.165, 0.84, 0.44, 1)
+    }
+    
+    .hamBox{
+        position: relative;
+        width: 0px;
+        height: 0px;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: 0.3s ease;
+        padding: 2em;
+    }
+    
+    .hamBox:hover {
+        background:transparent;
+    }
+    
+    .hamBoxOpen {
+        background:transparent;
+    }*/
+
+
+        /*ul.nav-links{
+        position: absolute;
+        top: 20%;
+        left: 1.5em;
+        margin: 0;
+        padding: 0em;
+        gap: 0.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }*/
