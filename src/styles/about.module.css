@@ -10,7 +10,7 @@
     padding-top: 10em;
     padding-left: 2em;
     padding-right: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 4em;
     background: var(--color-footer);
     min-height: 90vh;
 }
@@ -35,7 +35,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     box-sizing: border-box;
-    padding: 2em;
+    padding:4em 2em;
 }
 
 .textFounder{

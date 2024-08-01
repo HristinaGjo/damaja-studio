@@ -22,7 +22,9 @@ const Navbar = ({ style={}, onMenuToggle  }) => {
         <div className="nav" >
             <div className="nav-container">
                 <div className="navbar">
+                    <Link to="/">
                     <div className="logo" style={{...currentStyle, ...logoStyle}}>damaja</div>
+                    </Link>
                     <div className="menu-toggle" onClick={() => handleMenuToggle(!navOpen)}>
                         <div className={navOpen ? "hamBox hamBoxOpen" : "hamBox"}>
                             <span className={navOpen ? "lineTop spin" : "lineTop"} style={{ ...style, backgroundColor: currentStyle.color }} ></span>
