@@ -31,19 +31,8 @@ const About = () => {
         <>
         <Navbar />
         <div className={classes.pageCtn}>
-               
-            <div className={classes.textCtn}>
-                <div className={classes.brandText}>
-                    <span className={classes.fullOpacity}>damaja </span>
-                    <span className={classes.halfOpacity}>focuses on hand embroidery, slow fashion, and mindful living. 
-                    Emphasizing the reuse of textiles, the brand supports sustainable practices through slow creation, 
-                    conscious collaborations with ethical brands, and offering workshops in art embroidery. 
-                    This approach reflects a commitment to </span> 
-                    <span className={classes.fullOpacity}>environmental consciousness and artisanal craftsmanship.</span>
-                </div>
-            </div>
 
-            <div className={classes.founderCtn}>
+        <div className={classes.founderCtn}>
                 <div className={classes.textFounder}>
                     <div className={classes.titleFounder}>
                         <h2>the founder <br/> of damaja</h2>
@@ -63,6 +52,19 @@ const About = () => {
                     <img src={founderImg} alt="Img not available" />
                 </div>
             </div>
+               
+            <div className={classes.textCtn}>
+                <div className={classes.brandText}>
+                    <span className={classes.fullOpacity}>damaja </span>
+                    <span className={classes.halfOpacity}>focuses on hand embroidery, slow fashion, and mindful living. 
+                    Emphasizing the reuse of textiles, the brand supports sustainable practices through slow creation, 
+                    conscious collaborations with ethical brands, and offering workshops in art embroidery. 
+                    This approach reflects a commitment to </span> 
+                    <span className={classes.fullOpacity}>environmental consciousness and artisanal craftsmanship.</span>
+                </div>
+            </div>
+
+
 
             <div className={classes.newsCtn}>
             <div className={classes.text}>
