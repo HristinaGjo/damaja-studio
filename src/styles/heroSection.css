@@ -11,16 +11,15 @@
   padding-bottom: 16vw;*/
   padding-left: 1.5em;
   padding-right: 1.5em;
-
 }
+
 .img-ctn{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 2em;
 }
-
 
 .img{
   width: 100vw;
@@ -43,7 +42,7 @@ img{
 }
 
 .selected-work h1{
-  font-size: 8em;
+  font-size: 5.61em;
   text-transform: uppercase;
   letter-spacing: -0.06em;
 }

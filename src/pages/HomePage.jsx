@@ -16,13 +16,13 @@ import img10 from "../assets/wa02-2.webp"
 import img11 from "../assets/wa02-3.webp"
 import img12 from "../assets/wa02-4.webp"
 
-import img13 from "../assets/wa-01.webp"
-import img14 from "../assets/wa-02.webp"
-import img15 from "../assets/wa-03.webp"
-import img16 from "../assets/wa01-4.webp"
-import img17 from "../assets/wa02-2.webp"
-import img18 from "../assets/wa02-3.webp"
-import img19 from "../assets/wa02-4.webp"
+import img13 from "../assets/hoops01.webp"
+import img14 from "../assets/hoops02.webp"
+import img15 from "../assets/hoops03.webp"
+import img16 from "../assets/hoops04.webp"
+import img17 from "../assets/hoops05.webp"
+import img18 from "../assets/hoops06.webp"
+import img19 from "../assets/hoops07.webp"
 
 import img20 from "../assets/flora01.webp"
 import img21 from "../assets/flora02.webp"
@@ -94,6 +94,36 @@ const HomePage = () => {
                     </div>
                     <div className="img-v-2">
                         <img src={img05}  />
+                    </div>
+                </div>
+            </div>
+
+            <div className="row-ctn">
+                <div className="row-info-v-1">
+                    <p>O3</p>
+                    <p>Hoops, Personal Work</p>
+                </div>
+                <div className="row-items-v-1">
+                    <div className="img-project">
+                        <img src={img13}  />
+                    </div>
+                    <div className="img-project">
+                        <img src={img14}  />
+                    </div>
+                    <div className="img-project">
+                        <img src={img15}  />
+                    </div>
+                    <div className="img-project">
+                        <img src={img16}  />
+                    </div>
+                    <div className="img-project">
+                        <img src={img18}  />
+                    </div>
+                    <div className="img-project">
+                        <img src={img17}  />
+                    </div>
+                    <div className="img-project">
+                        <img src={img19}  />
                     </div>
                 </div>
             </div>

@@ -38,8 +38,8 @@ const HeroSection = () => {
                         peek & cloppenburg, dawn denim, ivy oak</p>
                 </div>
             </div>
-            </div>
-
+        </div>
+        
       </div>
 
     </div>
