@@ -6,15 +6,18 @@ import Footer from "./components/Footer";
 import PageTransition from "./components/PageTransition";
 
 import HeroSection from "./components/HeroSection";
+import Nav from "./components/Nav";
+import HomePage from "./pages/HomePage";
 
 
 function App() {
 
   return (
   <>
-
+  <Nav />
     <Routes>
-      <Route path="/" element={<HeroSection />} />
+
+      <Route path="/" element={<HomePage />} />
     </Routes>
 
   </>

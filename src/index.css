@@ -7,6 +7,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f2f2f2;
 }
 
 html, body{
@@ -17,7 +18,7 @@ html, body{
 }
 
 
-.loadingScreen {
+/*.loadingScreen {
   position: fixed;
   top: 0;
   left: 0;
@@ -25,7 +26,7 @@ html, body{
   height: 100%;
   background: white;
   z-index: 9999;
-}
+} */
 
 
 

@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "build": "^0.1.4",
-    "framer-motion": "^11.3.19",
+    "framer-motion": "^11.11.9",
     "hamburger-react": "^2.5.1",
     "js-yaml": "^4.1.0",
     "lodash": "^4.17.21",

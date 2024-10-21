@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.nav-ctn {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5em;
+    padding:2.5em 1.5em;
+  }
+  
+  .nav-ctn h1{
+    position: relative;
+    letter-spacing: -0.075em;
+    font-weight: 400;
+  }
+  
+  .nav-ctn p{
+    font-family: "Tinos", serif;
+    font-size: 1.75em;
+    letter-spacing: -0.06em;
+    text-transform: capitalize;
+  }
+
+  .right-ctn{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }

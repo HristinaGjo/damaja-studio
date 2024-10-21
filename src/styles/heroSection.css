@@ -10,12 +10,13 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ensures that the image stays at the bottom */
+  justify-content: space-between;
   overflow: hidden;
-  padding:2.5em 1.5em;
+  padding:2.5em 1.5em; 
 }
 
 .hero-text {
+  visibility:visible;
   position: relative;
   z-index: 1;
   display: flex;
@@ -39,7 +40,6 @@
 .hero-image {
   width: 100%;
   overflow: hidden;
-  border-radius: 20px;
   /*margin-left: auto;*/
 }
 
@@ -48,4 +48,5 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: 1.25em;
 }
