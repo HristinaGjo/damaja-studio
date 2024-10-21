@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.work-ctn{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    gap: 8em;
+}
+
+.row-ctn{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+}
+
+.row-info-v-1{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-left: auto;
+    text-transform: uppercase;
+}
+
+.row-info-v-1 p,
+.row-info-v-2 p,
+.row-info-v-4 p{
+    font-size: 12px;
+    font-family: 'Tinos', serif;
+}
+
+.row-items-v-1 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* Create a 3-column grid */
+    gap: 2em; /* Space between grid items */
+    width: 100%; /* Make sure the grid takes the full width */
+}
+
+/* Default image project takes 1 column */
+.img-project {
+    grid-column: span 1; 
+}
+
+/* Specific column spans for each image */
+.img-project:nth-child(1) {
+    grid-column: span 2; /* img01 takes 2 columns */
+}
+
+.img-project:nth-child(2) {
+    grid-column: span 1; /* img02 takes 1 column */
+}
+
+.img-project:nth-child(3) {
+    grid-column: span 2; /* img03 takes 2 columns */
+}
+
+.img-project:nth-child(4),
+.img-project:nth-child(5) {
+    grid-column: span 1; /* img04 and img05 take 1 column each */
+}
+
+.img-project:nth-child(6) {
+    grid-column: span 2; /* img03 takes 2 columns */
+}
+
+/* Maintain aspect ratio */
+.img-project img {
+    width: 100%; /* Make image take the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border radius if needed */
+}
+
+
+
+.row-info-v-2{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    /*margin-left: 49vw;*/
+    text-transform: uppercase;
+}
+
+.row-info-v-4{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    /*margin-left: 65vw;*/
+    text-transform: uppercase;
+}
+
+.row-items-v-2 {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); /* Create a 3-column grid */
+    gap: 2em; /* Space between grid items */
+    width: 100%; /* Make sure the grid takes the full width */
+}
+
+
+/* Default image project takes 1 column */
+.img-v-2 {
+    grid-column: span 1; 
+}
+
+/* Specific column spans for each image */
+.img-v-2:nth-child(1) {
+    grid-column: span 1; /* img01 takes 2 columns */
+}
+
+.img-v-2:nth-child(2) {
+    grid-column: span 2; /* img02 takes 1 column */
+}
+
+.img-v-2:nth-child(3) {
+    grid-column: span 1; /* img03 takes 2 columns */
+}
+
+.img-v-2:nth-child(4) {
+    grid-column: span 2; /* img04 and img05 take 1 column each */
+}
+
+.img-v-2:nth-child(5) {
+    grid-column: span 1; /* img03 takes 2 columns */
+}
+
+/* Maintain aspect ratio */
+.img-v-2 img {
+    width: 100%; /* Make image take the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border radius if needed */
+}

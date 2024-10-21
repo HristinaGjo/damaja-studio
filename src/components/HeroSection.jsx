@@ -1,40 +1,53 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/heroSection.css"; 
-import img from "../assets/wallArt.webp";
-import Navbar from "./Navbar";
-import Nav from "../components/Nav";
+import img01 from "../assets/damaja-studio-cut-1.webp";
+
+
 
 const HeroSection = () => {
-  const [imgHeight, setImgHeight] = useState(50); // Initially, the image is half-visible
-
-  const handleMouseMove = (e) => {
-    const windowHeight = window.innerHeight;
-    const mouseY = e.clientY;
-
-    // Reverse calculation to reveal image from bottom to top
-    const newHeight = Math.max(50, ((windowHeight - mouseY) / windowHeight) * 80);
-
-    setImgHeight(newHeight);
-  };
 
   return (
-    <div className="hero-container" onMouseMove={handleMouseMove}>
-      <div className="hero-text">
-        <h1>Damaja Studio</h1>
-        <p>Embroidery Studio, Berlin</p>
+    <div className="hero-container">
+      <div className="img-ctn">
+        <div className="img">
+            <img src={img01} alt="Image not Available" />
+         
+        </div>
+        <div className="selected-work">
+            <div className="header">
+                <p>Featured
+                    <br/>
+                    Embroidery
+                </p>
+                <h1>Work</h1>
+            </div>
+            <div className="about-text">
+                <p>Stefanija Pejchinovska, who works behind the name Damaja, 
+                    is a Berlin-based embroidery artist. <br/>
+                    With a diploma in architecture and inherited passion for textile arts, 
+                    she has devoted her life to hand embroidery.</p> 
+
+                <p>Her work explores current social and cultural topics, 
+                    through a blend of traditional craftsmanship with modern aesthetics 
+                    and conscientious attention to detail.</p>
+            </div>
+            <div className="clients-ctn">
+                <div className="clients-text">
+                    <p>clients</p>
+                </div>
+            </div>
+            </div>
+
       </div>
-      <div
-        className="hero-image"
-        style={{
-          height: `${imgHeight}%`,
-          transition: "height 0.3s ease-out",
-        }}
-      >
-        <img src={img} alt="Hero" />
-      </div>
+
     </div>
   
   );
 };
 
 export default HeroSection;
+
+
+/*style={{
+    transition: "height 0.3s ease-out",
+  }} */

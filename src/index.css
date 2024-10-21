@@ -14,19 +14,15 @@ html, body{
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 
-/*.loadingScreen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: white;
-  z-index: 9999;
-} */
+:root{
+  --column:10vw;
+  --columns:6;
+  --gap:1em;
+}
+
 
 
 
@@ -197,7 +193,15 @@ a{
 
 
 
-
+/*.loadingScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 9999;
+} */
 
 /*a {
   font-weight: 500;

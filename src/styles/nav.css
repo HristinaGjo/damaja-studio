@@ -8,10 +8,14 @@
     position: relative;
     z-index: 1;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 0.5em;
-    padding:2.5em 1.5em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   /* padding:2.5em 1.5em;*/
+   padding-top: 2.5em;
+   padding-bottom: 1em;
+   padding-left: 1.5em;
+   padding-right: 1.5em;
   }
   
   .nav-ctn h1{
