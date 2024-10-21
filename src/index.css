@@ -1,5 +1,6 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /*font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;*/
+  font-family: 'Tinos', serif;
   color-scheme: light dark;
   background-color:var(--color-white);
   font-synthesis: none;
@@ -94,10 +95,10 @@ html, body{
 
 /* font-family */
 :root{
-  --font-family-h1:Helvetica, sans-serif;
+  --font-family-h1:"Tinos", serif;
   --font-family-h2:Arial, sans-serif;
   --font-family-h3:Arial, sans-serif;
-  --font-family-h4:Arial, sans-serif;
+  --font-family-h4:'Tinos', serif;
   --font-family-span:Arial, sans-serif;
   --font-family-p:Arial, sans-serif;
 }
@@ -134,7 +135,6 @@ h4{
   font-family: var(--font-family-h4);
   font-weight: var(--font-weight-h4);
   line-height: var(--line-height-h4);
-  color: var(--color-h4);
   margin: 0;
 
 }
