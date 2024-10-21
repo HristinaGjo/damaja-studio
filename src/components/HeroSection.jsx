@@ -16,12 +16,12 @@ const HeroSection = () => {
         <div className="selected-work">
             <div className="header">
                 <p>Featured
-                    <br/>
-                    Embroidery
+                  
                 </p>
                 <h1>Work</h1>
             </div>
             <div className="about-text">
+                <div className="text-ctn">
                 <p>Stefanija Pejchinovska, who works behind the name Damaja, 
                     is a Berlin-based embroidery artist. <br/>
                     With a diploma in architecture and inherited passion for textile arts, 
@@ -30,10 +30,12 @@ const HeroSection = () => {
                 <p>Her work explores current social and cultural topics, 
                     through a blend of traditional craftsmanship with modern aesthetics 
                     and conscientious attention to detail.</p>
+                </div>
             </div>
             <div className="clients-ctn">
                 <div className="clients-text">
-                    <p>clients</p>
+                    <p>clients: adidas, vice, tommy hilfiger, circular berlin, olivia steele, i-D, vee collective, 
+                        peek & cloppenburg, dawn denim, ivy oak</p>
                 </div>
             </div>
             </div>
@@ -48,6 +50,11 @@ const HeroSection = () => {
 export default HeroSection;
 
 
-/*style={{
+/*
+
+  <br/>
+                    Embroidery
+
+style={{
     transition: "height 0.3s ease-out",
   }} */
