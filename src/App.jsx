@@ -9,6 +9,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import PageTransition from "./components/PageTransition";
 import ProjectDetails from "./pages/ProjectsDetails";
+import NewHomePage from "./pages/NewHomePage";
+import HeroSection from "./components/HeroSection";
 
 
 function App() {
@@ -17,7 +19,7 @@ function App() {
   <>
 
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/" element={<HeroSection />} />
       <Route path="/artwear" element={<ArtWear />} />
       <Route path="/workshops" element={<Workshops />} />
       <Route path="/about" element={<About />} />

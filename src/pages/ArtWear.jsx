@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import classes from "../styles/artWear.module.css"
 import Footer from "../components/Footer";
 import {useLocation, useNavigate } from "react-router-dom";
-import placeHolder from "../assets/domestika.webp"
+
 import transition from "../transition";
-import domestikaImg from "../assets/domestika.webp";
+
 import SvgArrow from "../components/SvgArrow";
 import LazyLoad from "react-lazyload";
 

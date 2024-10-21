@@ -1,0 +1,33 @@
+/* NewHomePage.module.css */
+.container {
+    height: 700vh; /* Set height to give space for scrolling */
+    position: relative;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh; /* Sticky height: 100vh to keep each image visible */
+    overflow: hidden;
+}
+
+.el {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer {
+    position: relative;
+    width: 40vw;
+    height: 40vh;
+}
+
+.image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

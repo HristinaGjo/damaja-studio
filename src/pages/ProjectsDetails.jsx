@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import Footer from "../components/Footer";
 import classes from "../styles/artWear.module.css"
-import placeHolder from "../assets/domestika.webp"
+
 import transition from "../transition";
 
 

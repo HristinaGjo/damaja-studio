@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import classes from "../styles/about.module.css"
 import Navbar from "../components/Navbar";
-import founderImg from "../assets/domestika.webp";
-import domestikaImg from "../assets/domestika.webp";
+
 import SvgArrow from "../components/SvgArrow";
 import Footer from "../components/Footer";
 import transition from "../transition";

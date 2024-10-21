@@ -1,12 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import classes from "../styles/homePage.module.css";
 import Navbar from "../components/Navbar";
-import heroImg from "../assets/domestika.webp";
-import heroImgMobile from "../assets/domestika.webp";
-import firstRowImg from "../assets/domestika.webp";
-import secondRowImg from "../assets/secondRow.webp";
-import thirdRowImg from "../assets/domestika.webp";
-import domestikaImg from "../assets/domestika.webp";
+i
 /*import { useScroll, useTransform, motion } from "framer-motion";*/
 import Footer from "../components/Footer";
 import SvgArrow from "../components/SvgArrow";
