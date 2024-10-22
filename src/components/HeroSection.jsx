@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/heroSection.css"; 
-import img01 from "../assets/damaja-studio-cut-1.webp";
+import img01 from "../assets/damaja-studio-cut.webp";
 
 
 

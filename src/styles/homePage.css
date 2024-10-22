@@ -1,47 +1,34 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.work-ctn{
+  }
+  
+  .work-ctn {
     display: flex;
     flex-direction: column;
     padding-left: 1.5em;
     padding-right: 1.5em;
     gap: 8em;
-}
-
-.row-ctn{
+    transition: background-color 0.3s ease;
+  }
+  
+  .row-ctn {
     display: flex;
     flex-direction: column;
     gap: 1em;
     width: 100%;
-}
+  }
 
-.row-info-v-1{
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-    margin-left: auto;
-    text-transform: uppercase;
-}
-
-.row-info-v-1 p,
-.row-info-v-2 p,
-.row-info-v-4 p{
-    font-size: 12px;
-    font-family: 'Tinos', serif;
-}
-
-.row-items-v-1 {
+  .row-items-v-1 {
     display: grid;
-    grid-template-columns: repeat(10, 1fr); /* Create a 3-column grid */
-    gap: 2em; /* Space between grid items */
-    width: 100%; /* Make sure the grid takes the full width */
-}
+    grid-template-columns: repeat(10, 1fr); 
+    gap: 2em; 
+    width: 100%; 
+  }
 
-/* Default image project takes 1 column */
+
+  /* Default image project takes 1 column */
 .img-project {
     grid-column: span 1; 
 }
@@ -75,13 +62,19 @@
     border-radius: 0; /* Remove border radius if needed */
 }
 
-
-
 .row-info-v-2{
     display: flex;
     flex-direction: row;
     gap: 2em;
     /*margin-left: 49vw;*/
+    text-transform: uppercase;
+}
+
+.row-info-v-1{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-left: auto;
     text-transform: uppercase;
 }
 
@@ -133,3 +126,90 @@
     height: auto; /* Maintain aspect ratio */
     border-radius: 0; /* Remove border radius if needed */
 }
+
+  .row-info-v-1,
+  .row-info-v-2,
+  .row-info-v-4 {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    text-transform: uppercase;
+  }
+  
+  .row-info-v-1 p,
+  .row-info-v-2 p,
+  .row-info-v-4 p {
+    font-size: 12px;
+    font-family: 'Tinos', serif;
+  }
+  
+  .row-items-v-1,
+  .row-items-v-2 {
+    display: grid;
+    gap: 2em;
+    width: 100%;
+  }
+  
+
+
+
+/* Change background color when hovering */
+    .work-ctn.hovered {
+    background-color: #F4F3EF; 
+    /*background: #D9CAC5;*/
+  }
+
+
+  .img-project img,
+  .img-v-2 img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease, filter 0.3s ease, border-color 0.3s ease;
+    border-radius: 0;
+    opacity: 1;
+  }
+  
+  /* Only dim non-hovered images */
+  .work-ctn.hovered .img-project:not(.active) img,
+  .work-ctn.hovered .img-v-2:not(.active) img {
+    opacity: 0.1; /* Dim non-hovered images */
+    filter: grayscale(100%); /* Grayscale effect */
+    border: 1px solid black; 
+  }
+
+  .work-ctn.hovered .img-project:not(.active) img,
+  .work-ctn.hovered .img-v-2:not(.active) img {
+    border: 1px solid black; 
+  }
+  
+  /* Only show hovered image */
+  .img-project.active img,
+  .img-v-2.active img {
+    opacity: 1;
+    filter: none; /* Remove grayscale */
+    border: 1px solid #000; /* Add a border on the hovered image */
+  }
+  
+  .img-project.active,
+  .img-v-2.active {
+    border-color: #333; /* Darken the border when hovered */
+  }
+  
+
+
+
+ /* Default image styles 
+  .img-project,
+  .img-v-2 {
+    grid-column: span 1;
+  }
+    
+  
+    /* Grid settings for specific rows 
+    .row-items-v-1 {
+        grid-template-columns: repeat(10, 1fr);
+      }
+      
+      .row-items-v-2 {
+        grid-template-columns: repeat(9, 1fr);
+      }*/
