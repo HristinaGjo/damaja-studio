@@ -13,7 +13,7 @@
     font-weight: 500;
     line-height: 1.25;
     letter-spacing: -0.05em;
-    color: var(--color-change-item);
+    color:white;
 }
 
 .logo-ctn{
@@ -27,11 +27,16 @@
     grid-template-columns: repeat(5,1fr);
 }
 
+.second-row,
+.first-row {
+    align-items: center; /* Centers items vertically */
+    justify-items: center; /* Centers items horizontally */
+}
+
 .first-row img{
     display: flex;
     margin-left: auto;
 }
-
 
 .second-row img{
     display: flex;
@@ -39,11 +44,16 @@
 }
 
 .logo-img{
-    width: 8vw;
+    width: 10vw;
     height: auto;
-    filter: grayscale(100%);
+    filter: brightness(0) invert(1);
+
 }
 
+.first-row :nth-child(1),
+.second-row :nth-child(4){
+    width: 6vw;
+}
 
 img{
     width: 100%;

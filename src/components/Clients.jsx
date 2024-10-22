@@ -27,16 +27,17 @@ const Clients = () => {
             <div className="logo-ctn">
                 <div className="first-row">
                     <img className="logo-img" src={adidas} />
-                    <img className="logo-img" src={vice} />
+                    <img className="logo-img" src={ivy} />
                     <img className="logo-img" src={circular} />
                     <img className="logo-img" src={dawn} />
-                    <img className="logo-img" src={vee} />
+                   
                 </div>
                 <div className="second-row">
-                    <img className="logo-img" src={ivy} />
-                    <img className="logo-img" src={olivia} />
                     <img className="logo-img" src={peek} />
+                    <img className="logo-img" src={olivia} />
                     <img className="logo-img" src={tommy} />
+                    <img className="logo-img" src={vice} />
+                    <img className="logo-img" src={vee} />
                 </div>
             </div>
         </div>
