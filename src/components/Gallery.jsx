@@ -52,13 +52,14 @@ const rows = [
 const Gallery = () => {
     const [hoveredImage, setHoveredImage] = useState(null);
     const [isHovered, setIsHovered] = useState(false); // New state for background color
+    const [hoveredRow, setHoveredRow] = useState(null);
 
 
     return (
         <div className={`gallery-container ${isHovered ? 'hovered' : ''}`}>
             {rows.map((row, rowIndex) => (
                 <div key={rowIndex} className={`row-container row-${rowIndex}`}>
-                    <div className={`title-column ${isHovered ? 'hovered' : ''}`}>
+                    <div className={`title-column ${hoveredRow === rowIndex ? 'hovered' : ''}`}>
                         <p>{row.title}</p>
                     </div>
                     <div className={`images-row images-row-${rowIndex}`}>
@@ -69,10 +70,12 @@ const Gallery = () => {
                                 onMouseEnter={() => {
                                     setHoveredImage(image.src);
                                     setIsHovered(true);
+                                    setHoveredRow(rowIndex)
                                 }}
                                 onMouseLeave={() => {
                                     setHoveredImage(null);
                                     setIsHovered(false)
+                                    setHoveredRow(null)
                                 }}
                             >
                                 <img

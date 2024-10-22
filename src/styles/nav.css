@@ -16,8 +16,9 @@
     position:fixed;
     width: 100%;
     z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding-top: 2em;
     padding-bottom: 2em;
     padding-left: 1.5em;
@@ -28,7 +29,7 @@
 
   /*.nav-ctn h4{
     font-style: italic;
-  }*/
+  }
 
   .right-ctn{
     display:flex;
@@ -36,5 +37,5 @@
     justify-content: end;
     gap: 2em;
     text-transform: uppercase;
-  }
+  } */
   
