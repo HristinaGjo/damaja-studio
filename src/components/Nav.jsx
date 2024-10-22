@@ -8,9 +8,11 @@ const Nav = () => {
     return ( 
         <>
         <div className="nav-ctn">
-                <Link to="/">Home</Link>
-                {/*<Link to="/">About</Link>*/}
+            <Link to="/"><h4>DAMAJA STUDIO</h4></Link>
+            <div className="right-ctn">
+                <Link to="/">About</Link>
                 <Link to="/">Workshops</Link>
+            </div>
         </div>
         </>
      );

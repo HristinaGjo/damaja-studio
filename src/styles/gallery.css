@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
+    padding:10em 1.5em 1.5em 1.5em;
+    transition: background-color 0.3s ease; 
+}
+
+.gallery-container.hovered {
+    background-color: #F2E2DF 
+}
+
+.row-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+}
+
+.title-column{
+   visibility: hidden;
+}
+
+.title-column p{
+    font-size: 12px;
+    font-family: 'Tinos', serif;
+    font-style: italic;
+    font-weight: 600;
+    visibility: hidden;
+ }
+
+.title-column.hovered{
+    opacity: 1;
+    display: flex;
+    margin-left: auto;
+}
+
+.title-column.hovered p{
+    font-size: 12px;
+    font-family: 'Tinos', serif;
+    font-style: italic;
+    font-weight: 600;
+    visibility: visible;
+}
+
+.images-row-0{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    justify-content: start;
+    align-items: start;
+    gap: 2em;
+    width: 100%;
+}
+
+.images-row-0 :nth-child(1),
+.images-row-0 :nth-child(4),
+.images-row-0 :nth-child(7){
+    grid-column: span 2;
+}
+
+.images-row-1{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    justify-content: start;
+    align-items: start;
+    gap: 2em;
+    width: 100%;
+}
+
+.images-row-1 :nth-child(3){
+    grid-column: span 2;
+}
+
+.images-row-2{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    justify-content: start;
+    align-items: start;
+    gap: 2em;
+    width: 100%;
+}
+
+.images-row-2 :nth-child(1),
+.images-row-2 :nth-child(5){
+    grid-column: span 2;
+}
+
+.images-row-2{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    justify-content: start;
+    align-items: start;
+    gap: 2em;
+    width: 100%;
+}
+
+.images-row-2 :nth-child(2),
+.images-row-2 :nth-child(5){
+    grid-column: span 2;
+}
+
+
+
+.images-row-3{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    justify-content: start;
+    align-items: start;
+    gap: 2em;
+    width: 100%;
+}
+
+.images-row-3 :nth-child(2),
+.images-row-3 :nth-child(5){
+    grid-column: span 2;
+}
+
+.images-row-3{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    justify-content: start;
+    align-items: start;
+    gap: 2em;
+    width: 100%;
+}
+
+.images-row-3 :nth-child(1),
+.images-row-3 :nth-child(6) {
+    grid-column: span 2;
+}
+
+
+/* Image wrapper to control the hover effect */
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Default state of the image: full opacity */
+.gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Using ::before to handle the border effect */
+.image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent; /* No visible border by default */
+    transition: border 0.3s ease;
+}
+
+/* Hover effect: add border to all images */
+.image-wrapper.hovered::before,
+.image-wrapper.non-hovered::before {
+    border: 1px solid black;
+}
+
+/* The hovered image stays fully opaque, non-hovered ones go transparent */
+.image-wrapper.hovered .gallery-image {
+    opacity: 1;
+}
+
+.image-wrapper.non-hovered .gallery-image {
+    opacity: 0;
+}
+
+

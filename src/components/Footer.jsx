@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import classes from "../styles/footer.module.css"
 import { Link, useLocation } from "react-router-dom";
-import SvgArrowFooter from "./SvgArrowFooter";
+
 
 const Footer = () => {
 

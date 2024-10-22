@@ -1,4 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
+import "../styles/homePage.css";
+import Gallery from "../components/Gallery";
+
+
+
+
+const HomePage = () => {
+
+
+  return (
+    <>
+    <Gallery />
+    
+    </>
+  );
+};
+
+export default HomePage;
+
+
+/*  <img className="border-img" src={img} alt={`Project ${index}`} /> */
+
+
+/* import React, { useState } from "react";
 import "../styles/homePage.css";
 import HeroSection from "../components/HeroSection";
 
@@ -47,7 +71,6 @@ const HomePage = () => {
     <>
       
       <div className={`work-ctn ${hoveredImg !== null ? "hovered" : ""}`}>
-      <HeroSection />
         <div className="row-ctn">
           <div className="row-info-v-1">
             <p>O1</p>
@@ -128,7 +151,7 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default HomePage; */
 
 
-/*  <img className="border-img" src={img} alt={`Project ${index}`} /> */
+
