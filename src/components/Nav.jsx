@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 
 
-const Nav = () => {
+const Nav = ({isHovered}) => {
     return ( 
         <>
-        <div className="nav-ctn">
+        <div className={`nav-ctn ${isHovered ? 'hovered' : ''}`} >
             <Link to="/">About</Link>
-            <Link to="/"><h4>DAMAJA STUDIO</h4></Link>
+            <Link to="/"><h3>DAMAJA  STUDIO</h3></Link>
             <Link to="/">Workshops</Link>
         </div>
         </>

@@ -4,17 +4,25 @@
     box-sizing: border-box;
 }
 
+
 .gallery-container{
     display: flex;
     flex-direction: column;
     gap: 10em;
-    padding:10em 1.5em 1.5em 1.5em;
+    padding:10em 1.5em 10em 1.5em;
     transition: background-color 0.3s ease; 
+    border-bottom: 1px solid black;
 }
 
 .gallery-container.hovered {
-    background-color: #F2E2DF 
+    background:#CD6D71;
 }
+
+
+.gallery-container.hovered a {
+    color: white;
+}
+
 
 .row-container{
     display: flex;
@@ -39,6 +47,7 @@
     opacity: 1;
     display: flex;
     margin-left: auto;
+
 }
 
 .title-column.hovered p{
@@ -47,6 +56,7 @@
     font-style: italic;
     font-weight: 600;
     visibility: visible;
+    color: white;
 }
 
 .images-row-0{
