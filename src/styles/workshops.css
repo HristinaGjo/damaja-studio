@@ -1,0 +1,40 @@
+.workshops-wrapper{
+    padding:5em 1.5em;
+    border-bottom: 1px solid black;
+}
+
+.workshops-content-ctn{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.workshops-left-ctn p,
+.workshops-right-ctn p{
+    font-size: 24px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.05em;
+}
+
+.workshops-right-ctn {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.video-ctn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    gap: 2em;
+
+    height:60vh;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}

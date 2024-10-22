@@ -15,10 +15,13 @@ const Nav = ({isHovered}) => {
                     <Link to="/">Contact</Link>
                     </div>
                     <div className="studio">
-                    <Link to="/">DAMAJA  STUDIO</Link>
+                    <Link to="/">DAMAJA</Link>
                     </div>
                     <div className="workshops">
                     <Link to="/">Workshops</Link>
+                    </div>
+                    <div className="workshops">
+                    <Link to="/">Instagram</Link>
                     </div>
                 </div>
             </div>

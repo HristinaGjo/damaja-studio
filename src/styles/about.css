@@ -1,0 +1,54 @@
+a{
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
+}
+
+.about-ctn{
+    padding:5em 1.5em;
+    border-top: 1px solid black;
+}
+
+.about-text{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.about-left-ctn{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+}
+
+.about-left-ctn p,
+.about-right-ctn p{
+    font-size: 24px;
+    /*font-family: "IBM Plex Sans", sans-serif;*/
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.05em;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.about-right-ctn{
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+
+.damaja-img {
+   width: 100%;
+   height: auto;
+}
+
+.damaja-img img{
+    width: 100%;
+    height: 100%;
+}
+
