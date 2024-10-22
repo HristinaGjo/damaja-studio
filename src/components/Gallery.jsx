@@ -37,7 +37,7 @@ const rows = [
         ],
     },
     {
-        title: "01 WALL ART, PERSONAL WORK",
+        title: "04 FLORA & FAUNA, PRIVATE RESIDENCE, BERLIN",
         images: [
             { src: "/assets/flora05.webp", alt: "Image not available" },
             { src: "/assets/flora01.webp", alt: "Image not available" },
@@ -49,16 +49,12 @@ const rows = [
     },
 ];
 
-const Gallery = ({setIsHovered}) => {
+const Gallery = ({ setIsHovered }) => {
     const [hoveredImage, setHoveredImage] = useState(null);
     const [hoveredRow, setHoveredRow] = useState(null);
 
     return (
-        <div
-        className={`gallery-container ${hoveredImage ? 'hovered' : ''}`}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        >
+        <div className={`gallery-container ${hoveredImage ? 'hovered' : ''}`}>
             {rows.map((row, rowIndex) => (
                 <div key={rowIndex} className={`row-container row-${rowIndex}`}>
                     <div className={`title-column ${hoveredRow === rowIndex ? 'hovered' : ''}`}>
@@ -71,13 +67,13 @@ const Gallery = ({setIsHovered}) => {
                                 className={`image-wrapper ${hoveredImage === image.src ? 'hovered' : hoveredImage ? 'non-hovered' : ''}`}
                                 onMouseEnter={() => {
                                     setHoveredImage(image.src);
-                       
-                                    setHoveredRow(rowIndex)
+                                    setIsHovered(true); // Set hover state to true when hovering an image
+                                    setHoveredRow(rowIndex);
                                 }}
                                 onMouseLeave={() => {
                                     setHoveredImage(null);
-                               
-                                    setHoveredRow(null)
+                                    setIsHovered(false); // Reset hover state when leaving an image
+                                    setHoveredRow(null);
                                 }}
                             >
                                 <img

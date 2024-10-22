@@ -4,18 +4,16 @@
     box-sizing: border-box;
   }
 
+
+.nav-ctn a{
+  color: var(--color-change-item);
+}
+
 .nav-ctn {
     position:fixed;
     width: 100%;
     z-index: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    text-transform: uppercase;
+    padding:2em 1.5em;
   }
 
   .nav-ctn h3{
@@ -25,9 +23,98 @@
   }
 
   .nav-ctn.hovered a {
-    color:white; 
+    /*color:#b95733;*/
+    color:  var(--color-change-item);
   }
 
 .nav-ctn.hovered h3 {
-    color:white 
+   /*color:#b95733; */
+   color: var(--color-change-item);
   }
+
+  
+  .nav-content {
+    z-index: 1;
+    gap: 2em;
+    text-transform: uppercase;
+    color: black;
+    border: 1px solid var(--color-change-item);
+  }
+
+  .nav-links{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .contact,
+  .studio{
+    border-right: 1px solid var(--color-change-item);
+  }
+
+  .contact,
+  .studio,
+  .workshops{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+  }
+
+
+
+  .nav-content.hovered{
+    border: 1px solid var(--color-change-item);
+  }
+
+
+
+ 
+
+
+
+
+
+ /*
+
+   .social-links{
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-right: 1px solid var(--color-change-item);
+  }
+
+
+   .nav-content {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    text-transform: uppercase;
+    color: black;
+    border: 1px solid var(--color-change-item);
+  }
+
+ 
+ 
+ .nav-ctn {
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    text-transform: uppercase;
+    color: black;
+    border: 1px solid black;
+  } */
+

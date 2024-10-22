@@ -21,6 +21,8 @@ html, body{
   --column:10vw;
   --columns:6;
   --gap:1em;
+  --color-change-item: #b03035;
+  --color-change-bg:#CD6D71;
 }
 
 

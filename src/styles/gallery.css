@@ -15,12 +15,12 @@
 }
 
 .gallery-container.hovered {
-    background:#CD6D71;
-}
+   background:var(--color-change-bg);
+   /*background: #ac3e47;*/
 
 
-.gallery-container.hovered a {
-    color: white;
+   /*background: #BF7D65;*/
+   /*background: #8C695D;*/
 }
 
 
@@ -56,7 +56,8 @@
     font-style: italic;
     font-weight: 600;
     visibility: visible;
-    color: white;
+    /*color:#b95733; */
+    color:var(--color-change-item);
 }
 
 .images-row-0{
@@ -177,7 +178,7 @@
 /* Hover effect: add border to all images */
 .image-wrapper.hovered::before,
 .image-wrapper.non-hovered::before {
-    border: 1px solid black;
+    border: 1px solid var(--color-change-item);
 }
 
 /* The hovered image stays fully opaque, non-hovered ones go transparent */
