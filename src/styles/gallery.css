@@ -197,7 +197,10 @@
     width: 100vw;
     height: 100vh;
     /*background-color: rgba(0, 0, 0, 0.8);*/
-    background: var(--color-change-item);
+    /*background: var(--color-change-item);*/
+    /*background: #F2CA99;*/
+    /*background: #034AA6;*/
+    background: #D97D5B;
     display: flex;
     justify-content: center;
     align-items: center;
