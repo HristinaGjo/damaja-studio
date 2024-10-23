@@ -4,6 +4,7 @@ import Gallery from "../components/Gallery";
 import About from "../components/About";
 import Workshops from "../components/Workshops";
 import Clients from "../components/Clients";
+import Footer from "../components/Footer";
 
 
 
@@ -17,6 +18,7 @@ const HomePage = ({setIsHovered}) => {
     <About />
     <Clients />
     <Workshops />
+    <Footer />
     </>
   );
 };

@@ -1,0 +1,26 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    width: 100%;
+    padding: 1.5em;
+    text-transform: uppercase;
+}
+
+.footer-contact-ctn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info,
+.workshops-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.site-credits p{
+    text-transform: uppercase;
+    font-size: 12px;
+}
