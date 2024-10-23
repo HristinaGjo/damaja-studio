@@ -27,9 +27,9 @@
 
   
   .nav-content {
-    width: 30vw;
+    width: 25vw;
     z-index: 1;
-    gap: 2em;
+    gap: 0em;
     text-transform: uppercase;
     color: black;
     border: 1px solid var(--color-change-item);

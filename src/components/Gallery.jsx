@@ -52,6 +52,12 @@ const rows = [
 const Gallery = ({ setIsHovered }) => {
     const [hoveredImage, setHoveredImage] = useState(null);
     const [hoveredRow, setHoveredRow] = useState(null);
+    const [selectedImage, setSelectedImage] = useState(null); // State to store the clicked image
+
+    // Function to close the full-screen view
+    const closeFullScreen = () => {
+        setSelectedImage(null);
+    };
 
     return (
         <div className={`gallery-container ${hoveredImage ? 'hovered' : ''}`}>
@@ -67,14 +73,15 @@ const Gallery = ({ setIsHovered }) => {
                                 className={`image-wrapper ${hoveredImage === image.src ? 'hovered' : hoveredImage ? 'non-hovered' : ''}`}
                                 onMouseEnter={() => {
                                     setHoveredImage(image.src);
-                                    setIsHovered(true); // Set hover state to true when hovering an image
+                                    setIsHovered(true);
                                     setHoveredRow(rowIndex);
                                 }}
                                 onMouseLeave={() => {
                                     setHoveredImage(null);
-                                    setIsHovered(false); // Reset hover state when leaving an image
+                                    setIsHovered(false);
                                     setHoveredRow(null);
                                 }}
+                                onClick={() => setSelectedImage(image.src)} // Set selected image on click
                             >
                                 <img
                                     src={image.src}
@@ -86,6 +93,14 @@ const Gallery = ({ setIsHovered }) => {
                     </div>
                 </div>
             ))}
+
+            {/* Fullscreen Pop-up */}
+            {selectedImage && (
+                <div className="fullscreen-overlay">
+                    <button className="close-button" onClick={closeFullScreen}>Close</button>
+                    <img src={selectedImage} alt="Full view" className="fullscreen-image" />
+                </div>
+            )}
         </div>
     );
 };
