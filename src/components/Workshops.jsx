@@ -14,6 +14,12 @@ const Workshops = () => {
                     <div className="title">
                         <p>WORKSHOPS</p>
                     </div>
+                    <div className="contact-section">
+                        <p>Workshops inquiries</p>
+                        <div className="button-contact">
+                            <p>workshops@damaja-studio.com</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="workshops-right-ctn">
                     <p>
@@ -24,6 +30,27 @@ const Workshops = () => {
                     Main goal of Damaja’s teachings is to help the participants reconnect with the feeling of 
                     working with their hands.
                     </p>
+                    <div className="collab-list">
+                        {/*<div className="title-collab">
+                            <p>Previous Workshops with:</p>
+                        </div> */}
+                        <div className="collab-item">
+                            <p>01</p>
+                            <p>ADIDAS</p>
+                        </div>
+                        <div className="collab-item">
+                            <p>02</p>
+                            <p>ADIDAS</p>
+                        </div>
+                        <div className="collab-item">
+                            <p>03</p>
+                            <p>ADIDAS</p>
+                        </div>
+                        <div className="collab-item">
+                            <p>04</p>
+                            <p>ADIDAS</p>
+                        </div>
+                    </div>
                     <div className="video-ctn">
                         <video autoPlay loop muted playsInline>
                             <source src={workshopVideo01}/>   

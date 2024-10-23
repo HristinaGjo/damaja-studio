@@ -28,6 +28,7 @@ a{
     letter-spacing: -0.05em;
 }
 
+
 .links{
     display: flex;
     flex-direction: column;
@@ -38,7 +39,7 @@ a{
     grid-column: span 2;
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 4em;
 }
 
 

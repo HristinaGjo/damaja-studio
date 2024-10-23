@@ -20,9 +20,9 @@ const Nav = ({isHovered}) => {
                     <div className="workshops">
                     <Link to="/">Workshops</Link>
                     </div>
-                    <div className="workshops">
+                    {/*<div className="workshops">
                     <Link to="/">Instagram</Link>
-                    </div>
+                    </div>*/}
                 </div>
             </div>
         </div>
