@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -140,7 +141,6 @@
   .row-info-v-2 p,
   .row-info-v-4 p {
     font-size: 12px;
-    font-family: 'Tinos', serif;
   }
   
   .row-items-v-1,

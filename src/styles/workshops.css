@@ -11,22 +11,23 @@
 .workshops-left-ctn p,
 .workshops-right-ctn p{
     font-size: 24px;
-    font-family: "Dosis", sans-serif;
     font-weight: 500;
     line-height: 1.25;
     letter-spacing: -0.05em;
+}
+
+.toggle-workshops p{
+    font-size: 16px;
 }
 
 .contact-section p{
     text-transform: uppercase;
 }
 
-
-
 .workshops-left-ctn{
     display:flex;
     flex-direction: column;
-    gap: 24em;
+    justify-content: space-between;
 }
 
 .workshops-right-ctn {
@@ -64,26 +65,59 @@ video {
     height: 100%;
 }
 
-
-
 /* for workshops and about section */
 .contact-section {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+}
+
+.contact-section p{
+    font-size: 14px;
 }
 
 .button-contact{
     width: 49%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    padding: 1em;
-    background: var(--color-change-bg);
+    /*padding: 1em;*/
+    /*background: var(--color-change-bg);*/
     border-radius: 1em;
 }
 
 .button-contact p{
-    font-size: 12px;
-    color: white;
+    font-size: 14px;
+    /*color: white;*/
+    color: black;
+}
+
+
+.toggle-workshops{
+    width: 49%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /*padding: 1em;*/
+    /*background: var(--color-change-bg);*/
+    border-radius: 1em;
+}
+
+
+.additional-content{
+    display: flex;
+    flex-direction: column;
+    padding: 5em 1.5em;
+}
+
+.gallery-workshops{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.img-ctn-workshops{
+    width: 20vw;
+    height: auto;
 }

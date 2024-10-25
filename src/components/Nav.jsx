@@ -3,32 +3,27 @@ import "../styles/nav.css"
 import { Link } from "react-router-dom";
 
 
-
 const Nav = ({isHovered}) => {
     return ( 
         <>
-
         <div className={`nav-ctn ${isHovered ? 'hovered' : ''}`} >
             <div className="nav-content">
                 <div className="nav-links">
-                    <div className="contact">
-                    <Link to="/">Contact</Link>
-                    </div>
+
                     <div className="studio">
                     <Link to="/">DAMAJA</Link>
+                    </div>
+                    <div className="contact">
+                    <Link to="/">Contact</Link>
                     </div>
                     <div className="workshops">
                     <Link to="/">Workshops</Link>
                     </div>
-                    {/*<div className="workshops">
-                    <Link to="/">Instagram</Link>
-                    </div>*/}
                 </div>
             </div>
         </div>
-     
-        </>
-     );
+    </>
+  );
 }
  
 export default Nav;

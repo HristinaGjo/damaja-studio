@@ -1,5 +1,4 @@
 a{
-    font-family: "Dosis", sans-serif;
     font-weight: 500;
 }
 
@@ -22,7 +21,6 @@ a{
 .about-right-ctn p{
     font-size: 24px;
     /*font-family: "IBM Plex Sans", sans-serif;*/
-    font-family: "Dosis", sans-serif;
     font-weight: 500;
     line-height: 1.25;
     letter-spacing: -0.05em;
@@ -41,7 +39,6 @@ a{
     flex-direction: column;
     gap: 4em;
 }
-
 
 .damaja-img {
    width: 100%;

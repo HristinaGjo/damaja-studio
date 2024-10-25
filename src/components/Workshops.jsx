@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/workshops.css"
 import workshopVideo01 from "../assets/video-1.mp4"
 import workshopVideo02 from "../assets/video-2.mp4"
 import workshopVideo03 from "../assets/video-3.mp4"
 
 
+import img01 from "../assets/img01.webp"
+import img03 from "../assets/img03.webp"
+import img02 from "../assets/img02.webp"
+
 const Workshops = () => {
+
+
+    const[isOpen, setIsOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsOpen(prevState => !prevState)
+    }
+
+
     return ( 
         <>
         <div className="workshops-wrapper">
@@ -14,11 +27,14 @@ const Workshops = () => {
                     <div className="title">
                         <p>WORKSHOPS</p>
                     </div>
-                    <div className="contact-section">
-                        <p>Workshops inquiries</p>
+                    {/*<div className="contact-section">
+                            <p>Workshops inquiries</p>
                         <div className="button-contact">
                             <p>workshops@damaja-studio.com</p>
                         </div>
+                    </div>*/}
+                    <div className="toggle-workshops" onClick={toggleDropdown} style={{cursor:'pointer'}}>
+                        <p>{isOpen ? 'see less' : 'see more'}</p>
                     </div>
                 </div>
                 <div className="workshops-right-ctn">
@@ -64,6 +80,22 @@ const Workshops = () => {
                     </div>
                 </div>
             </div>
+
+            {isOpen && (
+                <div className="additional-content">
+                    <div className="gallery-workshops">
+                        <div className="img-ctn-workshops">
+                            <img src={img01} />
+                        </div>
+                        <div className="img-ctn-workshops">
+                            <img src={img03} />
+                        </div>
+                        <div className="img-ctn-workshops">
+                            <img src={img02} />
+                        </div>
+                    </div>
+                </div>
+            )}
 
         </div>
         </>

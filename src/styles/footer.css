@@ -13,11 +13,20 @@
     justify-content: space-between;
 }
 
+.footer-contact-ctn p{
+    font-weight: 500;
+}
+
 .info,
 .workshops-info{
     display: flex;
     flex-direction: column;
     gap: 0.3em;
+}
+
+.site-credits{
+    display: flex;
+    margin-left: auto;
 }
 
 .site-credits p{

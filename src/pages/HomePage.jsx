@@ -5,20 +5,19 @@ import About from "../components/About";
 import Workshops from "../components/Workshops";
 import Clients from "../components/Clients";
 import Footer from "../components/Footer";
-
-
+import Nav from "../components/Nav";
 
 
 const HomePage = ({setIsHovered}) => {
 
-
   return (
     <>
+    <Nav />
     <Gallery setIsHovered={setIsHovered} />
-    <About />
+    <About  />
     <Clients />
-    <Workshops />
-    <Footer />
+    <Workshops  />
+    <Footer  />
     </>
   );
 };

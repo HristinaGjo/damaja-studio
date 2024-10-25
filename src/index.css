@@ -1,5 +1,6 @@
 :root {
   /*font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;*/
+  /*ont-family: "Oswald", sans-serif;*/
   font-family: 'Tinos', serif;
   color-scheme: light dark;
   background-color:var(--color-white);
@@ -101,12 +102,12 @@ html, body{
 
 /* font-family */
 :root{
-  --font-family-h1:"Tinos", serif;
-  --font-family-h2:Arial, sans-serif;
-  --font-family-h3:Arial, sans-serif;
-  --font-family-h4:'Tinos', serif;
-  --font-family-span:Arial, sans-serif;
-  --font-family-p:Arial, sans-serif;
+  --font-family-h1:"Montserrat", sans-serif;
+  --font-family-h2:"Montserrat", sans-serif;
+  --font-family-h3:"Montserrat", sans-serif;
+  --font-family-h4:"Montserrat", sans-serif;
+  --font-family-span:"Montserrat", sans-serif;
+  --font-family-p:"Courier Prime", monospace;
 }
 
 h1{
@@ -164,6 +165,7 @@ p{
 }
 
 a{
+  font-family: "Courier Prime", monospace;
   text-decoration: none;
   color: black;
   margin: 0;

@@ -12,12 +12,12 @@ const About = () => {
                     <div className="title">
                         <p>ABOUT</p>
                     </div>
-                    <div className="contact-section">
-                        <p>Contact</p>
+                    {/*<div className="contact-section">
+                            <p>Contact</p>
                         <div className="button-contact">
                             <p>info@damaja-studio.com</p>
                         </div>
-                    </div>
+                    </div>*/}
                     {/*<div className="links">
                         <Link to="/"><p>INSTAGRAM</p></Link>
                         <Link to="/"><p>YOUTUBE</p></Link>

@@ -8,7 +8,7 @@ const App = () => {
 
     return (
         <>
-            <Nav isHovered={isHovered} />
+            {/*<Nav isHovered={isHovered} />*/}
             <Routes>
                 <Route path="/" element={<Home setIsHovered={setIsHovered} />} />
                 {/* Other routes can be added here */}
