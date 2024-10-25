@@ -1,5 +1,5 @@
 .nav-ctn a{
-  color: var(--color-change-item);
+  color: black;
   font-size: 14px;
   font-weight: 500;
 }
@@ -10,30 +10,21 @@
     justify-content: center;
     width: 100%;
     z-index: 1;
-    padding:2em 1.5em;
+    padding:1.5em 2em;
   }
-
 
   .nav-ctn.hovered a {
     /*color:#b95733;*/
     color:  var(--color-change-item);
   }
 
-.nav-ctn.hovered h3 {
-   /*color:#b95733; */
-   color: var(--color-change-item);
-  }
-
-  
   .nav-content {
-    width: 25vw;
+    width: 100%;
     z-index: 1;
     gap: 0em;
     text-transform: uppercase;
     color: black;
-    border: 1px solid var(--color-change-item);
     border-radius: 2em;
-    padding: 1em;
   }
 
   .nav-links{
@@ -42,19 +33,12 @@
     justify-content: space-between;
   }
 
-  /*.contact,
-  .studio{
-    border-right: 1px solid var(--color-change-item);
-  }*/
-
-  .contact,
-  .studio,
-  .workshops{
+  .right-ctn{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    gap: 2em;
   }
-  
+
   .nav-content.hovered{
     border: 1px solid var(--color-change-item);
   }

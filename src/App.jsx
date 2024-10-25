@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Routes, Route } from "react-router-dom"; // Removed BrowserRouter
+import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./pages/HomePage";
 
@@ -8,16 +8,19 @@ const App = () => {
 
     return (
         <>
-            {/*<Nav isHovered={isHovered} />*/}
+           <Nav  isHovered={isHovered} />
             <Routes>
                 <Route path="/" element={<Home setIsHovered={setIsHovered} />} />
-                {/* Other routes can be added here */}
             </Routes>
         </>
     );
 };
 
 export default App;
+
+
+
+
 
 
 

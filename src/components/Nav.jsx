@@ -9,15 +9,13 @@ const Nav = ({isHovered}) => {
         <div className={`nav-ctn ${isHovered ? 'hovered' : ''}`} >
             <div className="nav-content">
                 <div className="nav-links">
-
-                    <div className="studio">
-                    <Link to="/">DAMAJA</Link>
+                    <div className="left-ctn">
+                        <Link to="/">DAMAJA</Link>
                     </div>
-                    <div className="contact">
-                    <Link to="/">Contact</Link>
-                    </div>
-                    <div className="workshops">
-                    <Link to="/">Workshops</Link>
+                    <div className="right-ctn">
+                        <Link to="/">About</Link>
+                        <Link to="/">Workshops</Link>
+                        <Link to="/">Contact</Link>
                     </div>
                 </div>
             </div>
