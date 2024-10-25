@@ -6,11 +6,34 @@ import Home from "./pages/HomePage";
 const App = () => {
     const [isHovered, setIsHovered] = useState(false);
 
+    // 1. Initialize state to store scroll functions
+    const [scrollToAbout, setScrollToAbout] = useState(() => {});
+    const [scrollToContact, setScrollToContact] = useState(() => {});
+    const [scrollToHome, setScrollToHome] = useState(() => {});
+    const [scrollToWorkshops, setScrollToWorkshops] = useState(() => {});
+
     return (
         <>
-           <Nav  isHovered={isHovered} />
+           <Nav 
+           isHovered={isHovered} 
+           scrollToAbout={scrollToAbout}
+           scrollToWorkshops={scrollToWorkshops}
+           scrollToHome = {scrollToHome}
+           scrollToContact = {scrollToContact}
+           />
             <Routes>
-                <Route path="/" element={<Home setIsHovered={setIsHovered} />} />
+            <Route
+                    path="/"
+                    element={
+                        <Home
+                            setIsHovered={setIsHovered}
+                            setScrollToHome={setScrollToHome}
+                            setScrollToAbout={setScrollToAbout}
+                            setScrollToWorkshops={setScrollToWorkshops}
+                            setScrollToContact={setScrollToContact}
+                        />
+                    }
+                />
             </Routes>
         </>
     );

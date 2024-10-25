@@ -17,29 +17,29 @@ const HomePage = ({ setIsHovered, setScrollToAbout, setScrollToContact, setScrol
 
   useEffect (() => {
 
-    setScrollToAbout (() => {
-      if (aboutRef.current) aboutRef.current.scrollIntoView ({behavior:smooth});
+    setScrollToHome (() => () => {
+      if (homeRef.current) homeRef.current.scrollIntoView ({behavior:'smooth'});
     });
 
-    setScrollToWorkshops (() => {
-      if (workshopsRef.current) workshopsRef.current.scrollIntoView ({behavior:smooth});
+    setScrollToAbout  (() => () => {
+      if (aboutRef.current) aboutRef.current.scrollIntoView ({behavior:'smooth'});
     });
 
-    setScrollToContact (() => {
-      if (contactRef.current) contactRef.current.scrollIntoView ({behavior:smooth});
+    setScrollToWorkshops  (() => () => {
+      if (workshopsRef.current) workshopsRef.current.scrollIntoView ({behavior:'smooth'});
     });
 
-    setScrollToHome (() => {
-      if (homeRef.current) homeRef.current.scrollIntoView ({behavior:smooth});
+    setScrollToContact  (() => () => {
+      if (contactRef.current) contactRef.current.scrollIntoView ({behavior:'smooth'});
     });
 
-  })
+  }, [setScrollToHome, setScrollToAbout, setScrollToWorkshops, setScrollToContact]);
 
   return (
     <>
 
-    <div ref={homeRef} setIsHovered={setIsHovered} >
-      <Gallery />
+    <div ref={homeRef}  >
+      <Gallery setIsHovered={setIsHovered} />
     </div> 
     <div ref={aboutRef} >
       <About />
