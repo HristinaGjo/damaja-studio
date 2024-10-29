@@ -37,7 +37,7 @@
 .title-column p{
     font-size: 12px;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 400;
     visibility: hidden;
  }
 
@@ -51,7 +51,7 @@
 .title-column.hovered p{
     font-size: 12px;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 400;
     visibility: visible;
     /*color:#b95733; */
     color:var(--color-change-item);
@@ -81,7 +81,8 @@
     width: 100%;
 }
 
-.images-row-1 :nth-child(3){
+.images-row-1 :nth-child(3),
+.images-row-1 :nth-child(6){
     grid-column: span 2;
 }
 

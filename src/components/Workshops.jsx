@@ -9,6 +9,10 @@ import img01 from "../assets/img01.webp"
 import img03 from "../assets/img03.webp"
 import img02 from "../assets/img02.webp"
 
+import img04 from "../assets/img04.webp"
+import img05 from "../assets/img05.webp"
+import img06 from "../assets/img06.webp"
+
 const Workshops = () => {
 
 
@@ -83,17 +87,61 @@ const Workshops = () => {
 
             {isOpen && (
                 <div className="additional-content">
-                    <div className="gallery-workshops">
-                        <div className="img-ctn-workshops">
-                            <img src={img01} />
+                    <div className="additional-left-ctn">
+                    <div className="collab-list">
+                        <div className="title-collab">
+                            <p>Previous Workshops</p>
+                        </div> 
+                        <div className="collab-item">
+                            <p>01</p>
+                            <p>ADIDAS</p>
                         </div>
-                        <div className="img-ctn-workshops">
-                            <img src={img03} />
+                        <div className="collab-item">
+                            <p>02</p>
+                            <p>ADIDAS</p>
                         </div>
-                        <div className="img-ctn-workshops">
-                            <img src={img02} />
+                        <div className="collab-item">
+                            <p>03</p>
+                            <p>ADIDAS</p>
+                        </div>
+                        <div className="collab-item">
+                            <p>04</p>
+                            <p>ADIDAS</p>
                         </div>
                     </div>
+
+                    </div>
+
+                    <div className="additional-right-ctn">
+
+
+                    <div className="gallery-workshops">
+                        <div className="first-row-imgs">
+                            <div className="img-ctn-workshops">
+                                <img src={img01} />
+                            </div>
+                            <div className="img-ctn-workshops">
+                             <img src={img03} />
+                            </div>
+                            <div className="img-ctn-workshops">
+                                <img src={img02} />
+                            </div>
+                        </div>
+                        <div className="second-row-imgs">
+                            <div className="img-ctn-workshops">
+                                <img src={img04} />
+                            </div>
+                            <div className="img-ctn-workshops">
+                                <img src={img05} />
+                            </div>
+                            <div className="img-ctn-workshops">
+                                <img src={img06} />
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+
                 </div>
             )}
 

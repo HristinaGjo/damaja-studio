@@ -41,8 +41,9 @@ a{
 }
 
 .damaja-img {
-   width: 100%;
+   width: 50%;
    height: auto;
+   margin-left: auto;
 }
 
 .damaja-img img{

@@ -38,26 +38,17 @@
     gap: 4em;
 }
 
-.collab-list{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
 
-.collab-item{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 11em;
-}
 
 .video-ctn{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /*display: flex;
+    flex-direction: row;*/
+    margin-left: 0;
     gap: 2em;
-    height:60vh;
+    /*height:60vh;*/
 }
 
 video {
@@ -93,31 +84,90 @@ video {
 
 
 .toggle-workshops{
-    width: 49%;
+    width: 30%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     /*padding: 1em;*/
     /*background: var(--color-change-bg);*/
     border-radius: 1em;
+    background: var(--color-change-bg);
+    padding: 1em;
+   
+}
+
+.toggle-workshops p{
+    color: white;
 }
 
 
-.additional-content{
+/*.additional-content{
     display: flex;
     flex-direction: column;
-    padding: 5em 1.5em;
+    padding: 10em 1.5em;
+}*/
+
+.additional-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 10em;
+    padding-right: 1.5em;
+}
+
+.additional-right-ctn{
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    width: 100%;
+    grid-column: span 2;
+}
+
+.collab-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.collab-item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 11em;
+}
+
+.collab-item p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.05em;
+}
+
+
+.title-collab p{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.05em;
+    padding-bottom: 2em;
+    
 }
 
 .gallery-workshops{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 2em;
+
+}
+
+.first-row-imgs,
+.second-row-imgs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     width: 100%;
-    justify-content: space-between;
+    gap: 2em;
 }
 
 
-.img-ctn-workshops{
+/*.img-ctn-workshops{
     width: 20vw;
     height: auto;
-}
+} */

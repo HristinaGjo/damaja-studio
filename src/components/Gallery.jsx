@@ -19,9 +19,10 @@ const rows = [
         images: [
             { src: "/assets/adidas03.webp", alt: "Image not available" },
             { src: "/assets/adidas01.webp", alt: "Image not available" },
-            { src: "/assets/adidas04.webp", alt: "Image not available" },
+            { src: "/assets/adidas06.webp", alt: "Image not available" },
             { src: "/assets/adidas02.webp", alt: "Image not available" },
             { src: "/assets/adidas05.webp", alt: "Image not available" },
+            { src: "/assets/adidas04.webp", alt: "Image not available" },
         ],
     },
     {

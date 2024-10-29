@@ -14,6 +14,7 @@ import peek from "../assets/peek-logo.webp"
 import tommy from "../assets/tommy-logo.webp"
 
 import vee from "../assets/vee-logo.webp"
+import iD from "../assets/id.svg"
 
 
 
@@ -30,6 +31,7 @@ const Clients = () => {
                     <img className="logo-img" src={ivy} />
                     <img className="logo-img" src={circular} />
                     <img className="logo-img" src={dawn} />
+                    <img className="logo-img" src={iD} />
                    
                 </div>
                 <div className="second-row">

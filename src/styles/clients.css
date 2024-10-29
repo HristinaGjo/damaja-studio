@@ -34,7 +34,7 @@
 
 .first-row img{
     display: flex;
-    margin-left: auto;
+    margin-left: 0;
 }
 
 .second-row img{
@@ -49,9 +49,25 @@
 
 }
 
-.first-row :nth-child(1),
-.second-row :nth-child(4){
+.first-row :nth-child(1){
     width: 6vw;
+}
+
+.first-row :nth-child(4){
+    width: 7vw;
+}
+
+
+.first-row :nth-child(5){
+    width: 4.5vw;
+}
+
+.second-row :nth-child(3){
+    width: 15vw;
+}
+
+.second-row :nth-child(4){
+    width: 8vw;
 }
 
 img{

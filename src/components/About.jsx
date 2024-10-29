@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/about.css"
-import damajaStudio from "../assets/damaja-studio-cut-1.webp"
+import damajaStudio from "../assets/damajaStudio.webp"
 import { Link } from "react-router-dom";
 
 const About = () => {
