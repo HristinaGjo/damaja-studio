@@ -199,7 +199,7 @@
     /*background: var(--color-change-item);*/
     /*background: #F2CA99;*/
     /*background: #034AA6;*/
-    background: #D97D5B;
+    background: var(--color-popup);
     display: flex;
     justify-content: center;
     align-items: center;

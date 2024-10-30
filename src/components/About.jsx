@@ -40,9 +40,9 @@ const About = () => {
                                 <p>contact for collab requests & info</p>
                                 <p>info@damaja-studio.com</p>
                             </div> */}
-                            <div className="clients-info">
+                            {/*<div className="clients-info">
                                 <p>Damaja's clients &darr;</p>
-                            </div>
+                            </div>*/}
                         </div>
                         <div className="damaja-img">
                             <img src={damajaStudio} />

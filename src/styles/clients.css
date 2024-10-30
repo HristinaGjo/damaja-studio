@@ -6,13 +6,20 @@
     background: var(--color-change-bg);
 }
 
+.clients-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .clients-title p{
-    font-size: 24px;
+    font-size: 20px;
     /*font-family: "IBM Plex Sans", sans-serif;*/
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.25;
     letter-spacing: -0.05em;
     color:white;
+    font-style: italic;
 }
 
 .logo-ctn{
@@ -20,7 +27,11 @@
     flex-direction: column;
 }
 
-.first-row,
+.first-row {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
 .second-row{
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -57,10 +68,16 @@
     width: 7vw;
 }
 
-
 .first-row :nth-child(5){
     width: 4.5vw;
+    transform: rotate(90deg);
+    margin-top: auto;
 }
+
+.first-row :nth-child(6){
+    width: 8vw;
+}
+
 
 .second-row :nth-child(3){
     width: 15vw;

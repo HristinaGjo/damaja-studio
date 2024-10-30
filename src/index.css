@@ -24,6 +24,7 @@ html, body{
 }
 
 
+/*
 :root{
   --column:10vw;
   --columns:6;
@@ -32,7 +33,27 @@ html, body{
   --color-change-bg:#CD6D71;
   --color-popup:#D97D5B;
 }
+ */
 
+:root{
+  --column:10vw;
+  --columns:6;
+  --gap:1em;
+  --color-change-item: #9f6b72;
+  --color-change-bg: #CDA7AC;
+  --color-popup:#CDC8A7;
+}
+
+
+/* 
+green: #d0d1ab;
+darker green: #c6c89b;
+
+light pink:  #d7c4b7;
+darker pink: #cdb5a7;
+#E4D3D9
+#CDA7AC
+*/
 
 
 

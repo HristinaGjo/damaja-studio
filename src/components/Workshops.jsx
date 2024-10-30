@@ -13,6 +13,10 @@ import img04 from "../assets/img04.webp"
 import img05 from "../assets/img05.webp"
 import img06 from "../assets/img06.webp"
 
+import img07 from "../assets/img07.webp"
+import img08 from "../assets/img08.webp"
+import img09 from "../assets/img09.webp"
+
 const Workshops = () => {
 
 
@@ -88,7 +92,82 @@ const Workshops = () => {
             {isOpen && (
                 <div className="additional-content">
                     <div className="additional-left-ctn">
-                    <div className="collab-list">
+
+
+                    </div>
+
+                    <div className="additional-right-ctn">
+
+                    <div className="gallery-workshops">
+
+                    <div className="row-info">
+                            <p>Adidas</p>
+                            <div className="second-row-imgs">
+                                <div className="img-ctn-workshops">
+                                    <img src={img07} />
+                                </div>
+                                <div className="img-ctn-workshops">
+                                    <img src={img08} />
+                                </div>
+                                <div className="img-ctn-workshops">
+                                    <img src={img09} />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="row-info">
+                            <p>Tommy Hilfinger</p>
+                            <div className="second-row-imgs">
+                                <div className="img-ctn-workshops">
+                                    <img src={img06} />
+                                </div>
+                                <div className="img-ctn-workshops">
+                                    <img src={img04} />
+                                </div>
+                                <div className="img-ctn-workshops">
+                                    <img src={img05} />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="row-info">
+                        <p>Adidas Flagship Store</p>
+                        <div className="first-row-imgs">
+                            <div className="img-ctn-workshops">
+                                <img src={img01} />
+                            </div>
+                            <div className="img-ctn-workshops">
+                             <img src={img03} />
+                            </div>
+                            <div className="img-ctn-workshops">
+                                <img src={img02} />
+                            </div>
+                        </div>
+                        </div>
+
+
+
+
+                    </div>
+                     
+                    </div>
+                </div>
+            )}
+
+        </div>
+        </>
+     );
+}
+ 
+export default Workshops;
+
+/* 
+                    <div className="clients">
+                        
+                    </div>
+
+
+                                        <div className="collab-list">
                         <div className="title-collab">
                             <p>Previous Workshops</p>
                         </div> 
@@ -110,57 +189,4 @@ const Workshops = () => {
                         </div>
                     </div>
 
-                    </div>
-
-                    <div className="additional-right-ctn">
-
-
-                    <div className="gallery-workshops">
-                        <div className="row-info">
-                        <p>Adidas Flagship Store</p>
-                        <div className="first-row-imgs">
-                            <div className="img-ctn-workshops">
-                                <img src={img01} />
-                            </div>
-                            <div className="img-ctn-workshops">
-                             <img src={img03} />
-                            </div>
-                            <div className="img-ctn-workshops">
-                                <img src={img02} />
-                            </div>
-                        </div>
-                        </div>
-
-                        <div className="row-info">
-                        <p>Tommy Hilfinger</p>
-                        <div className="second-row-imgs">
-                            <div className="img-ctn-workshops">
-                                <img src={img06} />
-                            </div>
-                            <div className="img-ctn-workshops">
-                                <img src={img04} />
-                            </div>
-                            <div className="img-ctn-workshops">
-                                <img src={img05} />
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-
-                    </div>
-
-                </div>
-            )}
-
-        </div>
-        </>
-     );
-}
- 
-export default Workshops;
-
-/* 
-                    <div className="clients">
-                        
-                    </div>
 */

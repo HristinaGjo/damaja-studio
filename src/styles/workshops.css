@@ -110,8 +110,8 @@ video {
 .additional-content{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    padding-top: 10em;
-    padding-right: 1.5em;
+    padding-top: 5em;
+  
 }
 
 .additional-right-ctn{

@@ -16,15 +16,17 @@ import tommy from "../assets/tommy-logo.webp"
 import vee from "../assets/vee-logo.webp"
 import iD from "../assets/id.svg"
 
+import sessun from "../assets/sessun-logo.svg"
+
 
 
 const Clients = () => {
     return ( 
         <>
         <div className="clients-wrapper">
-           {/* <div className="clients-title">
-                <p>CLIENTS</p>
-            </div> */}
+           <div className="clients-title">
+                <p>CLIENTS & COLLABORATIONS</p>
+            </div> 
             <div className="logo-ctn">
                 <div className="first-row">
                     <img className="logo-img" src={adidas} />
@@ -32,6 +34,7 @@ const Clients = () => {
                     <img className="logo-img" src={circular} />
                     <img className="logo-img" src={dawn} />
                     <img className="logo-img" src={iD} />
+                    <img className="logo-img" src={sessun} />
                    
                 </div>
                 <div className="second-row">
