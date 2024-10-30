@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/about.css"
 import damajaStudio from "../assets/damajaStudio.webp"
 import { Link } from "react-router-dom";
+import Clients from "./Clients";
 
 const About = () => {
     return ( 
@@ -33,11 +34,23 @@ const About = () => {
                     Her work explores current social and cultural topics, 
                     through a blend of traditional craftsmanship with modern aesthetics and conscientious attention to detail. 
                     </p>
-                    <div className="damaja-img">
-                        <img src={damajaStudio} />
+                    <div className="info-ctn">
+                        <div className="text-ctn">
+                           {/* <div className="contact-about">
+                                <p>contact for collab requests & info</p>
+                                <p>info@damaja-studio.com</p>
+                            </div> */}
+                            <div className="clients-info">
+                                <p>Damaja's clients &darr;</p>
+                            </div>
+                        </div>
+                        <div className="damaja-img">
+                            <img src={damajaStudio} />
+                        </div>
                     </div>
                 </div>
             </div>
+
 
         </div>
         </>

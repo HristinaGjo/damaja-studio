@@ -38,7 +38,7 @@ const Workshops = () => {
                         </div>
                     </div>*/}
                     <div className="toggle-workshops" onClick={toggleDropdown} style={{cursor:'pointer'}}>
-                        <p>{isOpen ? 'see less' : 'see more'}</p>
+                        <p>{isOpen ? 'less impressions' : 'more impressions'}</p>
                     </div>
                 </div>
                 <div className="workshops-right-ctn">
@@ -116,6 +116,8 @@ const Workshops = () => {
 
 
                     <div className="gallery-workshops">
+                        <div className="row-info">
+                        <p>Adidas Flagship Store</p>
                         <div className="first-row-imgs">
                             <div className="img-ctn-workshops">
                                 <img src={img01} />
@@ -127,16 +129,21 @@ const Workshops = () => {
                                 <img src={img02} />
                             </div>
                         </div>
+                        </div>
+
+                        <div className="row-info">
+                        <p>Tommy Hilfinger</p>
                         <div className="second-row-imgs">
+                            <div className="img-ctn-workshops">
+                                <img src={img06} />
+                            </div>
                             <div className="img-ctn-workshops">
                                 <img src={img04} />
                             </div>
                             <div className="img-ctn-workshops">
                                 <img src={img05} />
                             </div>
-                            <div className="img-ctn-workshops">
-                                <img src={img06} />
-                            </div>
+                        </div>
                         </div>
                     </div>
 

@@ -22,9 +22,9 @@ const Clients = () => {
     return ( 
         <>
         <div className="clients-wrapper">
-            <div className="clients-title">
+           {/* <div className="clients-title">
                 <p>CLIENTS</p>
-            </div>
+            </div> */}
             <div className="logo-ctn">
                 <div className="first-row">
                     <img className="logo-img" src={adidas} />

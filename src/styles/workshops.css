@@ -84,7 +84,7 @@ video {
 
 
 .toggle-workshops{
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,7 +148,6 @@ video {
     line-height: 1.25;
     letter-spacing: -0.05em;
     padding-bottom: 2em;
-    
 }
 
 .gallery-workshops{
@@ -156,6 +155,12 @@ video {
     flex-direction: column;
     gap: 2em;
 
+}
+
+.row-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .first-row-imgs,
