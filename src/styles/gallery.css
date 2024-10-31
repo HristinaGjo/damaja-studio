@@ -221,23 +221,30 @@
 }
 
 
+.title-column-mobile{
+    display: none;
+}
+
 @media (max-width:768px) {
 
     .gallery-container{
         gap: 4em;
-        padding: 8em 1.5em;
+        padding: 10em 1.5em;
         transition: none;
     }
 
     .title-column{
-        visibility: visible;
+       display: none;
     }
 
-    .title-column p{
+    .title-column-mobile{
+        margin-left: 0;
+    }
+
+    .title-column-mobile p{
         font-size: 12px;
         font-style: italic;
         font-weight: 400;
-        visibility: visible;
     }
 
     .images-row-0{
@@ -276,6 +283,9 @@
         width: 100%;
     }
     
+    .close-button:hover {
+        color: none;
+     }
 
 }
 

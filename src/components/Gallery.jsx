@@ -18,15 +18,15 @@ const rows = [
         title: "02 BLN GREEN MAP, ADIDAS FLAGSHIP STORE",
         images: [
             { src: "/assets/adidas03.webp", alt: "Image not available" },
-            { src: "/assets/adidas01.webp", alt: "Image not available" },
             { src: "/assets/adidas06.webp", alt: "Image not available" },
+            { src: "/assets/adidas01.webp", alt: "Image not available" },
             { src: "/assets/adidas02.webp", alt: "Image not available" },
             { src: "/assets/adidas05.webp", alt: "Image not available" },
             { src: "/assets/adidas04.webp", alt: "Image not available" },
         ],
     },
     {
-        title: "02 HOOPS, PERSONAL WORK",
+        title: "03 HOOPS, PERSONAL WORK",
         images: [
             { src: "/assets/hoops01.webp", alt: "Image not available" },
             { src: "/assets/hoops03.webp", alt: "Image not available" },
@@ -92,6 +92,11 @@ const Gallery = ({ setIsHovered }) => {
                             </div>
                         ))}
                     </div>
+
+                    <div className={`title-column-mobile ${hoveredRow === rowIndex ? 'hovered' : ''}`}>
+                        <p>{row.title}</p>
+                    </div>
+
                 </div>
             ))}
 

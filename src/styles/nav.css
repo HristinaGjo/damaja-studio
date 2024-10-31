@@ -5,6 +5,7 @@
 }
 
 .nav-ctn {
+    width: 100%;
     position:fixed;
     display: flex;
     justify-content: center;
@@ -47,6 +48,27 @@
 
 
   @media (max-width: 768px) {
+
+
+
+    .right-ctn{
+      display: flex;
+      flex-direction: row;
+      gap: 0.5em;
+    }
+
+    .nav-links{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+    }
+
+    .left-ctn a{
+      font-size: 24px;
+
+    }
 
   }
 
