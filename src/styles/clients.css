@@ -25,6 +25,7 @@
 .logo-ctn{
     display: flex;
     flex-direction: column;
+    gap: 2em;
 }
 
 .first-row {
@@ -130,7 +131,7 @@ img{
     .logo-ctn-mobile{
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        gap: 2em;
     }
 
     .first-row-mobile,
