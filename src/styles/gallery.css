@@ -239,6 +239,7 @@
 
     .title-column-mobile{
         margin-left: 0;
+        display: block;
     }
 
     .title-column-mobile p{
