@@ -60,12 +60,13 @@ const Clients = () => {
                 <div className="second-row-mobile">
 
                     <img className="logo-img-m" src={tommy} />
-                    <img className="logo-img-m" src={ivy} />
+                    
                     <img className="logo-img-m" src={vice} />
                 </div>
 
                 <div className="third-row-mobile">
                     <img className="logo-img-m" src={sessun} />
+                    <img className="logo-img-m" src={ivy} />
                     <img className="logo-img-m" src={peek} />
                 </div>
 

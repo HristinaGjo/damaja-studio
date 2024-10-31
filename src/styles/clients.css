@@ -123,7 +123,7 @@ img{
         padding:2.5em 1.5em;
         display: flex;
         flex-direction: column;
-        gap: 2em;
+        gap: 2.5em;
         background: var(--color-change-bg);
     }
 
@@ -166,7 +166,7 @@ img{
     }
 
     .first-row-mobile :nth-child(1){
-        width: 16vw;
+        width: 14vw;
     }
 
     .first-row-mobile :nth-child(2){
@@ -179,7 +179,7 @@ img{
     }
 
     .second-row-mobile :nth-child(1) {
-        width: 40vw;
+        width: 42vw;
     }
 
     .second-row-mobile :nth-child(2) {
@@ -191,7 +191,11 @@ img{
     }
 
     .third-row-mobile :nth-child(2){
-        width: 33vw;
+        width: 20vw;
+    }
+
+    .third-row-mobile :nth-child(3){
+        width: 31vw;
     }
 
     .fourth-row-mobile :nth-child(1){
