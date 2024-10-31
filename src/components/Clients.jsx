@@ -46,6 +46,38 @@ const Clients = () => {
                 </div>
             </div>
         </div>
+
+        <div className="clients-wrapper-mobile">
+           <div className="clients-title-mobile">
+                <p>CLIENTS & COLLABORATIONS</p>
+            </div> 
+            <div className="logo-ctn-mobile">
+                <div className="first-row-mobile">
+                    <img className="logo-img-m" src={adidas} />
+                    <img className="logo-img-m" src={circular} />
+                    <img className="logo-img-m" src={iD} />
+                </div>
+                <div className="second-row-mobile">
+
+                    <img className="logo-img-m" src={tommy} />
+                    <img className="logo-img-m" src={ivy} />
+                    <img className="logo-img-m" src={vice} />
+                </div>
+
+                <div className="third-row-mobile">
+                    <img className="logo-img-m" src={sessun} />
+                    <img className="logo-img-m" src={peek} />
+                </div>
+
+                <div className="fourth-row-mobile">
+                    <img className="logo-img-m" src={olivia} />
+                    <img className="logo-img-m" src={vee} />
+         
+                    <img className="logo-img-m" src={dawn} />
+                </div>
+
+            </div>
+        </div>
         </>
      );
 }
