@@ -86,6 +86,9 @@ const Workshops = () => {
                             <source src={workshopVideo03}/>   
                         </video>
                     </div>
+                    <div className="toggle-workshops-mobile" onClick={toggleDropdown} style={{cursor:'pointer'}}>
+                        <p>{isOpen ? 'less impressions' : 'more impressions'}</p>
+                    </div>
                 </div>
             </div>
 
