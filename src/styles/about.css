@@ -26,7 +26,6 @@ a{
     letter-spacing: -0.05em;
 }
 
-
 .links{
     display: flex;
     flex-direction: column;
@@ -70,3 +69,36 @@ a{
     height: 100%;
 }
 
+
+@media (max-width:768px) {
+
+    .about-text{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-left-ctn{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-right-ctn p{
+        font-size: var(--fon-size-p);
+    }
+
+    .info-ctn{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .damaja-img {
+        grid-column: 2 span 2;
+        width: 100%;
+        height: auto;
+    }
+     
+    .damaja-img img{
+        width: 100%;
+        height: 100%;
+    }
+}
