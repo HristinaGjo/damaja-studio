@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import "../styles/workshops.css"
+import { Link } from "react-router-dom";
+
+
+
 import workshopVideo01 from "../assets/video-1.mp4"
 import workshopVideo02 from "../assets/video-2.mp4"
 import workshopVideo03 from "../assets/video-3.mp4"
@@ -54,10 +58,15 @@ const Workshops = () => {
                     Main goal of Damaja’s teachings is to help the participants reconnect with the feeling of 
                     working with their hands.
                     </p>
-                    <div className="collab-list">
-                        {/*<div className="title-collab">
-                            <p>Previous Workshops with:</p>
-                        </div> */}
+
+                    <div className="contact-section">
+                        <p>For workshops inquiries contact:</p>
+                        <Link to="mailto:workshops@damaja-studio.com" target="_blank" rel="noreferrer">
+                            <p>workshops@damaja-studio.com</p>
+                        </Link>
+                    </div>
+
+                    {/*<div className="collab-list">
                         <div className="collab-item">
                             <p>01</p>
                             <p>ADIDAS</p>
@@ -74,7 +83,7 @@ const Workshops = () => {
                             <p>04</p>
                             <p>ADIDAS</p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="video-ctn">
                         <video autoPlay loop muted playsInline>
                             <source src={workshopVideo01}/>   
@@ -104,7 +113,8 @@ const Workshops = () => {
                     <div className="gallery-workshops">
 
                     <div className="row-info">
-                            <p>Adidas</p>
+                            <p>Damaja & Adidas Originals & FC Bayern, Munich
+                            </p>
                             <div className="second-row-imgs">
                                 <div className="img-ctn-workshops">
                                     <img src={img07} />
@@ -119,7 +129,7 @@ const Workshops = () => {
                         </div>
 
                         <div className="row-info">
-                            <p>Tommy Hilfinger</p>
+                            <p>Damaja & Tommy Hilfinger, Berlin</p>
                             <div className="second-row-imgs">
                                 <div className="img-ctn-workshops">
                                     <img src={img06} />
@@ -134,7 +144,7 @@ const Workshops = () => {
                         </div>
 
                         <div className="row-info">
-                        <p>Adidas Flagship Store</p>
+                        <p>Damaja & Adidas Flagship Store, Berlin</p>
                         <div className="first-row-imgs">
                             <div className="img-ctn-workshops">
                                 <img src={img01} />

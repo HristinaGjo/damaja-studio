@@ -20,9 +20,7 @@
     font-size: 16px;
 }
 
-.contact-section p{
-    text-transform: uppercase;
-}
+
 
 .workshops-left-ctn{
     display:flex;
@@ -59,28 +57,17 @@ video {
 /* for workshops and about section */
 .contact-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: .5em;
 }
 
-.contact-section p{
-    font-size: 14px;
+.contact-section p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.05em; 
 }
 
-.button-contact{
-    width: 49%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    /*padding: 1em;*/
-    /*background: var(--color-change-bg);*/
-    border-radius: 1em;
-}
-
-.button-contact p{
-    font-size: 14px;
-    /*color: white;*/
-    color: black;
-}
 
 
 .toggle-workshops{
@@ -185,7 +172,7 @@ video {
 @media (max-width:768px) {
 
     .title{
-        padding-bottom: 1em;
+        padding-bottom: 2em;
     }
 
     .title p{
@@ -231,6 +218,19 @@ video {
         display:flex;
         flex-direction: column;
         padding-top: 5em;
+    }
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        gap: 0em;
+    }
+    
+    .contact-section p {
+        font-size: var(--font-size-p);
+        font-weight: 500;
+        line-height: 1.25;
+        letter-spacing: -0.05em; 
     }
 
  
