@@ -8,8 +8,8 @@
     position:fixed;
     display: flex;
     justify-content: center;
-    width: 100%;
     z-index: 1;
+    box-sizing: border-box;
     padding:1.5em 2em;
   }
 
@@ -28,6 +28,7 @@
   }
 
   .nav-links{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

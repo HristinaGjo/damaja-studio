@@ -122,7 +122,7 @@ video {
     grid-column: span 2;
 }
 
-.collab-list{
+/*.collab-list{
     display: flex;
     flex-direction: column;
 }
@@ -139,7 +139,7 @@ video {
     font-weight: 500;
     line-height: 1.25;
     letter-spacing: -0.05em;
-}
+}*/
 
 
 .title-collab p{

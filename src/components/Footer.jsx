@@ -18,7 +18,7 @@ const Footer = () => {
           {/*<p>workshops inquiries</p>*/}
           <p>workshops@damaja-studio.com</p>
         </div>
-
+        
           <p>webshop</p>
           <p>instagram</p>
           <p>youtube</p>
