@@ -8,7 +8,7 @@ a,p{
     gap: 6em;
     width: 100%;
     padding: 1.5em;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 
 .footer-contact-ctn{
@@ -34,7 +34,7 @@ a,p{
 }
 
 .site-credits p{
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-size: 12px;
     font-style: italic;
 }
@@ -48,7 +48,7 @@ a,p{
         gap: 4em;
         width: 100%;
         padding: 1.5em;
-        text-transform: uppercase;
+        text-transform: lowercase;
     }
     
     .footer-contact-ctn{
