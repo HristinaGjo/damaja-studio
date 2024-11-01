@@ -54,11 +54,41 @@ const Gallery = ({ setIsHovered }) => {
     const [hoveredImage, setHoveredImage] = useState(null);
     const [hoveredRow, setHoveredRow] = useState(null);
     const [selectedImage, setSelectedImage] = useState(null); // State to store the clicked image
+    const [selectedImageIndex, setSelectedImageIndex] = useState(null);
+    const [selectedRow, setSelectedRow] =useState(null);
+
+
 
     // Function to close the full-screen view
     const closeFullScreen = () => {
         setSelectedImage(null);
+        setSelectedImageIndex(null);
+        setSelectedRow(null);
     };
+
+    const openImageInFullScreen = (image, imgIndex, rowIndex) => {
+        setSelectedImage(image.src);
+        setSelectedImageIndex(imgIndex);
+        setSelectedRow(rowIndex);
+    }
+
+    const goToNextImage = () => {
+        if (selectedRow !== null && selectedImageIndex < rows[selectedRow].images.length - 1) {
+            const nextIndex = selectedImageIndex + 1;
+            setSelectedImage(rows[selectedRow].images[nextIndex].src);
+            setSelectedImageIndex(nextIndex)
+        }
+    }
+
+    const goToPrevImage = () => {
+        if (selectedRow !== null && selectedImageIndex > 0) {
+            const prevIndex = selectedImageIndex - 1;
+            setSelectedImage(rows[selectedRow].images[prevIndex].src);
+            setSelectedImageIndex(prevIndex);
+        }
+    }
+
+
 
     return (
         <div className={`gallery-container ${hoveredImage ? 'hovered' : ''}`}>
@@ -82,7 +112,7 @@ const Gallery = ({ setIsHovered }) => {
                                     setIsHovered(false);
                                     setHoveredRow(null);
                                 }}
-                                onClick={() => setSelectedImage(image.src)} // Set selected image on click
+                                onClick={() => openImageInFullScreen(image, imgIndex, rowIndex)} // Set selected image on click
                             >
                                 <img
                                     src={image.src}
@@ -104,7 +134,10 @@ const Gallery = ({ setIsHovered }) => {
             {selectedImage && (
                 <div className="fullscreen-overlay">
                     <button className="close-button" onClick={closeFullScreen}>Close</button>
+                    <button className="prev-button" onClick={goToPrevImage} disabled={selectedImageIndex === 0}>Prev</button>
                     <img src={selectedImage} alt="Full view" className="fullscreen-image" />
+                    <button className="next-button" onClick={goToNextImage} disabled={selectedImageIndex === rows[selectedRow].images.length - 1} >next</button>
+
                 </div>
             )}
         </div>
@@ -112,3 +145,9 @@ const Gallery = ({ setIsHovered }) => {
 };
 
 export default Gallery;
+
+
+
+/* 
+                    <button className="next-button" onClick={goToNextImage} disabled={selectedImageIndex === rows[selectedRow].images.length - 1}>next</button>
+*/
