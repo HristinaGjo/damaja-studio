@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/gallery.css";
 
+// Original rows data with titles and images
 const rows = [
     {
         title: "01 WALL ART, PERSONAL WORK",
@@ -50,45 +51,37 @@ const rows = [
     },
 ];
 
+// Flatten all images into a single array for easy access by index
+const allImages = rows.flatMap(row => row.images);
+
 const Gallery = ({ setIsHovered }) => {
     const [hoveredImage, setHoveredImage] = useState(null);
     const [hoveredRow, setHoveredRow] = useState(null);
-    const [selectedImage, setSelectedImage] = useState(null); // State to store the clicked image
-    const [selectedImageIndex, setSelectedImageIndex] = useState(null);
-    const [selectedRow, setSelectedRow] =useState(null);
-
-
+    const [currentImageIndex, setCurrentImageIndex] = useState(null); // State to track the current image index in full-screen mode
 
     // Function to close the full-screen view
     const closeFullScreen = () => {
-        setSelectedImage(null);
-        setSelectedImageIndex(null);
-        setSelectedRow(null);
+        setCurrentImageIndex(null); // Set to null to close the overlay
     };
 
-    const openImageInFullScreen = (image, imgIndex, rowIndex) => {
-        setSelectedImage(image.src);
-        setSelectedImageIndex(imgIndex);
-        setSelectedRow(rowIndex);
-    }
+    // Function to open the selected image in full-screen mode
+    const openImageInFullScreen = (imgIndex) => {
+        setCurrentImageIndex(imgIndex); // Set the current index for navigation
+    };
 
+    // Go to the next image in allImages array
     const goToNextImage = () => {
-        if (selectedRow !== null && selectedImageIndex < rows[selectedRow].images.length - 1) {
-            const nextIndex = selectedImageIndex + 1;
-            setSelectedImage(rows[selectedRow].images[nextIndex].src);
-            setSelectedImageIndex(nextIndex)
+        if (currentImageIndex < allImages.length - 1) {
+            setCurrentImageIndex(currentImageIndex + 1);
         }
-    }
+    };
 
+    // Go to the previous image in allImages array
     const goToPrevImage = () => {
-        if (selectedRow !== null && selectedImageIndex > 0) {
-            const prevIndex = selectedImageIndex - 1;
-            setSelectedImage(rows[selectedRow].images[prevIndex].src);
-            setSelectedImageIndex(prevIndex);
+        if (currentImageIndex > 0) {
+            setCurrentImageIndex(currentImageIndex - 1);
         }
-    }
-
-
+    };
 
     return (
         <div className={`gallery-container ${hoveredImage ? 'hovered' : ''}`}>
@@ -98,46 +91,47 @@ const Gallery = ({ setIsHovered }) => {
                         <p>{row.title}</p>
                     </div>
                     <div className={`images-row images-row-${rowIndex}`}>
-                        {row.images.map((image, imgIndex) => (
-                            <div 
-                                key={imgIndex}
-                                className={`image-wrapper ${hoveredImage === image.src ? 'hovered' : hoveredImage ? 'non-hovered' : ''}`}
-                                onMouseEnter={() => {
-                                    setHoveredImage(image.src);
-                                    setIsHovered(true);
-                                    setHoveredRow(rowIndex);
-                                }}
-                                onMouseLeave={() => {
-                                    setHoveredImage(null);
-                                    setIsHovered(false);
-                                    setHoveredRow(null);
-                                }}
-                                onClick={() => openImageInFullScreen(image, imgIndex, rowIndex)} // Set selected image on click
-                            >
-                                <img
-                                    src={image.src}
-                                    alt={image.alt}
-                                    className="gallery-image"
-                                />
-                            </div>
-                        ))}
-                    </div>
+                        {row.images.map((image, imgIndex) => {
+                            // Calculate the global index of each image in allImages
+                            const globalIndex = rows
+                                .slice(0, rowIndex)
+                                .reduce((sum, row) => sum + row.images.length, 0) + imgIndex;
 
-                    <div className={`title-column-mobile ${hoveredRow === rowIndex ? 'hovered' : ''}`}>
-                        <p>{row.title}</p>
+                            return (
+                                <div 
+                                    key={imgIndex}
+                                    className={`image-wrapper ${hoveredImage === image.src ? 'hovered' : hoveredImage ? 'non-hovered' : ''}`}
+                                    onMouseEnter={() => {
+                                        setHoveredImage(image.src);
+                                        setIsHovered(true);
+                                        setHoveredRow(rowIndex);
+                                    }}
+                                    onMouseLeave={() => {
+                                        setHoveredImage(null);
+                                        setIsHovered(false);
+                                        setHoveredRow(null);
+                                    }}
+                                    onClick={() => openImageInFullScreen(globalIndex)} // Open full screen with global index
+                                >
+                                    <img
+                                        src={image.src}
+                                        alt={image.alt}
+                                        className="gallery-image"
+                                    />
+                                </div>
+                            );
+                        })}
                     </div>
-
                 </div>
             ))}
 
             {/* Fullscreen Pop-up */}
-            {selectedImage && (
+            {currentImageIndex !== null && (
                 <div className="fullscreen-overlay">
                     <button className="close-button" onClick={closeFullScreen}>Close</button>
-                    <button className="prev-button" onClick={goToPrevImage} disabled={selectedImageIndex === 0}>Prev</button>
-                    <img src={selectedImage} alt="Full view" className="fullscreen-image" />
-                    <button className="next-button" onClick={goToNextImage} disabled={selectedImageIndex === rows[selectedRow].images.length - 1} >next</button>
-
+                    <button className="prev-button" onClick={goToPrevImage} disabled={currentImageIndex === 0}>←</button>
+                    <img src={allImages[currentImageIndex].src} alt="Full view" className="fullscreen-image" />
+                    <button className="next-button" onClick={goToNextImage} disabled={currentImageIndex === allImages.length - 1}>→</button>
                 </div>
             )}
         </div>
@@ -145,9 +139,3 @@ const Gallery = ({ setIsHovered }) => {
 };
 
 export default Gallery;
-
-
-
-/* 
-                    <button className="next-button" onClick={goToNextImage} disabled={selectedImageIndex === rows[selectedRow].images.length - 1}>next</button>
-*/
