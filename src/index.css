@@ -209,12 +209,12 @@ a{
   }
 
   a{
-    font-family: "Courier Prime", monospace;
-    text-decoration: none;
-    color: black;
-    margin: 0;
-    cursor: pointer;
-  }
+  font-family: "Courier Prime", monospace;
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  cursor: pointer;
+}
 
 }
 
