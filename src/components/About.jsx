@@ -3,6 +3,8 @@ import "../styles/about.css"
 import damajaStudio from "../assets/damajaStudio.webp"
 import { Link } from "react-router-dom";
 import Clients from "./Clients";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 const About = () => {
     return ( 
@@ -44,7 +46,7 @@ const About = () => {
                             </div>*/}
                         </div>
                         <div className="damaja-img">
-                            <img src={damajaStudio} />
+                            <LazyLoadImage src={damajaStudio} />
                         </div>
                     </div>
                 </div>

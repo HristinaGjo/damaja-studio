@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/workshops.css"
 import { Link } from "react-router-dom";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 import workshopVideo01 from "../assets/video-1.mp4"
@@ -130,13 +130,13 @@ const Workshops = () => {
                                 <p>Adidas x Bayern Munich, 3rd Kit Jersey Launch, live customisation, 2024</p>
                             <div className="second-row-imgs">
                                 <div className="img-ctn-workshops">
-                                    <img src={img07} />
+                                    <LazyLoadImage src={img07} />
                                 </div>
                                 <div className="img-ctn-workshops">
-                                    <img src={img08} />
+                                    <LazyLoadImage src={img08} />
                                 </div>
                                 <div className="img-ctn-workshops">
-                                    <img src={img09} />
+                                    <LazyLoadImage src={img09} />
                                 </div>
                             </div>
                         </div>
@@ -145,13 +145,13 @@ const Workshops = () => {
                             <p>i-D x Tommy Hilfiger Shawn Mendes: Classics Reborn Berlin, 3-day upcycling workshop, 2023</p>
                             <div className="second-row-imgs">
                                 <div className="img-ctn-workshops">
-                                    <img src={img06} />
+                                    <LazyLoadImage src={img06} />
                                 </div>
                                 <div className="img-ctn-workshops">
-                                    <img src={img04} />
+                                    <LazyLoadImage src={img04} />
                                 </div>
                                 <div className="img-ctn-workshops">
-                                    <img src={img05} />
+                                    <LazyLoadImage src={img05} />
                                 </div>
                             </div>
                         </div>
@@ -160,13 +160,13 @@ const Workshops = () => {
                             <p>Adidas, brand ambassadors upcycling workshop @ Adidas GreenLab, 2022</p>
                         <div className="first-row-imgs">
                             <div className="img-ctn-workshops">
-                                <img src={img01} />
+                                <LazyLoadImage src={img01} />
                             </div>
                             <div className="img-ctn-workshops">
-                             <img src={img03} />
+                             <LazyLoadImage src={img03} />
                             </div>
                             <div className="img-ctn-workshops">
-                                <img src={img02} />
+                                <LazyLoadImage src={img02} />
                             </div>
                         </div>
 
