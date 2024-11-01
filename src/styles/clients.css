@@ -111,14 +111,14 @@ img{
     }
 
 
-.clients-title-mobile p{
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.25;
-    letter-spacing: -0.05em;
-    color:white;
-    font-style: italic;
-}
+    .clients-title-mobile p{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.25;
+        letter-spacing: -0.05em;
+        color:white;
+        font-style: italic; 
+    }
 
     .clients-wrapper-mobile{
         padding:4em 1.5em;

@@ -113,7 +113,7 @@ const Workshops = () => {
                     <div className="gallery-workshops">
 
                     <div className="row-info">
-                            <p>Damaja & Adidas Originals & FC Bayern, Munich
+                            <p>Damaja & Adidas & FC Bayern, Munich
                             </p>
                             <div className="second-row-imgs">
                                 <div className="img-ctn-workshops">
