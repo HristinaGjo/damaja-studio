@@ -54,7 +54,7 @@
     .right-ctn{
       display: flex;
       flex-direction: row;
-      gap: 0.5em;
+      gap: 0.7em;
     }
 
     .nav-links{

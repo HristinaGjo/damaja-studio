@@ -55,16 +55,31 @@ const Workshops = () => {
                     <br/>
                     From private workshops to embroidery events for product launch campaigns for companies and brands, 
                     she has introduced embroidery and upcyling techniques to thousands of people. 
-                    Main goal of Damaja’s teachings is to help the participants reconnect with the feeling of 
-                    working with their hands.
+                    With a main goal to help the participants to reconnect with the feeling of working with their hands, Damaja offers:
                     </p>
 
-                    <div className="contact-section">
-                        <p>For workshops inquiries contact:</p>
-                        <Link to="mailto:workshops@damaja-studio.com" target="_blank" rel="noreferrer">
-                            <p>workshops@damaja-studio.com</p>
-                        </Link>
-                    </div>
+                    {/*<div className="video-ctn">
+                        <video autoPlay loop muted playsInline>
+                            <source src={workshopVideo01}/>   
+                        </video>
+                        <video autoPlay loop muted playsInline>
+                            <source src={workshopVideo02}/>   
+                        </video>
+                        <video autoPlay loop muted playsInline>
+                            <source src={workshopVideo03}/>   
+                        </video>
+                    </div> */}
+
+                    <ul className="offer-list">
+                        <li>upcycling / hand embroidery workshops for groups of up to 15 people</li>
+                        <li>mindful connection between the mind and the body with engaged presence and distance from computer screens</li>
+                        <li>team building events: contributing to the well-being of people in a workspace where they can communicate through a common task</li>
+                        <li>an interactive event for your product campaign / charity / fundraiser</li>
+                        <li>creative influencers/ brand ambassadors’ environment for producing content</li>
+                        <li>basics in hand embroidery and upcycling using your product or independently sourced materials</li>
+                        <li>live hand embroidery customisation for your product launch / during holiday season</li>
+                    </ul>
+
 
                     {/*<div className="collab-list">
                         <div className="collab-item">
@@ -84,7 +99,8 @@ const Workshops = () => {
                             <p>ADIDAS</p>
                         </div>
                     </div> */}
-                    <div className="video-ctn">
+                    
+                   <div className="video-ctn">
                         <video autoPlay loop muted playsInline>
                             <source src={workshopVideo01}/>   
                         </video>
@@ -94,7 +110,27 @@ const Workshops = () => {
                         <video autoPlay loop muted playsInline>
                             <source src={workshopVideo03}/>   
                         </video>
-                    </div>
+                    </div> 
+
+                    <div className="past-events">
+                            <p>Past events:</p>
+                            <ul className="offer-list">
+                                <li>CFS by Peek & Cloppenburg, upcycling workshop, 2024</li>
+                                <li>DAWN, live customisation @ SEEK Trade Show, 2024</li>
+                                <li>Adidas, upcycling workshop @ Adidas GreenLab, 2023</li>
+                                <li>Neukölln Nachhaltig Fest, hand embroidery workshop, 2023 </li>
+                                <li>i-D x Tommy Hilfiger Shawn Mendes: Classics Reborn Berlin, 3-day upcycling workshop, 2023</li>
+                                <li>DAWN, live customisation, 2022</li>
+                                <li>Sessún, upcycling workshop, 2022</li>
+                                <li>TheLoopLook hand embroidery team session @ Bosch.IO Campus, 2022</li>
+                                <li>Circular Berlin, TheLoopLook launch, hand embroidery workshop, 2022</li>
+                                <li>Adidas, brand ambassadors upcycling workshop @ Adidas GreenLab, 2022</li>
+                                <li>Adidas, HALO activation upcycling workshop @ Adidas GreenLab, 2022</li>
+                                <li>Olivia Steele x Vee Collective, live customisation, 2021</li>
+                                <li>Ivy & Oak, live customisation, 2020</li>
+                            </ul>
+                        </div>
+
                     <div className="toggle-workshops-mobile" onClick={toggleDropdown} style={{cursor:'pointer'}}>
                         <p>{isOpen ? 'less impressions' : 'more impressions'}</p>
                     </div>
@@ -103,18 +139,12 @@ const Workshops = () => {
 
             {isOpen && (
                 <div className="additional-content">
-                    <div className="additional-left-ctn">
-
-
-                    </div>
+                    <div className="additional-left-ctn"></div>
 
                     <div className="additional-right-ctn">
-
-                    <div className="gallery-workshops">
-
-                    <div className="row-info">
-                            <p>Damaja & Adidas & FC Bayern, Munich
-                            </p>
+                        <div className="gallery-workshops">
+                            <div className="row-info">
+                                <p>Adidas x Bayern Munich, 3rd Kit Jersey Launch, live customisation, 2024</p>
                             <div className="second-row-imgs">
                                 <div className="img-ctn-workshops">
                                     <img src={img07} />
@@ -129,7 +159,7 @@ const Workshops = () => {
                         </div>
 
                         <div className="row-info">
-                            <p>Damaja & Tommy Hilfinger, Berlin</p>
+                            <p>i-D x Tommy Hilfiger Shawn Mendes: Classics Reborn Berlin, 3-day upcycling workshop, 2023</p>
                             <div className="second-row-imgs">
                                 <div className="img-ctn-workshops">
                                     <img src={img06} />
@@ -144,7 +174,7 @@ const Workshops = () => {
                         </div>
 
                         <div className="row-info">
-                        <p>Damaja & Adidas Flagship Store, Berlin</p>
+                            <p>Damaja & Adidas Flagship Store, Berlin</p>
                         <div className="first-row-imgs">
                             <div className="img-ctn-workshops">
                                 <img src={img01} />
@@ -156,9 +186,16 @@ const Workshops = () => {
                                 <img src={img02} />
                             </div>
                         </div>
+
                         </div>
 
 
+                    <div className="contact-section">
+                        <p>For workshops inquiries contact:</p>
+                        <Link to="mailto:workshops@damaja-studio.com" target="_blank" rel="noreferrer">
+                            <p>workshops@damaja-studio.com</p>
+                        </Link>
+                    </div>
 
 
                     </div>
@@ -174,32 +211,4 @@ const Workshops = () => {
  
 export default Workshops;
 
-/* 
-                    <div className="clients">
-                        
-                    </div>
-
-
-                                        <div className="collab-list">
-                        <div className="title-collab">
-                            <p>Previous Workshops</p>
-                        </div> 
-                        <div className="collab-item">
-                            <p>01</p>
-                            <p>ADIDAS</p>
-                        </div>
-                        <div className="collab-item">
-                            <p>02</p>
-                            <p>ADIDAS</p>
-                        </div>
-                        <div className="collab-item">
-                            <p>03</p>
-                            <p>ADIDAS</p>
-                        </div>
-                        <div className="collab-item">
-                            <p>04</p>
-                            <p>ADIDAS</p>
-                        </div>
-                    </div>
-
-*/
+        

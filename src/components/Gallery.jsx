@@ -122,6 +122,10 @@ const Gallery = ({ setIsHovered }) => {
                             );
                         })}
                     </div>
+
+                    <div className={`title-column-mobile ${hoveredRow === rowIndex ? 'hovered' : ''}`}>
+                        <p>{row.title}</p>
+                    </div>
                 </div>
             ))}
 

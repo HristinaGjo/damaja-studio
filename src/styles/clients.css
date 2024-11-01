@@ -121,17 +121,17 @@ img{
     }
 
     .clients-wrapper-mobile{
-        padding:4em 1.5em;
+        padding:3em 1.5em;
         display: flex;
         flex-direction: column;
-        gap: 4em;
+        gap: 3em;
         background: var(--color-change-bg);
     }
 
     .logo-ctn-mobile{
         display: flex;
         flex-direction: column;
-        gap: 4em;
+        gap: 3em;
     }
 
     .first-row-mobile,
