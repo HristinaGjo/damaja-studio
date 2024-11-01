@@ -184,6 +184,11 @@ ul{
 
 @media (max-width:768px) {
 
+    .workshops-wrapper{
+        padding:5em 1.5em 3em 1.5em;
+        border-bottom: 1px solid black;
+    }
+
     .title{
         padding-bottom: 2em;
     }
@@ -234,9 +239,11 @@ ul{
     }
 
     .contact-section {
+        display: none;
         display: flex;
         flex-direction: column;
         gap: 0em;
+        font-style: italic;
     }
     
     .contact-section p {
@@ -244,10 +251,11 @@ ul{
         font-weight: 500;
         line-height: 1.25;
         letter-spacing: -0.05em; 
+        display: none;
     }
 
     .row-info p{
-        font-size: 14px;
+        font-size: 10px;
     }
 
     .offer-list {

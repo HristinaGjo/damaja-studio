@@ -61,4 +61,9 @@ a,p{
         padding-bottom: 2em;
     }
 
+    .site-credits{
+        display: flex;
+        margin-left: 0;
+    }
+
 }
