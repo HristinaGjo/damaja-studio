@@ -1,11 +1,29 @@
-import React from "react";
-import "../styles/nav.css"
+import React, { useState, useEffect } from "react";
+import "../styles/nav.css";
 import { Link } from "react-router-dom";
 
-
 const Nav = ({ isHovered, scrollToAbout, scrollToContact, scrollToHome, scrollToWorkshops }) => {
+    const [isVisible, setIsVisible] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    // Handle scroll to show/hide navbar
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > lastScrollY && window.scrollY > 50) {
+                setIsVisible(false); // Hide on scroll down
+            } else {
+                setIsVisible(true); // Show on scroll up
+            }
+            setLastScrollY(window.scrollY);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [lastScrollY]);
+
     return (
-        <div className={`nav-ctn ${isHovered ? 'hovered' : ''}`}>
+        <div className={`nav-ctn ${isHovered ? 'hovered' : ''} ${isVisible ? 'visible' : 'hidden'}`}>
             <div className="nav-content">
                 <div className="nav-links">
                     <div className="left-ctn">
@@ -21,7 +39,9 @@ const Nav = ({ isHovered, scrollToAbout, scrollToContact, scrollToHome, scrollTo
         </div>
     );
 };
+
 export default Nav;
+ 
 
 
 
