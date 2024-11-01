@@ -45,9 +45,7 @@ const Workshops = () => {
                             <p>workshops@damaja-studio.com</p>
                         </div>
                     </div>*/}
-                    <div className="toggle-workshops" onClick={toggleDropdown} style={{cursor:'pointer'}}>
-                        <p>{isOpen ? 'less impressions' : 'more impressions'}</p>
-                    </div>
+                   
                 </div>
                 <div className="workshops-right-ctn">
                     <p>
@@ -80,26 +78,6 @@ const Workshops = () => {
                         <li>live hand embroidery customisation for your product launch / during holiday season</li>
                     </ul>
 
-
-                    {/*<div className="collab-list">
-                        <div className="collab-item">
-                            <p>01</p>
-                            <p>ADIDAS</p>
-                        </div>
-                        <div className="collab-item">
-                            <p>02</p>
-                            <p>ADIDAS</p>
-                        </div>
-                        <div className="collab-item">
-                            <p>03</p>
-                            <p>ADIDAS</p>
-                        </div>
-                        <div className="collab-item">
-                            <p>04</p>
-                            <p>ADIDAS</p>
-                        </div>
-                    </div> */}
-                    
                    <div className="video-ctn">
                         <video autoPlay loop muted playsInline>
                             <source src={workshopVideo01}/>   
@@ -129,6 +107,10 @@ const Workshops = () => {
                                 <li>Olivia Steele x Vee Collective, live customisation, 2021</li>
                                 <li>Ivy & Oak, live customisation, 2020</li>
                             </ul>
+                        </div>
+
+                        <div className="toggle-workshops" onClick={toggleDropdown} style={{cursor:'pointer'}}>
+                            <p>{isOpen ? 'less impressions' : 'more impressions'}</p>
                         </div>
 
                     <div className="toggle-workshops-mobile" onClick={toggleDropdown} style={{cursor:'pointer'}}>
@@ -174,7 +156,7 @@ const Workshops = () => {
                         </div>
 
                         <div className="row-info">
-                            <p>Damaja & Adidas Flagship Store, Berlin</p>
+                            <p>Adidas, brand ambassadors upcycling workshop @ Adidas GreenLab, 2022</p>
                         <div className="first-row-imgs">
                             <div className="img-ctn-workshops">
                                 <img src={img01} />

@@ -5,7 +5,7 @@ a,p{
 .footer-container{
     display: flex;
     flex-direction: column;
-    gap: 5em;
+    gap: 6em;
     width: 100%;
     padding: 1.5em;
     text-transform: uppercase;
@@ -36,6 +36,7 @@ a,p{
 .site-credits p{
     text-transform: uppercase;
     font-size: 12px;
+    font-style: italic;
 }
 
 

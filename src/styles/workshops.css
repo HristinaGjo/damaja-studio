@@ -89,7 +89,7 @@ ul{
 }
 
 .toggle-workshops{
-    width: 40%;
+    width: 27%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,6 +247,10 @@ ul{
     }
 
     .row-info p{
+        font-size: 14px;
+    }
+
+    .offer-list {
         font-size: 14px;
     }
 
