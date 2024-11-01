@@ -21,8 +21,6 @@
     font-size: 16px;
 }
 
-
-
 .workshops-left-ctn{
     display:flex;
     flex-direction: column;
@@ -201,6 +199,10 @@ ul{
         font-size: var(--font-size-p);
     }
 
+    .workshops-right-ctn{
+        gap: 2.5em;
+    }
+
     .workshops-content-ctn{
         display: flex;
         flex-direction: column;
@@ -259,6 +261,10 @@ ul{
 
     .offer-list {
         font-size: 14px;
+    }
+
+    .past-events{
+        gap: 1em;
     }
 
  

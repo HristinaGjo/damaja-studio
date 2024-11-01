@@ -82,6 +82,10 @@ a{
         flex-direction: column;
     }
 
+    .about-right-ctn{
+        gap: 2.5em;
+    }
+
     .about-right-ctn p{
         font-size: var(--fon-size-p);
     }

@@ -50,7 +50,7 @@ const Workshops = () => {
                 <div className="workshops-right-ctn">
                     <p>
                     Since 2017, teaching workshops is a significant part of Damaja’s practice. 
-                    <br/>
+                   
                     From private workshops to embroidery events for product launch campaigns for companies and brands, 
                     she has introduced embroidery and upcyling techniques to thousands of people. 
                     With a main goal to help the participants to reconnect with the feeling of working with their hands, Damaja offers:
@@ -91,8 +91,9 @@ const Workshops = () => {
                     </div> 
 
                     <div className="past-events">
-                            <p>Past events:</p>
+                            <p>Past events</p>
                             <ul className="offer-list">
+                                <li>Adidas x Bayern Munich, 3rd Kit Jersey Launch, live customisation, 2024</li>
                                 <li>CFS by Peek & Cloppenburg, upcycling workshop, 2024</li>
                                 <li>DAWN, live customisation @ SEEK Trade Show, 2024</li>
                                 <li>Adidas, upcycling workshop @ Adidas GreenLab, 2023</li>

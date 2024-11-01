@@ -28,7 +28,6 @@ const About = () => {
                     <p>
                     Stefanija Pejchinovska, who works behind the name Damaja, 
                     is a Berlin-based embroidery artist. 
-                    <br/>
                     With a diploma in architecture and inherited passion for textile arts, 
                     she has devoted her life to hand embroidery.
                     Her work explores current social and cultural topics, 
