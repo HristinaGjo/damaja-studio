@@ -92,6 +92,18 @@ const Gallery = ({ setIsHovered }) => {
             "/assets/flora04.webp",
             "/assets/flora05.webp",
             "/assets/flora06.webp",
+
+            "../assets/img01.webp",
+            "../assets/img02.webp",
+            "../assets/img03.webp",
+            "../assets/img04.webp",
+            "../assets/img05.webp",
+            "../assets/img06.webp",
+            "../assets/img07.webp",
+            "../assets/img08.webp",
+            "../assets/img09.webp",
+
+            "../assets/damajaStudio.webp",
         ];
 
         preloadImages.forEach((src) => {
