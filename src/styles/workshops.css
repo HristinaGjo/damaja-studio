@@ -99,6 +99,27 @@ ul{
     gap: 2em;
 }
 
+.button-ctn{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 4em;
+}
+
+.contact-button{
+    width: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    padding: 1em;
+    border: 1px solid var(--color-change-bg);
+}
+
+.contact-button p{
+    color: var(--color-change-bg);
+}
+
 .toggle-workshops{
     width: 27%;
     display: flex;
@@ -109,7 +130,6 @@ ul{
     border-radius: 1em;
     background: var(--color-change-bg);
     padding: 1em;
-   
 }
 
 .toggle-workshops p{
@@ -246,6 +266,19 @@ ul{
         text-align: center;
     }
 
+    .contact-button{
+        width: 100%;
+        border-radius: 8px;
+        order: -1;
+    }
+
+    .button-ctn{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1em;
+    }
+
     .additional-content{
         display:flex;
         flex-direction: column;
@@ -277,6 +310,7 @@ ul{
     .past-events{
         gap: 1em;
     }
+
 
  
 }

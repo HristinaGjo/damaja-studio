@@ -41,7 +41,7 @@ const Footer = () => {
         <div className="site-credits">
 
           <Link to="https://hristinagjorgieva.com/" target="_blank" rel="noreferrer">
-            <p>&copy; 2024 Site by DSGN Studio</p>
+            <p>&copy; 2024 Site by Hristina Gjorgieva</p>
           </Link>
           
         </div>

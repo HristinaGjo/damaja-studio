@@ -110,15 +110,21 @@ const Workshops = () => {
                             </ul>
                         </div>
 
-                        <div className="toggle-workshops" onClick={toggleDropdown} style={{cursor:'pointer'}}>
-                            <p>{isOpen ? 'less impressions' : 'more impressions'}</p>
+                        <div className="button-ctn">
+                            <div className="toggle-workshops" onClick={toggleDropdown} style={{cursor:'pointer'}}>
+                                <p>{isOpen ? 'less impressions' : 'more impressions'}</p>
+                            </div>
+                            <div className="toggle-workshops-mobile" onClick={toggleDropdown} style={{cursor:'pointer'}}>
+                                <p>{isOpen ? 'less impressions' : 'more impressions'}</p>
+                            </div>
+                            <div className="contact-button">
+                             <Link to="mailto:workshops@damaja-studio.com" target="_blank" rel="noreferrer">
+                                <p>contact</p>
+                            </Link>
+                            </div>
                         </div>
-
-                    <div className="toggle-workshops-mobile" onClick={toggleDropdown} style={{cursor:'pointer'}}>
-                        <p>{isOpen ? 'less impressions' : 'more impressions'}</p>
                     </div>
                 </div>
-            </div>
 
             {isOpen && (
                 <div className="additional-content">
@@ -173,12 +179,12 @@ const Workshops = () => {
                         </div>
 
 
-                    <div className="contact-section">
+                    {/*<div className="contact-section">
                         <p>For workshops inquiries contact Damaja</p>
                         <Link to="mailto:workshops@damaja-studio.com" target="_blank" rel="noreferrer">
                             <p>here.</p>
                         </Link>
-                    </div>
+                    </div> */}
 
 
                     </div>
