@@ -71,8 +71,29 @@ const Gallery = ({ setIsHovered }) => {
             "/assets/wa02-3.webp",
             "/assets/wa02-4.webp",
 
+            "/assets/adidas03.webp",
+            "/assets/adidas06.webp",
+            "/assets/adidas01.webp",
+            "/assets/adidas02.webp",
+            "/assets/adidas05.webp",
+            "/assets/adidas04.webp",
 
-            // Add more important images here if necessary
+            "/assets/hoops01.webp",
+            "/assets/hoops02.webp",
+            "/assets/hoops03.webp",
+            "/assets/hoops04.webp",
+            "/assets/hoops05.webp",
+            "/assets/hoops06.webp",
+            "/assets/hoops07.webp",
+
+            "/assets/flora01.webp",
+            "/assets/flora02.webp",
+            "/assets/flora03.webp",
+            "/assets/flora04.webp",
+            "/assets/flora05.webp",
+            "/assets/flora06.webp",
+
+            "../assets/damajaStudio.webp"
         ];
 
         preloadImages.forEach((src) => {
