@@ -25,7 +25,7 @@ const Clients = () => {
         <>
         <div className="clients-wrapper">
            <div className="clients-title">
-                <p>CLIENTS & COLLABORATIONS</p>
+                <p>CLIENTS</p>
             </div> 
             <div className="logo-ctn">
                 <div className="first-row">
@@ -49,7 +49,7 @@ const Clients = () => {
 
         <div className="clients-wrapper-mobile">
            <div className="clients-title-mobile">
-                <p>CLIENTS & COLLABORATIONS</p>
+                <p>CLIENTS</p>
             </div> 
             <div className="logo-ctn-mobile">
                 <div className="first-row-mobile">

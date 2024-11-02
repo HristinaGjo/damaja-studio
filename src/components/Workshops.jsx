@@ -91,7 +91,7 @@ const Workshops = () => {
                     </div> 
 
                     <div className="past-events">
-                            <p>Past events</p>
+                            <p>Past events:</p>
                             <ul className="offer-list">
                                 <li>Adidas x Bayern Munich, 3rd Kit Jersey Launch, live customisation, 2024</li>
                                 <li>CFS by Peek & Cloppenburg, upcycling workshop, 2024</li>
@@ -174,9 +174,9 @@ const Workshops = () => {
 
 
                     <div className="contact-section">
-                        <p>For workshops inquiries contact:</p>
+                        <p>For workshops inquiries contact Damaja</p>
                         <Link to="mailto:workshops@damaja-studio.com" target="_blank" rel="noreferrer">
-                            <p>workshops@damaja-studio.com</p>
+                            <p>here.</p>
                         </Link>
                     </div>
 

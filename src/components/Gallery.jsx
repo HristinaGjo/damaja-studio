@@ -5,7 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 // Original rows data with titles and images
 const rows = [
     {
-        title: "01 WALL ART, PERSONAL WORK",
+        title: "01 WALL ART, VARIOUS CLIENTS",
         images: [
             { src: "/assets/wa-01.webp", alt: "Image not available" },
             { src: "/assets/wa-02.webp", alt: "Image not available" },

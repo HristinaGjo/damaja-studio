@@ -8,18 +8,17 @@
 
 .clients-title{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
 .clients-title p{
     font-size: 20px;
     /*font-family: "IBM Plex Sans", sans-serif;*/
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.25;
     letter-spacing: -0.05em;
     color:white;
-    font-style: italic;
 }
 
 .logo-ctn{
@@ -106,18 +105,17 @@ img{
 
     .clients-title-mobile{
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
     }
 
 
     .clients-title-mobile p{
         font-size: 20px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 1.25;
         letter-spacing: -0.05em;
         color:white;
-        font-style: italic; 
     }
 
     .clients-wrapper-mobile{

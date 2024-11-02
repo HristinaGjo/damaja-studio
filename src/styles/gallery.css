@@ -190,7 +190,7 @@
     /*background: var(--color-change-item);*/
     /*background: #F2CA99;*/
     /*background: #034AA6;*/
-    background: var(--color-popup);
+    background: var(--color-change-bg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,7 +229,7 @@
 .prev-button, .next-button {
     background: none;
     border: none;
-    color: var(--color-popup);
+    color: var(--color-change-bg);
     font-size: 1em;
     cursor: pointer;
     position: absolute;

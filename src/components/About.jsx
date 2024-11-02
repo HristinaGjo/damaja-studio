@@ -27,7 +27,10 @@ const About = () => {
                     </div>*/}
                 </div>
                 <div className="about-right-ctn">
-                    <p>
+          
+                    <div className="info-ctn">
+                        <div className="text-ctn">
+                        <p>
                     Stefanija Pejchinovska, who works behind the name Damaja, 
                     is a Berlin-based embroidery artist. 
                     With a diploma in architecture and inherited passion for textile arts, 
@@ -35,8 +38,6 @@ const About = () => {
                     Her work explores current social and cultural topics, 
                     through a blend of traditional craftsmanship with modern aesthetics and conscientious attention to detail. 
                     </p>
-                    <div className="info-ctn">
-                        <div className="text-ctn">
                            {/* <div className="contact-about">
                                 <p>contact for collab requests & info</p>
                                 <p>info@damaja-studio.com</p>

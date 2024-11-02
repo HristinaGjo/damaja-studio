@@ -19,7 +19,7 @@ a{
 
 .about-left-ctn p,
 .about-right-ctn p{
-    font-size: 24px;
+    font-size: 16px;
     /*font-family: "IBM Plex Sans", sans-serif;*/
     font-weight: 500;
     line-height: 1.25;
@@ -35,20 +35,21 @@ a{
 .about-right-ctn{
     grid-column: span 2;
     display: flex;
-    flex-direction: column;
-    gap: 4em;
+    flex-direction: row;
+    gap: 2em;
 }
 
-.info-ctn{
+ .info-ctn{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-}
+    gap: 2em;
+} 
 
 .text-ctn{
-
+    grid-column: span 2;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: start;
     gap: 2em;
 }
 
@@ -86,14 +87,19 @@ a{
         gap: 2.5em;
     }
 
+    .info-ctn{
+        display: flex;
+        flex-direction: column;
+    }
+
     .about-right-ctn p{
         font-size: var(--fon-size-p);
     }
 
-    .info-ctn{
+    /*.info-ctn{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-    }
+    }*/
 
     .damaja-img {
         grid-column: 2 span 2;

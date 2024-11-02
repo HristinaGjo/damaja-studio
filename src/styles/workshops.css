@@ -11,11 +11,20 @@
 .workshops-left-ctn p,
 .workshops-right-ctn p,
 .past-events p{
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.25;
     letter-spacing: -0.05em;
 }
+
+.title p{
+    font-size: 20px;
+    /*font-family: "IBM Plex Sans", sans-serif;*/
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.05em;
+}
+
 
 .toggle-workshops p{
     font-size: 16px;
@@ -32,7 +41,7 @@
     grid-column: span 2;
     display: flex;
     flex-direction: column;
-    gap: 4em;
+    gap: 2em;
 }
 
 .video-ctn{
@@ -63,6 +72,10 @@ video {
     font-weight: 500;
     line-height: 1.25;
     letter-spacing: -0.05em; 
+}
+
+.contact-section :nth-last-child(1){
+    text-decoration: underline;
 }
 
 .offer-list{
@@ -200,7 +213,7 @@ ul{
     }
 
     .workshops-right-ctn{
-        gap: 2.5em;
+        gap: 2em;
     }
 
     .workshops-content-ctn{
@@ -240,11 +253,9 @@ ul{
     }
 
     .contact-section {
-        display: none;
         display: flex;
-        flex-direction: column;
-        gap: 0em;
-        font-style: italic;
+        gap: 0.5em;
+        /*font-style: italic;*/
     }
     
     .contact-section p {
@@ -252,7 +263,7 @@ ul{
         font-weight: 500;
         line-height: 1.25;
         letter-spacing: -0.05em; 
-        display: none;
+        
     }
 
     .row-info p{
