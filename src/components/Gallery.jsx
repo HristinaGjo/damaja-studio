@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/gallery.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
 
 // Original rows data with titles and images
 const rows = [
@@ -60,6 +59,30 @@ const Gallery = ({ setIsHovered }) => {
     const [hoveredImage, setHoveredImage] = useState(null);
     const [hoveredRow, setHoveredRow] = useState(null);
     const [currentImageIndex, setCurrentImageIndex] = useState(null); // State to track the current image index in full-screen mode
+
+    // Preload critical images on initial load
+    useEffect(() => {
+        const preloadImages = [
+            "/assets/wa-01.webp",
+            "/assets/adidas03.webp",
+            "/assets/wa01-4.webp",
+            "/assets/wa-03.webp",
+            "/assets/wa02-2.webp",
+            "/assets/wa02-3.webp",
+            "/assets/wa02-4.webp",
+
+
+            // Add more important images here if necessary
+        ];
+
+        preloadImages.forEach((src) => {
+            const link = document.createElement("link");
+            link.rel = "preload";
+            link.as = "image";
+            link.href = src;
+            document.head.appendChild(link);
+        });
+    }, []);
 
     // Function to close the full-screen view
     const closeFullScreen = () => {
