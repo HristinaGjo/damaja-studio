@@ -1,6 +1,9 @@
 import React from "react";
 import "../styles/about.css"
 import damajaStudio from "../assets/damajaStudio.webp"
+import studio01 from "../assets/studio-01.webp"
+import studio02 from "../assets/studio-02.webp"
+
 import { Link } from "react-router-dom";
 import Clients from "./Clients";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -27,10 +30,8 @@ const About = () => {
                     </div>*/}
                 </div>
                 <div className="about-right-ctn">
-          
-                    <div className="info-ctn">
-                        <div className="text-ctn">
-                        <p>
+                <div className="text-ctn">
+                    <p>
                     Stefanija Pejchinovska, who works behind the name Damaja, 
                     is a Berlin-based embroidery artist. 
                     With a diploma in architecture and inherited passion for textile arts, 
@@ -38,6 +39,10 @@ const About = () => {
                     Her work explores current social and cultural topics, 
                     through a blend of traditional craftsmanship with modern aesthetics and conscientious attention to detail. 
                     </p>
+                    </div>
+          
+                    <div className="info-ctn">
+
                            {/* <div className="contact-about">
                                 <p>contact for collab requests & info</p>
                                 <p>info@damaja-studio.com</p>
@@ -45,11 +50,20 @@ const About = () => {
                             {/*<div className="clients-info">
                                 <p>Damaja's clients &darr;</p>
                             </div>*/}
+                            {/*<div className="damaja-img-01">
+                                <LazyLoadImage src={studio01} />
+                            </div>*/}
+                            
+                            {/*<div className="damaja-img">
+                                <LazyLoadImage src={studio02} />
+                            </div>*/}
+
+                            <div className="damaja-img">
+                                <LazyLoadImage src={damajaStudio} />
+                            </div>
                         </div>
-                        <div className="damaja-img">
-                            <LazyLoadImage src={damajaStudio} />
-                        </div>
-                    </div>
+                     
+                    
                 </div>
             </div>
 
