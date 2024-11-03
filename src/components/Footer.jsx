@@ -40,8 +40,10 @@ const Footer = () => {
 
         <div className="site-credits">
 
+          <p>&copy; 2024 Damaja Studio. All rights reserved.</p>
+
           <Link to="https://hristinagjorgieva.com/" target="_blank" rel="noreferrer">
-            <p>&copy; 2024 Site by Hristina Gjorgieva</p>
+            <p>Site by Hristina Gjorgieva</p>
           </Link>
           
         </div>

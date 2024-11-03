@@ -186,7 +186,7 @@ const Workshops = () => {
                                 Julia Lee Goodwin,&nbsp;
                             </Link>
                             <Link to="https://www.instagram.com/style.withasmile/?hl=en" target="_blank" rel="noreferrer">
-                                Noa Ben-Moshe, &nbsp;
+                                Noa Ben-Moshe,&nbsp;
                             </Link>
                             <Link to="https://www.instagram.com/julialeegoodwin?igsh=MXBhcWVzeWozZ2FtMA%3D%3D" target="_blank" rel="noreferrer">
                                 Michael Romacker.
