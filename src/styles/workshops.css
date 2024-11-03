@@ -199,7 +199,7 @@ ul{
     display: flex;
     flex-direction: column;
     gap: 1em;
-    font-style: italic;
+    /*font-style: italic;*/
 }
 
 .first-row-imgs,
@@ -214,9 +214,9 @@ ul{
     display: none;
 }
 
-.photo-credits{
+/*.photo-credits{
     font-style: italic;
-}
+}*/
 
 
 @media (max-width:768px) {

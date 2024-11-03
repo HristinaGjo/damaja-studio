@@ -65,4 +65,8 @@ a,p{
         margin-left: 0;
     }
 
+    .site-credits p{
+        font-size: 10px;
+    }
+
 }
