@@ -57,5 +57,3 @@ const HomePage = ({ setIsHovered, setScrollToAbout, setScrollToContact, setScrol
 };
 
 export default HomePage;
-
-
