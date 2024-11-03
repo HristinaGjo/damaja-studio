@@ -181,7 +181,18 @@ const Workshops = () => {
 
 
                     <div className="photo-credits">
-                        <p>Photo credits in order of showing: person x, person x, person x</p>
+                        <p>Photo credits in order of showing:&nbsp;
+                            <Link to="https://www.instagram.com/julialeegoodwin?igsh=MXBhcWVzeWozZ2FtMA%3D%3D" target="_blank" rel="noreferrer">
+                                Julia Lee Goodwin,&nbsp;
+                            </Link>
+                            <Link to="https://www.instagram.com/style.withasmile/?hl=en" target="_blank" rel="noreferrer">
+                                Noa Ben-Moshe, &nbsp;
+                            </Link>
+                            <Link to="https://www.instagram.com/julialeegoodwin?igsh=MXBhcWVzeWozZ2FtMA%3D%3D" target="_blank" rel="noreferrer">
+                                Michael Romacker.
+                            </Link>
+
+                        </p>
                     </div> 
 
 
