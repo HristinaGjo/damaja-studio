@@ -185,6 +185,11 @@ p{
   margin: 0;
 }
 
+
+ul, li{
+  color: var(--color-p);
+}
+
 a{
   font-family: "Courier Prime", monospace;
   text-decoration: none;
