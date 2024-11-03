@@ -164,6 +164,7 @@ const Workshops = () => {
 
                         <div className="row-info">
                             <p>Adidas, brand ambassadors upcycling workshop @ Adidas GreenLab, 2022</p>
+                            {/*<p>photo credits: Michael Romacker </p> */}
                         <div className="first-row-imgs">
                             <div className="img-ctn-workshops">
                                 <LazyLoadImage src={img01} />
@@ -179,12 +180,9 @@ const Workshops = () => {
                         </div>
 
 
-                    {/*<div className="contact-section">
-                        <p>For workshops inquiries contact Damaja</p>
-                        <Link to="mailto:workshops@damaja-studio.com" target="_blank" rel="noreferrer">
-                            <p>here.</p>
-                        </Link>
-                    </div> */}
+                    <div className="photo-credits">
+                        <p>Photo credits in order of showing: person x, person x, person x</p>
+                    </div> 
 
 
                     </div>

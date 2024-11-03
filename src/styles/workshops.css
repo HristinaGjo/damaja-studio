@@ -214,6 +214,10 @@ ul{
     display: none;
 }
 
+.photo-credits{
+    font-style: italic;
+}
+
 
 @media (max-width:768px) {
 
@@ -304,7 +308,8 @@ ul{
         
     }
 
-    .row-info p{
+    .row-info p,
+    .photo-credits p{
         font-size: 10px;
     }
 
