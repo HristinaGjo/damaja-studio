@@ -173,6 +173,7 @@ const Gallery = ({ setIsHovered }) => {
                                         src={image.src}
                                         alt={image.alt}
                                         className="gallery-image"
+                                        loading="lazy"
                                     />
                                 </div>
                             );
