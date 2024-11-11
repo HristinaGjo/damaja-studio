@@ -63,47 +63,10 @@ const Gallery = ({ setIsHovered }) => {
     // Preload critical images on initial load
     useEffect(() => {
         const preloadImages = [
-            "/assets/wa-01.webp",
-            "/assets/adidas03.webp",
-            "/assets/wa01-4.webp",
-            "/assets/wa-03.webp",
-            "/assets/wa02-2.webp",
-            "/assets/wa02-3.webp",
-            "/assets/wa02-4.webp",
-
-            "/assets/adidas03.webp",
-            "/assets/adidas06.webp",
-            "/assets/adidas01.webp",
-            "/assets/adidas02.webp",
-            "/assets/adidas05.webp",
-            "/assets/adidas04.webp",
-
-            "/assets/hoops01.webp",
-            "/assets/hoops02.webp",
-            "/assets/hoops03.webp",
-            "/assets/hoops04.webp",
-            "/assets/hoops05.webp",
-            "/assets/hoops06.webp",
-            "/assets/hoops07.webp",
-
-            "/assets/flora01.webp",
-            "/assets/flora02.webp",
-            "/assets/flora03.webp",
-            "/assets/flora04.webp",
-            "/assets/flora05.webp",
-            "/assets/flora06.webp",
-
-            "../assets/img01.webp",
-            "../assets/img02.webp",
-            "../assets/img03.webp",
-            "../assets/img04.webp",
-            "../assets/img05.webp",
-            "../assets/img06.webp",
-            "../assets/img07.webp",
-            "../assets/img08.webp",
-            "../assets/img09.webp",
-
-            "../assets/damajaStudio.webp",
+            "/assets/wa-01.webp", // Image from first row
+            "/assets/adidas03.webp", // Image from second row
+            "/assets/hoops01.webp", // Image from third row
+            "/assets/flora05.webp", // Image from fourth row
         ];
 
         preloadImages.forEach((src) => {
@@ -200,3 +163,51 @@ const Gallery = ({ setIsHovered }) => {
 };
 
 export default Gallery;
+
+
+/* 
+    useEffect(() => {
+        const preloadImages = [
+            "/assets/wa-01.webp",
+            "/assets/adidas03.webp",
+            "/assets/wa01-4.webp",
+            "/assets/wa-03.webp",
+            "/assets/wa02-2.webp",
+            "/assets/wa02-3.webp",
+            "/assets/wa02-4.webp",
+
+            "/assets/adidas03.webp",
+            "/assets/adidas06.webp",
+            "/assets/adidas01.webp",
+            "/assets/adidas02.webp",
+            "/assets/adidas05.webp",
+            "/assets/adidas04.webp",
+
+            "/assets/hoops01.webp",
+            "/assets/hoops02.webp",
+            "/assets/hoops03.webp",
+            "/assets/hoops04.webp",
+            "/assets/hoops05.webp",
+            "/assets/hoops06.webp",
+            "/assets/hoops07.webp",
+
+            "/assets/flora01.webp",
+            "/assets/flora02.webp",
+            "/assets/flora03.webp",
+            "/assets/flora04.webp",
+            "/assets/flora05.webp",
+            "/assets/flora06.webp",
+
+            "../assets/img01.webp",
+            "../assets/img02.webp",
+            "../assets/img03.webp",
+            "../assets/img04.webp",
+            "../assets/img05.webp",
+            "../assets/img06.webp",
+            "../assets/img07.webp",
+            "../assets/img08.webp",
+            "../assets/img09.webp",
+
+            "../assets/damajaStudio.webp",
+        ];
+*/
