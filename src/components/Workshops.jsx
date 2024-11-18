@@ -117,11 +117,14 @@ const Workshops = () => {
                             <div className="toggle-workshops-mobile" onClick={toggleDropdown} style={{cursor:'pointer'}}>
                                 <p>{isOpen ? 'less impressions' : 'more impressions'}</p>
                             </div>
+                            <Link to="mailto:workshops@damaja-studio.com" target="_blank" rel="noreferrer">
                             <div className="contact-button">
-                             <Link to="mailto:workshops@damaja-studio.com" target="_blank" rel="noreferrer">
+                            
                                 <p>contact</p>
-                            </Link>
+                            
                             </div>
+                            </Link>
+                           
                         </div>
                     </div>
                 </div>

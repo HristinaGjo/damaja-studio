@@ -41,6 +41,18 @@ a,p{
     /*font-style: italic;*/
 }
 
+.design-credits{
+    display: flex;
+    flex-direction: row;
+    text-decoration: underline;
+    justify-content: end;
+}
+
+
+.kiki {
+    font-style: "Open Sans", sans-serif;
+}
+
 
 @media (max-width: 768px) {
 

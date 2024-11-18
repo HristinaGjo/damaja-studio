@@ -43,7 +43,10 @@ const Footer = () => {
           <p>&copy; 2024 Damaja Studio. All rights reserved.</p>
 
           <Link to="https://hristinagjorgieva.com/" target="_blank" rel="noreferrer">
-            <p>Site by Hristina Gjorgieva</p>
+          <div className="design-credits">
+            <p className="site-by">Site by </p>
+            <p className="kiki">&nbsp;KÍKÍ</p>
+          </div>
           </Link>
           
         </div>
