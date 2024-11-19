@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "../styles/about.css"
 import damajaStudio from "../assets/damajaStudio.webp"
 import studio01 from "../assets/studio-01.webp"
@@ -10,6 +10,23 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 const About = () => {
+
+    // Preload critical images on initial load
+    useEffect(() => {
+        const preloadImages = [
+            damajaStudio, // Use the imported image variable
+        ];
+
+        preloadImages.forEach((src) => {
+            const link = document.createElement("link");
+            link.rel = "preload";
+            link.as = "image";
+            link.href = src;  // This will now correctly refer to the imported images
+            document.head.appendChild(link);
+        });
+    }, []);
+
+
     return ( 
         <>
         <div className="about-ctn">

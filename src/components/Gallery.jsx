@@ -102,6 +102,25 @@ const Gallery = ({ setIsHovered }) => {
         }
     };
 
+      // Handle keyboard events for left and right arrows
+      useEffect(() => {
+        const handleKeydown = (event) => {
+            if (event.key === "ArrowRight") {
+                goToNextImage();
+            } else if (event.key === "ArrowLeft") {
+                goToPrevImage();
+            }
+        };
+
+        // Attach the event listener when the component mounts
+        window.addEventListener("keydown", handleKeydown);
+
+        // Clean up the event listener when the component unmounts
+        return () => {
+            window.removeEventListener("keydown", handleKeydown);
+        };
+    }, [currentImageIndex]);
+
     return (
         <div className={`gallery-container ${hoveredImage ? 'hovered' : ''}`}>
             {rows.map((row, rowIndex) => (
