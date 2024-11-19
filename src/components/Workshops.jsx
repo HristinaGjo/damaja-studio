@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/workshops.css"
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -29,6 +29,24 @@ const Workshops = () => {
     const toggleDropdown = () => {
         setIsOpen(prevState => !prevState)
     }
+
+
+        // Preload critical images on initial load
+        useEffect(() => {
+            const preloadImages = [
+                img07,
+                img06,
+                img01
+            ];
+    
+            preloadImages.forEach((src) => {
+                const link = document.createElement("link");
+                link.rel = "preload";
+                link.as = "image";
+                link.href = src;
+                document.head.appendChild(link);
+            });
+        }, []);
 
 
     return ( 
