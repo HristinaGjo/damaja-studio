@@ -64,6 +64,12 @@ const Gallery = ({ setIsHovered }) => {
     useEffect(() => {
         const preloadImages = [
             "/assets/wa-01.webp", // Image from first row
+            "/assets/wa-02.webp", 
+            "/assets/wa01-4.webp", 
+            "/assets/wa-03.webp", 
+            "/assets/wa02-2.webp", 
+            "/assets/wa02-3.webp", 
+            "/assets/wa02-4.webp", 
             "/assets/adidas03.webp", // Image from second row
             "/assets/hoops01.webp", // Image from third row
             "/assets/flora05.webp", // Image from fourth row
