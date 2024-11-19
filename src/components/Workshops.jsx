@@ -31,14 +31,10 @@ const Workshops = () => {
     }
 
 
-        // Preload critical images on initial load
-        useEffect(() => {
-            const preloadImages = [
-                img07,
-                img06,
-                img01
-            ];
-    
+    useEffect(() => {
+        if (isOpen) {
+            const preloadImages = [img07, img06, img01];
+
             preloadImages.forEach((src) => {
                 const link = document.createElement("link");
                 link.rel = "preload";
@@ -46,7 +42,8 @@ const Workshops = () => {
                 link.href = src;
                 document.head.appendChild(link);
             });
-        }, []);
+        }
+    }, [isOpen]);
 
 
     return ( 
