@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./pages/HomePage";
+import CookieBanner from "./components/CookieBanner";
 
 const App = () => {
     const [isHovered, setIsHovered] = useState(false);
@@ -14,6 +15,7 @@ const App = () => {
 
     return (
         <>
+        <CookieBanner/>
            <Nav 
            isHovered={isHovered} 
            scrollToAbout={scrollToAbout}

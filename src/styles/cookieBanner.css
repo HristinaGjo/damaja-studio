@@ -1,0 +1,76 @@
+.cookie-banner {
+  background:#CDA7AC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 1.5em;
+  font-size: 14px;
+  text-align: center;
+  position: fixed;
+  bottom:1em !important;
+  right: 1em;
+  z-index: 9999;
+  width: 30vw;
+  height: 20vh;
+  border-radius: 1em;
+  font-family: var( --font-family-p);
+  /*border: 1px solid #9f6b72;*/
+}
+
+.cookie-text {
+  color: white;
+  margin-bottom: 1em;
+}
+
+.cookie-accept,
+.cookie-reject {
+  border: none;
+  padding: 0.5em 1em;
+  margin: 0.25em;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.cookie-accept {
+  background-color: white;
+  color: #CDA7AC;
+}
+
+.cookie-reject {
+  background-color: #aaa7a7;
+  color: white;
+}
+
+/* 📱 Mobile optimization */
+@media (max-width: 600px) {
+  .cookie-banner {
+    background: #CDA7AC;
+    font-size: 12px;
+    padding: 1em;
+    width:fit-content;
+    left: 1em;
+    right: 1em;
+    height:fit-content;
+  }
+
+  /* Wrap only buttons and reorder them */
+  .cookie-banner > button.cookie-reject {
+    order: 2; /* Show reject second */
+    width: 100%;
+    margin: 0.25em 0;
+  }
+
+  .cookie-banner > button.cookie-accept {
+    order: 1; /* Show accept first */
+    width: 100%;
+    margin: 0.25em 0;
+  }
+
+  /* Keep text at top */
+  .cookie-text {
+    order: 0;
+  }
+}
