@@ -17,6 +17,7 @@
   border-radius: 1em;
   font-family: var( --font-family-p);
   /*border: 1px solid #9f6b72;*/
+    border: 1.5px solid white;
 }
 
 .cookie-text {
@@ -40,7 +41,8 @@
 }
 
 .cookie-reject {
-  background-color: #aaa7a7;
+  background-color:transparent;
+  border: 1px solid white;
   color: white;
 }
 
