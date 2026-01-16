@@ -106,7 +106,30 @@ const Workshops = () => {
                     </div> 
 
                     <div className="past-events">
-                            <p>Past events:</p>
+                            {/*<p>Past events:</p>*/}
+                            <div><p>Past events 2025</p></div>
+                            <ul className="offer-list">
+                                <li>Cyprien Gaillard @ Art Basel, hand embroideries for Life in the Cracks, 2025</li>
+                                <li>Cyprien Gaillard @ Sprüth Magers, hand embroideries for Retinal Rivalry, 2025</li>
+                                <li>Cyprien Gaillard @ Sprüth Magers, hand embroideries for Retinal Rivalry, 2025</li>
+                                <li>In-house team building, corporate hand embroidery workshop @ Qonto, 2025</li>
+                                <li>The Slow Label, live hand embroidery customisation and workshop, 2025</li>
+                                <li>New Standard Studio x A Gain Guide, hand embroidery repairs @ Happa, 2025</li>
+                                <li>DAWN, live hand embroidery @ The Berlin Denim experience, 2025</li>
+                                <li>Circular Berlin, Hand embroidery workshops @ The Berlin Denim experience, 2025</li>
+                                <li>H&M pre-loved, Hand embroidery upcycling workshop @ Berlin Mitte Garden store, 2025</li>
+                                <li>Adidas, Firebird live embroidery customisation @ Adidas Flagship Store, 2025 </li>
+                                <li>Adsquare, live embroidery customisation @ Adsquare Connect conference, 2025</li>
+                            </ul>
+
+                           {/* <div><p>Past events 2024</p></div>
+                            <ul className="offer-list">
+                                <li>Adidas x Bayern Munich, 3rd Kit Jersey Launch, live customisation, 2024</li>
+                                <li>CFS by Peek & Cloppenburg, upcycling workshop, 2024</li>
+                                <li>DAWN, live customisation @ SEEK Trade Show, 2024</li>
+                            </ul>*/}
+
+                            <div><p>Past events 2020 - 2024</p></div>
                             <ul className="offer-list">
                                 <li>Adidas x Bayern Munich, 3rd Kit Jersey Launch, live customisation, 2024</li>
                                 <li>CFS by Peek & Cloppenburg, upcycling workshop, 2024</li>
