@@ -111,7 +111,7 @@ const Workshops = () => {
                             <ul className="offer-list">
                                 <li>Cyprien Gaillard @ Art Basel, hand embroideries for Life in the Cracks, 2025</li>
                                 <li>Cyprien Gaillard @ Sprüth Magers, hand embroideries for Retinal Rivalry, 2025</li>
-                                <li>Cyprien Gaillard @ Sprüth Magers, hand embroideries for Retinal Rivalry, 2025</li>
+                                <li>Hermès, live hand embroidery customisation and workshop, Christmas activation @ Hermès Kudamm</li>
                                 <li>In-house team building, corporate hand embroidery workshop @ Qonto, 2025</li>
                                 <li>The Slow Label, live hand embroidery customisation and workshop, 2025</li>
                                 <li>New Standard Studio x A Gain Guide, hand embroidery repairs @ Happa, 2025</li>
